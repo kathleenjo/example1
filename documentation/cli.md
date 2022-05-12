@@ -10,7 +10,7 @@ You can find the code for the tmo_shell at https://github.com/tmobile/iot-develo
 
 1. On a computer with a USB-A port, install a serial app (e.g. Tera Term or PuTTY on Windows, 'screen' or picocom on Linux). You will need this app to communicate with the serial ports on the T-Mobile DevEdge IoT Developer Kit.
    <br><br> 
-    > NOTE: For demonstration purposes we will be using Tera Term in the rest of this document. Windows 10 is the operating system that Tera Term is installed on.
+    > **NOTE:** For demonstration purposes we will be using Tera Term in the rest of this document. Windows 10 is the operating system that Tera Term is installed on.
    <p>&nbsp;</p>
 2. Connect your IoT Developer Kit to your computer using the "USB-A to FTDI". Please see the screenshot below. 
    <br><br>
@@ -19,9 +19,9 @@ You can find the code for the tmo_shell at https://github.com/tmobile/iot-develo
    <img src="https://user-images.githubusercontent.com/60194531/167969548-97aebc41-9d73-40ad-9ed5-a5289eb37f94.png" width="399">
    </p>
 3. On your computer, open the Tera Term app. The Tera Term: New Connection window opens.
-4. Select the "Serial" radio button then from the drop down select the port that your T-Mobile DevEdge IoT Developer Kit is connected to. Click OK. 
+4. Select the "Serial" radio button then from the drop down select the port that your T-Mobile DevEdge IoT Developer Kit is connected to. Click ***OK***. 
    <p><img width="700" alt="image" src="https://user-images.githubusercontent.com/60194531/167970174-fa8a59ea-e35e-461a-abb4-2519affa5134.png"></p>
-5. Under Setup > Serial port... the settings for the kit's port need to be assigned the following way or you will not be able to connect to the kit:
+5. Under **Setup** > **Serial port**... the settings for the kit's port need to be assigned the following way or you will not be able to connect to the kit:
    1. Speed / Baud Rate: 9600 
    2. Data: 8
    3. Parity: none
@@ -30,7 +30,9 @@ You can find the code for the tmo_shell at https://github.com/tmobile/iot-develo
    6. Click New setting if you had to change any of these values. Cancel if you did not. The Tera Term command line appears. 
    <p><img width="500" alt="image" src="https://user-images.githubusercontent.com/60194531/167970314-79d87ca1-b381-4688-bc9e-9c21c829b9df.png"></p>
 6. In the Tera Term command line console press enter on your keyboard. The Zephyr uart peripheral appears.
-7. Type tmo. This will display all of the commands available in the tmo_shell. Below is a table describing the commands and available subcommands with descriptions.
+   <p><img src="https://user-images.githubusercontent.com/60194531/167972999-03063375-fda0-4a22-9766-6263bebea131.png" width="500"></p>
+   <p><img src="https://user-images.githubusercontent.com/60194531/167973184-3a7716b5-5f3b-4e7e-b34e-f1847dfe64e6.png" width="500"></p>
+7. Type `tmo`. This will display all of the commands available in the tmo_shell. Below is a table describing the commands and available subcommands with descriptions.
 
       |   What's in the box   |   Product Features   |
       |   -----   |   -----   |
@@ -147,11 +149,11 @@ Check the Wi-Fi status of an interface.
 
 ## What are some things I would want to do at tmo_shell CLI?
 ### Connect to Wi-Fi
-1. Enter tmo ifaces in the terminal. Based on the Data Sheet, the murata.1sc is the LTE CAT-M1/NB1 cellular modem and the RS9116W is the Wi-Fi/BLE radio device.
-2. Scan for available networks by running tmo wifi scan <iface_id>.
-3. Connect to a network by running tmo wifi connect <iface_id> "<ssid>" 0 "<psk>" or tmo wifi connect <iface_id> "<ssid>" if your network lacks a password:
+1. Enter `tmo ifaces` in the terminal. Based on the Data Sheet, the murata.1sc is the LTE CAT-M1/NB1 cellular modem and the RS9116W is the Wi-Fi/BLE radio device.
+2. Scan for available networks by running `tmo wifi scan <iface_id>`.
+3. Connect to a network by running `tmo wifi connect <iface_id> "<ssid>" 0 "<psk>"` or `tmo wifi connect <iface_id> "<ssid>"` if your network lacks a password:
 4. If the connection is successful you should receive a "Connected" response.
-5. Check the status of the Wi-Fi connection by entering tmo wifi status <iface_id>.
+5. Check the status of the Wi-Fi connection by entering `tmo wifi status <iface_id>`.
    <p>You can also see that you are connected to your chosen Wi-Fi by looking at your smartphone > DevEdge IoT companion app > I/O.</p>
    <p> screenshot </p>
 
@@ -159,57 +161,33 @@ Check the Wi-Fi status of an interface.
 
 
 ### Testing TCP connect/send/recv/close
-Create a TCP socket by entering tmo tcp create <iface_id> .
-
-NOTE: For this to work, you must be connected to Wi-Fi. The error "Socket creation failed, errno = 22" indicates that you are not connected to Wi-Fi and, as a result, the TCP socket cannot be created. 
-
-
-
-If the socket is created properly a <socket_number> will appear. In the case of the screenshot below the socket number is 0. 
-
-
-
-To list all open sockets type tmo sockets .
-
-
-
-To connect the socket to a server, call tmo tcp connect <socket_number> <ip_addr> <port>:
-
-NOTE: You will need a echo server IP address in order to complete this part of the exercise. 
+1. Create a TCP socket by entering `tmo tcp create <iface_id>`.
+   <br><br>
+   > **NOTE:** For this to work, you must be connected to Wi-Fi. The error "Socket creation failed, errno = 22" indicates that you are not connected to Wi-Fi and, as a result, the TCP socket cannot be created. 
+   <p>&nbsp;</p>
+2. If the socket is created properly a <socket_number> will appear. In the case of the screenshot below the socket number is 0. 
+3. To list all open sockets type `tmo sockets`.
+4. To connect the socket to a server, call `tmo tcp connect <socket_number> <ip_addr> <port>`:
+   <br><br>
+   > **NOTE:** You will need a echo server IP address in order to complete this part of the exercise. 
+   <p>&nbsp;</p>
+5. The message "Connected socket 0" if the call was made successfully. 
+6. To send data, call `tmo tcp send <socket_number> "<data>"`. When you hit enter on your keyboard Tera Term will simple go back to the uart prompt. 
+7. To see the data you just sent, call `tmo tcp recv <socket_number>`. 
+8. To close the socket, call `tmo tcp close <socket_number>`.
 
 
+### Testing UDP connect/send/recv/close
+1. kjo
+2. kjo
+3. kjo
 
-The message "Connected socket 0" if the call was made successfully. 
+### Testing UDP bind
+1. lorem
+2. ipsum
+3. dolor
 
-
-
-To send data, call tmo tcp send <socket_number> "<data>". When you hit enter on your keyboard Tera Term will simple go back to the uart prompt. 
-
-
-
-To see the data you just sent, call tmo tcp recv <socket_number>. 
-
-
-
-
-
-To close the socket, call tmo tcp close <socket_number>.
-
-
-
-
-
-Testing UDP connect/send/recv/close
-kjo
-kjo
-kjo
-
-Testing UDP bind
-lorem
-ipsum
-dolor
-
-Testing UDP sendto/recvfrom
-lorem
-ipsum
-dolor
+### Testing UDP sendto/recvfrom
+1. lorem
+2. ipsum
+3. dolor
