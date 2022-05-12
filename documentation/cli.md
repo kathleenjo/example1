@@ -11,11 +11,16 @@ You can find the code for the tmo_shell at https://github.com/tmobile/iot-develo
 1. On a computer with a USB-A port, install a serial app (e.g. Tera Term or PuTTY on Windows, 'screen' or picocom on Linux). You will need this app to communicate with the serial ports on the T-Mobile DevEdge IoT Developer Kit.
    <br><br> 
     > NOTE: For demonstration purposes we will be using Tera Term in the rest of this document. Windows 10 is the operating system that Tera Term is installed on.
-   <br><br>
+   <p>&nbsp;</p>
 2. Connect your IoT Developer Kit to your computer using the "USB-A to FTDI". Please see the screenshot below. 
-    > IMPORTANT: Make sure that the FTDI cable is pointing to the right hand side of the board like in the screenshot below. If the cable is not pointed to the right (the opposite of Beyoncé's song Irreplaceable) it will not be able to connect the kit to your Windows computer. 
+   <br><br>
+    > **IMPORTANT:** Make sure that the FTDI cable is pointing to the **right hand side of** the board like in the screenshot below. If the cable is not pointed to the right (the opposite of Beyoncé's song [Irreplaceable](https://www.youtube.com/watch?v=2EwViQxSJJQ)) it will not be able to connect the kit to your Windows computer. 
+   <p>
+   <img src="https://user-images.githubusercontent.com/60194531/167969548-97aebc41-9d73-40ad-9ed5-a5289eb37f94.png" width="399">
+   </p>
 3. On your computer, open the Tera Term app. The Tera Term: New Connection window opens.
 4. Select the "Serial" radio button then from the drop down select the port that your T-Mobile DevEdge IoT Developer Kit is connected to. Click OK. 
+   <p><img width="700" alt="image" src="https://user-images.githubusercontent.com/60194531/167970174-fa8a59ea-e35e-461a-abb4-2519affa5134.png"></p>
 5. Under Setup > Serial port... the settings for the kit's port need to be assigned the following way or you will not be able to connect to the kit:
    1. Speed / Baud Rate: 9600 
    2. Data: 8
@@ -23,9 +28,14 @@ You can find the code for the tmo_shell at https://github.com/tmobile/iot-develo
    4. Stop bits: 1
    5. Flow control: none
    6. Click New setting if you had to change any of these values. Cancel if you did not. The Tera Term command line appears. 
-
+   <p><img width="500" alt="image" src="https://user-images.githubusercontent.com/60194531/167970314-79d87ca1-b381-4688-bc9e-9c21c829b9df.png"></p>
 6. In the Tera Term command line console press enter on your keyboard. The Zephyr uart peripheral appears.
 7. Type tmo. This will display all of the commands available in the tmo_shell. Below is a table describing the commands and available subcommands with descriptions.
+
+      |   What's in the box   |   Product Features   |
+      |   -----   |   -----   |
+      | • IoT Developer Kit main board<br>• Protective case<br>• Battery <br>• Power adapter<br>• USB Charging Cable<br>• Quick Start Guide<br>• SIM with 500 MB of data<br>• Mobile and web apps that will assist in IoT Development<br>• Code snippets|The kit comes pre-bundled with connectivity and is sold exclusively through DevEdge.<br/>Specifications:<br>• 32-bit ARM Cortex M4 MCU<br>• LTE CAT-M Module <br>• 2.4GHz Wi-Fi<br>• BLE Bluetooth <br>• GNSS <br>• RGB LED <br>• White LED <br>• Temperature sensor <br>• Accelerometer<br>• Ambient Light Sensor<br>• Pressure Sensor<br>• Buzzer<br>• Button<br>• Li-ion Battery<br>• I2C Expansion Connector <br>• Type-C USB Connector  |
+
 <!-- 
 
 
@@ -141,20 +151,14 @@ Check the Wi-Fi status of an interface.
 2. Scan for available networks by running tmo wifi scan <iface_id>.
 3. Connect to a network by running tmo wifi connect <iface_id> "<ssid>" 0 "<psk>" or tmo wifi connect <iface_id> "<ssid>" if your network lacks a password:
 4. If the connection is successful you should receive a "Connected" response.
-
-
-
-Check the status of the Wi-Fi connection by entering tmo wifi status <iface_id>.
-
-
-
-You can also see that you are connected to your chosen Wi-Fi by looking at your smartphone > DevEdge IoT companion app > I/O.
+5. Check the status of the Wi-Fi connection by entering tmo wifi status <iface_id>.
+   <p>You can also see that you are connected to your chosen Wi-Fi by looking at your smartphone > DevEdge IoT companion app > I/O.</p>
+   <p> screenshot </p>
 
 
 
 
-
-Testing TCP connect/send/recv/close
+### Testing TCP connect/send/recv/close
 Create a TCP socket by entering tmo tcp create <iface_id> .
 
 NOTE: For this to work, you must be connected to Wi-Fi. The error "Socket creation failed, errno = 22" indicates that you are not connected to Wi-Fi and, as a result, the TCP socket cannot be created. 
