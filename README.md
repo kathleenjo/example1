@@ -10,3 +10,38 @@
 - World
   1. Hi
   2. Bye
+
+```json
+{
+  "isConnected": 2,
+  "errors": [],
+  "messages": [],
+  "dataUsage": {
+    "renewDate": 1650917936982,
+    "dataUsed": 86.2,
+    "dataCap": 500
+  },
+  "deviceStatus": {
+    "pluggedIn": false,
+    "batteryLevel": 83,
+    "deviceOnline": true,
+    "cloudConnected": true,
+    "cellularConnected": true,
+    "wifiConnected": true,
+    "bluetoothConnected": true
+  },
+  "accelerometer": {
+    "x": 0,
+    "y": 0,
+    "z": -1
+  },
+  "cellSignalStrength": {
+    "dbm": -73
+  },
+  "map": {},
+  "temperature": {
+    "temperatureCelsius": 21.1
+  },
+  "lastReport": 1650917936982
+}
+```
