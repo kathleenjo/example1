@@ -191,3 +191,6 @@ Check the Wi-Fi status of an interface.
 1. lorem
 2. ipsum
 3. dolor
+
+***
+[<< Go back](07-Driver-Configurations.md) &nbsp; | &nbsp; [Up next >>](09-Accompanying-Apps.md)
