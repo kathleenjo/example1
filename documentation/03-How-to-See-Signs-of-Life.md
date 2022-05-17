@@ -49,9 +49,39 @@
 
 ## Step C - Connect the IoT Developer Kit to the DevEdge IoT companion app
 1. On your smartphone, open the DevEdge IoT companion app.
+2. Using Bluetooth, the DevEdge IoT companion app will search for your IoT Developer Kit.
+3. Next, the DevEdge IoT companion app provides a list.
+4. Select "T-Mobile DevEdge".
+5. The DevEdge IoT home screen opens and is now populated with data from the IoT Developer Kit. 
 
+
+## Step D - Observe Data Updates in the Companion App
+### Option 1 - Turn the Buzzer On and Off
+1. In your smartphone DevEdge IoT companion app, tap the Home icon. 
+2. Tap I/O.
+3. Tap Activate Buzzer.
+4. On the IoT Developer Kit watch / feel the buzzer turn on and off.
+5. Repeat the exercise as much as you wish.
+
+### Option 2 - Turning the LED On and Off
+1. In your smartphone DevEdge IoT companion app, tap the Home icon. 
+2. Tap I/O.
+3. Tap any of the switches to turn the LED on and off.
+4. On the IoT Developer Kit watch the LED turn on and off. 
+5. Repeat the exercise as much as you wish.
+
+
+## Troubleshooting
+If you do not find "T-Mobile DevEdge" in the list, try the following:
+1. On your smartphone, navigate to the Settings app.
+2. Search for "DevEdge IoT". Tap on DevEdge IoT.
+3. Delete anything that exists in the "Prefix" field. 
+4. Return to the DevEdge IoT app. 
+5. A list appears with any Bluetooth enabled devices that are near the IoT Developer Kit.
+6. If a list does not appear, tap "Devices".
+7. Tap "T-Mobile DevEdge".
+8. The DevEdge IoT companion app home screen opens and is now populated with data from the IoT Developer Kit. 
 
 
 ***
-
 [<< Go back](02-Whats-in-the-Box.md) &nbsp; | &nbsp; [Up next >>](04-Connecting-to-the-T-Mobile-LTE-M-Network.md)
