@@ -1,3 +1,11 @@
+##### Table of Contents  
+[Headers](#headers)  
+[Emphasis](#emphasis)  
+...snip...    
+<a name="headers"/>
+## Headers
+
+
 # How to See Signs of Life
 ## Step A - Install the Companion App on your Smart Phone
 ### Apple iPhone
