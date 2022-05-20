@@ -2,13 +2,32 @@
 
 ## Introduction
 This document gives the reader specifications, a block diagram, pin descriptions, sensor descriptions, and more about the kit. 
+<br><br>
 
 ## Specifications
-|   What's in the box   |   Product Features   |
-|   -----   |   -----   |
-| <ul><li>kjo</li><li>kjo2</li></ul> • IoT Developer Kit main board<br>• Protective case<br>• Battery <br>• Power adapter<br>• USB Charging Cable<br>• Quick Start Guide<br>• SIM with 500 MB of data<br>• Mobile and web apps that will assist in IoT Development<br>• Code snippets|The kit comes pre-bundled with connectivity and is sold exclusively through DevEdge.<br/>Specifications:<br>• 32-bit ARM Cortex M4 MCU<br>• LTE CAT-M Module <br>• 2.4GHz Wi-Fi<br>• BLE Bluetooth <br>• GNSS <br>• RGB LED <br>• White LED <br>• Temperature sensor <br>• Accelerometer<br>• Ambient Light Sensor<br>• Pressure Sensor<br>• Buzzer<br>• Button<br>• Li-ion Battery<br>• I2C Expansion Connector <br>• Type-C USB Connector  |
+The T-Mobile DevEdge IoT Developer Kit has the following specifications.
+> **NOTE:** The features that are struck through are yet to be implemented on this beta version of the IoT Developer Kit. 
+- 32-bit ARM Cortex M4 MCU
+- LTE CAT-M Module
+- 2.4GHz Wi-Fi
+- BLE Bluetooth
+- GNSS
+- RGB LED
+- Temperature sensor
+- Accelerometer
+- ~Ambient light sensor~
+- Pressure sensor
+- Buzzer
+- Button
+- ~Lithium-ion battery~
+- Segger J-Link programming interface
+- I2C expansion connector
+- Type-C USB connector
+<br><br>
 
 ## Block Diagram
+![image](https://user-images.githubusercontent.com/60194531/169599811-db9b29d7-31c4-497c-ad05-e21341b3a38c.png)
+<br><br>
 
 ## Pin and Sensor Descriptions
 1. Sensors on the Pearl Gecko I2C1 bus. 
