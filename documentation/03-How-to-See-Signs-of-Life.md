@@ -15,15 +15,15 @@ This document guides the reader on how to turn on the buzzer and switch the LED 
 
 ## Step A - Install the Companion App on your Smart Phone
 ### Apple iPhone
-1. On your iPhone, open the App Store app.<br><img src="https://user-images.githubusercontent.com/60194531/170142918-d40a123f-c003-4c19-868e-b18903355e26.png" width="75" ><br>
-2. Search for the TestFlight app.<br><br>
-3. Tap to install the TestFlight app.<br><br> 
+1. On your iPhone, open the App Store app.<br><br><img src="https://user-images.githubusercontent.com/60194531/170142918-d40a123f-c003-4c19-868e-b18903355e26.png" width="75" ><br>
+2. Search for the TestFlight app.<br><br><img width="300" alt="Search for TestFlight" src="https://user-images.githubusercontent.com/60194531/170145557-269f2a76-b8ae-436a-8b5e-58828cf54784.png"><br>
+3. Tap to install the TestFlight app.<br>
 4. On your iPhone, check the Apple ID email address that is associated with your iPhone for an invitation from TestFlight.<br><br><img width="300" alt="TestFlight T-Mobile IoT Developer Kit Invitation" src="https://user-images.githubusercontent.com/60194531/170144632-8421cb3c-3544-4bbe-9365-d6f6232b4ae4.png">
-   <br><br>
+   <br>
    > **NOTE:** If you have not received this invitation please reach out to us using [this contact form](https://devedge.t-mobile.com/contact). 
-5. Accept the invitation to join the T-Mobile DevEdge Companion App by tapping ***View in TestFlight***.<img width="300" alt="Tap View in TestFlight" src="https://user-images.githubusercontent.com/60194531/170145143-3bfe08e5-ece3-4e21-93be-c360b4c5a659.png">
+5. Accept the invitation to join the T-Mobile DevEdge Companion App by tapping ***View in TestFlight***.<br><br><img width="300" alt="Tap View in TestFlight" src="https://user-images.githubusercontent.com/60194531/170145143-3bfe08e5-ece3-4e21-93be-c360b4c5a659.png">
 
-6. Allow TestFlight to send you notifications.
+6. Allow TestFlight to send you notifications.<br><br><img src="https://user-images.githubusercontent.com/60194531/170146307-bfa460df-f6be-4b60-ac71-52d1369b76f5.png" width="300">
 7. Tap ***Continue***.
 8. Tap ***Accept*** then ***Done***.
 9. Tap ***Install***.
@@ -57,10 +57,11 @@ This document guides the reader on how to turn on the buzzer and switch the LED 
 9. For this document, the section we care about the most is I/O.
 
 ## Step B - Turn on the IoT Developer Kit
-1. Plug in the USB-C to USB-A to a power source. We recommend plugging it into the Modem USB-C Debug port. 
+1. Plug in the USB-C to USB-A to a power source. We recommend plugging it into the Modem USB-C Debug port.<br><img src="https://user-images.githubusercontent.com/60194531/170146594-aa063ff9-b3b8-4457-ab0d-a36300145686.png" width="450"><br> 
 2. Notice the following on the IoT Developer Kit:
-    - The LED lights flashing.
     - The board playing the T-Mobile jingle.
+    - The LED lights flashing.<br><img src="https://user-images.githubusercontent.com/60194531/170147025-85fdba71-c30d-4196-8023-7a5039dd17ef.png" width="450">
+    
 
 ## Step C - Connect the IoT Developer Kit to the DevEdge IoT companion app
 1. On your smartphone, open the DevEdge IoT companion app.
