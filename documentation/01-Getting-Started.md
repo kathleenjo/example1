@@ -1,5 +1,6 @@
-## Getting Started
+# Getting Started
 
+## Introduction
 This documentation guides the reader on how to get up and running quickly with the T-Mobile DevEdge IoT Developer Kit. 
 
 ## Prerequisites
@@ -10,7 +11,7 @@ This documentation guides the reader on how to get up and running quickly with t
     - iOS version 15.3.1 installed on the iPhone
     - The *DevEdge IoT* companion app installed on the iPhone. 
   - If it is an Android
-    - Android OS version 12 and later installed on the phone
+    - Android OS version 11 and later installed on the phone
     - The *DevEdge IoT* companion app installed on the phone.
 - A computer with Windows, Mac, or Linux operating system with available USB ports.
 - Git installed on the computer.
