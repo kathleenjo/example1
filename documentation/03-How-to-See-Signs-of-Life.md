@@ -1,12 +1,18 @@
-##### Table of Contents  
-[Headers](#headers)  
-[Emphasis](#emphasis)  
-...snip...    
-<a name="headers"/>
-## Headers
-
-
 # How to See Signs of Life
+
+## Introduction
+This document guides the reader on how to turn on the buzzer and switch the LED lights on and off on the [T-Mobile DevEdge IoT Developer Kit](https://devedge.t-mobile.com/solutions/iot-developer-kit) using the accompanying mobile app. To learn more about the accompanying mobile app, please read [this document](09-Accompanying-Apps.md). 
+
+## Prerequisites
+- The [T-Mobile DevEdge IoT Developer Kit](https://devedge.t-mobile.com/solutions/iot-developer-kit).
+- A smartphone
+  - If it is an iPhone
+    - iOS version 15.3.1 installed on the iPhone
+    - The *DevEdge IoT* companion app installed on the iPhone. 
+  - If it is an Android
+    - Android OS version 11 and later installed on the phone
+    - The *DevEdge IoT* companion app installed on the phone.
+
 ## Step A - Install the Companion App on your Smart Phone
 ### Apple iPhone
 1. On your iPhone, open the App Store app.
@@ -14,7 +20,7 @@
 3. Tap to install the TestFlight app. 
 4. Check the Apple ID email address that is associated with your iPhone for an invitation from TestFlight.
    <br><br>
-   > **NOTE:** If you have not received this inviation please reach out to us using [this contact form](https://devedge.t-mobile.com/contact). 
+   > **NOTE:** If you have not received this invitation please reach out to us using [this contact form](https://devedge.t-mobile.com/contact). 
 5. Accept the invitation to join the T-Mobile DevEdge Companion App by tapping View in TestFlight.
 6. Allow TestFlight to send you notifications.
 7. Tap ***Continue***.
