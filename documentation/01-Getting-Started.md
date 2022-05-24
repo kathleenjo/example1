@@ -15,7 +15,7 @@ This documentation guides the reader on how to get up and running quickly with t
 - A computer with Windows, Mac, or Linux operating system with available USB ports.
 - Git installed on the computer.
 - Windows terminal app capable of serial port communication, e.g. [Tera Term](https://ttssh2.osdn.jp/index.html.en) or [PuTTY](https://www.putty.org/).
-- You remember that this [T-Mobile DevEdge Developer Kit](https://devedge.t-mobile.com/solutions/iot-developer-kit) is a pre-production, beta version. If you find bugs, things wrong, frustrating things... wwwweeeellllll yeah...
+- You remember that this [T-Mobile DevEdge IoT Developer Kit](https://devedge.t-mobile.com/solutions/iot-developer-kit) is a pre-production, beta version. If you find bugs, things wrong, frustrating things... wwwweeeellllll yeah...
 
 ## What are the ultimate goals of this documentation?
 To teach the reader how to:
