@@ -27,15 +27,15 @@ This document guides the reader on how to turn on the buzzer and switch the LED 
 7. Tap ***Continue***.
 8. Tap ***Accept*** then ***Done***.
 9. Tap ***Install***.
-10. Tap ***Open***. This opens the T-Mobile *DevEdge IoT* companion app.<br><img src="https://user-images.githubusercontent.com/60194531/170148377-18e1ef03-bc51-472b-ab95-ad8fb840aa2b.png" width="300"><br>
+10. Tap ***Open***. This opens the T-Mobile *DevEdge IoT* companion app.<br><br><img src="https://user-images.githubusercontent.com/60194531/170148377-18e1ef03-bc51-472b-ab95-ad8fb840aa2b.png" width="300"><br>
 11. Tap ***Next***.
 12. Tap ***Start Testing***.
 13. Tap ***Do it later***.
 14. The *DevEdge IoT* companion app has the following user interface (UI) sections that help developers understand the kit’s / sensor’s statuses. This includes:
     - **Power** - Displays the amount of power in the battery and whether the device is plugged in or not.
     - **Environment** - Displays temperature data from the temperature sensor and other sensors, like the pressure sensor.
-    - **I/O** - Displays the input / output information for the kit. This includes whether your IoT Device is connected to Wi-Fi, whether or not the LED is on or off, and more.
-    - **Cellular** - Displays the speed at which the data is being transferred from the kit and the number of cell towers the kit has to transfer data to.
+    - **I/O** - Displays the input / output information for the kit. This includes whether your IoT kit is connected to Wi-Fi, whether or not the LED is on or off, and more.
+    - **Cellular** - Displays the speed at which the data is being transferred from the kit and the number of cell towers the kit has to transfer data to.<br><br>Example of the mobile app without data in dark appearance:<br><br><img src="https://user-images.githubusercontent.com/60194531/170149712-9a0dd3cf-9c35-460e-b8f0-41343c20f7c5.png" width="300">
 15. For this document, the section we care about the most is **I/O**. 
 
 ### Android
@@ -50,11 +50,8 @@ This document guides the reader on how to turn on the buzzer and switch the LED 
     - **Power** – Displays the amount of power in the battery and whether the device is plugged in or not.
     - **Environment** – Displays temperature data from the temperature sensor and other sensors, like the pressure sensor.
     - **I/O** – Displays the input / output information for the kit. This includes whether your IoT Device is connected to WiFi, whether or not the LED is on or off, and more.
-    - **Cellular** – Displays the speed at which the data is being transferred from the kit and the number of cell towers the kit has to transfer data to.
-
-(screenshot)
-
-9. For this document, the section we care about the most is I/O.
+    - **Cellular** – Displays the speed at which the data is being transferred from the kit and the number of cell towers the kit has to transfer data to.<br><br>(screenshot)
+9. For this document, the section we care about the most is **I/O**.
 
 ## Step B - Turn on the IoT Developer Kit
 1. Plug in the USB-C to USB-A to a power source. We recommend plugging it into the Modem USB-C Debug port.<br><img src="https://user-images.githubusercontent.com/60194531/170146594-aa063ff9-b3b8-4457-ab0d-a36300145686.png" width="450"><br> 
