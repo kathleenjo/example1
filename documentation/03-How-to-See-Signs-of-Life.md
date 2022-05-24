@@ -1,10 +1,5 @@
 # How to See Signs of Life
 
-| **Table of Contents** |
-| -----| 
-| <ul><li>[Introduction](https://github.com/tmobile/iot-developer-kit/blob/main/documentation/03-How-to-See-Signs-of-Life.md#introduction)</li><li>[Prerequisites](https://github.com/tmobile/iot-developer-kit/blob/main/documentation/03-How-to-See-Signs-of-Life.md#prerequisites)</li><li>Step A - Install the Companion App on your Smart Phone<ul><li>Apple iPhone</li><li>Android</li></ul><li>Step B</li><li>Step C</li><li>Step D</li></ul> |
-
-
 ## Introduction
 This document guides the reader on how to turn on the buzzer and switch the LED lights on and off on the [T-Mobile DevEdge IoT Developer Kit](https://devedge.t-mobile.com/solutions/iot-developer-kit) using the accompanying mobile app. To learn more about the accompanying mobile app, please read [this document](09-Accompanying-Apps.md).
 
@@ -20,13 +15,14 @@ This document guides the reader on how to turn on the buzzer and switch the LED 
 
 ## Step A - Install the Companion App on your Smart Phone
 ### Apple iPhone
-1. On your iPhone, open the App Store app.
-2. Search for the TestFlight app.
-3. Tap to install the TestFlight app. 
-4. Check the Apple ID email address that is associated with your iPhone for an invitation from TestFlight.
+1. On your iPhone, open the App Store app.<br><img src="https://user-images.githubusercontent.com/60194531/170142918-d40a123f-c003-4c19-868e-b18903355e26.png" width="75" ><br>
+2. Search for the TestFlight app.<br><br>
+3. Tap to install the TestFlight app.<br><br> 
+4. On your iPhone, check the Apple ID email address that is associated with your iPhone for an invitation from TestFlight.<br><br><img width="300" alt="TestFlight T-Mobile IoT Developer Kit Invitation" src="https://user-images.githubusercontent.com/60194531/170144632-8421cb3c-3544-4bbe-9365-d6f6232b4ae4.png">
    <br><br>
    > **NOTE:** If you have not received this invitation please reach out to us using [this contact form](https://devedge.t-mobile.com/contact). 
-5. Accept the invitation to join the T-Mobile DevEdge Companion App by tapping View in TestFlight.
+5. Accept the invitation to join the T-Mobile DevEdge Companion App by tapping ***View in TestFlight***.<img width="300" alt="Tap View in TestFlight" src="https://user-images.githubusercontent.com/60194531/170145143-3bfe08e5-ece3-4e21-93be-c360b4c5a659.png">
+
 6. Allow TestFlight to send you notifications.
 7. Tap ***Continue***.
 8. Tap ***Accept*** then ***Done***.
