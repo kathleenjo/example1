@@ -1,7 +1,12 @@
 # How to See Signs of Life
 
+| **Table of Contents** |
+| -----| 
+| <ul><li>[Introduction](https://github.com/tmobile/iot-developer-kit/blob/main/documentation/03-How-to-See-Signs-of-Life.md#introduction)</li><li>[Prerequisites](https://github.com/tmobile/iot-developer-kit/blob/main/documentation/03-How-to-See-Signs-of-Life.md#prerequisites)</li><li>Step A - Install the Companion App on your Smart Phone<ul><li>Apple iPhone</li><li>Android</li></ul><li>Step B</li><li>Step C</li><li>Step D</li></ul> |
+
+
 ## Introduction
-This document guides the reader on how to turn on the buzzer and switch the LED lights on and off on the [T-Mobile DevEdge IoT Developer Kit](https://devedge.t-mobile.com/solutions/iot-developer-kit) using the accompanying mobile app. To learn more about the accompanying mobile app, please read [this document](09-Accompanying-Apps.md). 
+This document guides the reader on how to turn on the buzzer and switch the LED lights on and off on the [T-Mobile DevEdge IoT Developer Kit](https://devedge.t-mobile.com/solutions/iot-developer-kit) using the accompanying mobile app. To learn more about the accompanying mobile app, please read [this document](09-Accompanying-Apps.md).
 
 ## Prerequisites
 - The [T-Mobile DevEdge IoT Developer Kit](https://devedge.t-mobile.com/solutions/iot-developer-kit).
