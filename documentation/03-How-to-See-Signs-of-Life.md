@@ -27,30 +27,30 @@ This document guides the reader on how to turn on the buzzer and switch the LED 
 7. Tap ***Continue***.
 8. Tap ***Accept*** then ***Done***.
 9. Tap ***Install***.
-10. Tap ***Open***.
+10. Tap ***Open***. This opens the T-Mobile *DevEdge IoT* companion app.<br><img src="https://user-images.githubusercontent.com/60194531/170148377-18e1ef03-bc51-472b-ab95-ad8fb840aa2b.png" width="300"><br>
 11. Tap ***Next***.
 12. Tap ***Start Testing***.
 13. Tap ***Do it later***.
-14. The DevEdge IoT companion app has the following user interface (UI) sections that help developers understand the kit’s / sensor’s statuses. This includes:
-    - **Power** - 
-    - **Environment** -
-    - **I/O** -
-    - **Cellular** -
-16. For this document, the section we care about the most is I/O. 
+14. The *DevEdge IoT* companion app has the following user interface (UI) sections that help developers understand the kit’s / sensor’s statuses. This includes:
+    - **Power** - Displays the amount of power in the battery and whether the device is plugged in or not.
+    - **Environment** - Displays temperature data from the temperature sensor and other sensors, like the pressure sensor.
+    - **I/O** - Displays the input / output information for the kit. This includes whether your IoT Device is connected to Wi-Fi, whether or not the LED is on or off, and more.
+    - **Cellular** - Displays the speed at which the data is being transferred from the kit and the number of cell towers the kit has to transfer data to.
+15. For this document, the section we care about the most is **I/O**. 
 
 ### Android
 1. On your Android mobile device, open the Google Play store app. 
-2. Search for DevEdge IoT. 
-3. Tap to install the DevEdge IoT app.
-4. Open the DevEdge IoT app.
-5. Tap Next.
-6. Tap Start Testing. 
-7. Tap Do it later. 
+2. Search for "DevEdge IoT". 
+3. Tap to install the *DevEdge IoT* app.
+4. Open the *DevEdge IoT* app.
+5. Tap ***Next***.
+6. Tap ***Start Testing***. 
+7. Tap ***Do it later***. 
 8. The DevEdge IoT companion app has the following user interface (UI) sections that help developers understand the kit’s / sensor’s statuses. This includes:
-    - Power – Displays the amount of power in the battery and whether the device is plugged in or not.
-    - Environment – Displays temperature data from the temperature sensor and other sensors, like the pressure sensor.
-    - I/O – Displays the input / output information for the kit. This includes whether your IoT Device is connected to WiFi, whether or not the LED is on or off, and more.
-    - Cellular – Displays the speed at which the data is being transferred from the kit and the number of cell towers the kit has to transfer data to.
+    - **Power** – Displays the amount of power in the battery and whether the device is plugged in or not.
+    - **Environment** – Displays temperature data from the temperature sensor and other sensors, like the pressure sensor.
+    - **I/O** – Displays the input / output information for the kit. This includes whether your IoT Device is connected to WiFi, whether or not the LED is on or off, and more.
+    - **Cellular** – Displays the speed at which the data is being transferred from the kit and the number of cell towers the kit has to transfer data to.
 
 (screenshot)
 
