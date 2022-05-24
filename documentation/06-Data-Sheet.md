@@ -66,11 +66,11 @@ The T-Mobile DevEdge IoT Developer Kit has the following specifications.
 | USB 2.0 to UART bridge | Silicon Labs | CP2105-F01-GMR | https://www.silabs.com/documents/public/data-sheets/CP2105.pdf | 
 
 ## Other Features
-1. **User button** – Labeled SW3 on the PCB, and accessible from the exterior of the DevEdge enclosure. Pressing it drives Pearl Gecko port PB13 (configured as an input) low.
+1. **User button** – Labeled SW3 on the PCB, and accessible from the exterior of the DevEdge enclosure. Pressing it drives Pearl Gecko port PB13 (configured as an input) low.<br><br>
 2. **Reset button** – Labeled SW1 on the PCB, not accessible from the exterior of the enclosure. Pressing it will reset the Pearl Gecko microprocessor.
 3. There is a nano-SIM socket on the board (labeled J2). A properly provisioned SIM is used by the cellular modem IC to connect to and transfer data with a cellular network.
 4. **2-pin header J6** – Placing a shunt (shorting block) across pins 1 and 2 of this header, and resetting the Pearl Gecko microprocessor, will invoke a boot loader program in the micro’s onboard Flash memory. This will allow firmware images to be downloaded to the micro without using the ARM SWD (Serial Wire Debug) or JTAG (Joint Test Action Group) debug interfaces. 
-5. **Spare GPIO pins on the Pearl Gecko** – There are four unassigned GPIO (general purpose input/output) port pins on the Pearl Gecko: PB7, PF9, PF11, and PK2. These pins, a 1.85V supply rail, and ground are routed to a set of 1.5mm test point pads on the bottom side of the PCB. They are located along one edge of the board and are labeled with the port name. <br><br>There was no room on the board to mount a pin header for these signals, so wires must be soldered to the board to access them. There is no ESD protection on these pads, so industry standard anti-static measures should be used when connecting external circuitry.
+5. **Spare GPIO pins on the Pearl Gecko** – There are four unassigned GPIO (General Purpose Input/Output) port pins on the Pearl Gecko: PB7, PF9, PF11, and PK2. These pins, a 1.85V supply rail and ground, are routed to a set of 1.5mm test point pads on the bottom side of the PCB. They are located along one edge of the board and are labeled with the port name.<br>**ALSO NOTE:** <ul><li>There is an additional test point in this group, labeled PB6, that is not connected to anything with the default configuration of the board.</li> <li>There was no room on the board to mount a pin header for these signals, so wires must be soldered to the board to access them.</li> <li>There is no ESD protection on these pads, so industry standard anti-static measures should be used when connecting external circuitry.</li></ul>
 
 
 ***
