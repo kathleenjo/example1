@@ -96,7 +96,7 @@ The web and mobile apps help developers interact with the IoT Developer Kit with
    
 #### iPhone
 - **Question** - Where can I find the iPhone T-Mobile DevEdge IoT Developer Kit mobile app?
-- **Answer** - For this pilot you can find it in TestFlight. Note that you will have to ask for access. If you do not have access, please reach out to us using this contact form. If you did ask for access and still do not see the DevEdge IoT mobile app in TestFlight, again, please reach out to us using this contact form.
+- **Answer** - For this pilot you can find it in [TestFlight](https://apps.apple.com/us/app/testflight/id899247664). Note that you will have to ask for access. If you do not have access, please reach out to us using [this contact form](https://devedge.t-mobile.com/contact). If you did ask for access and still do not see the DevEdge IoT mobile app in [TestFlight](https://apps.apple.com/us/app/testflight/id899247664), again, please reach out to us using [this contact form](https://devedge.t-mobile.com).
 
 
 
