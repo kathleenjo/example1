@@ -19,8 +19,8 @@ Each has its different uses which will be covered below.
    - Teach you where to find the web app
    - What it can do
    - What it cannot do
-2. For the mobile apps
-   - Teach you where to find the mobile apps
+2. For the mobile app
+   - Teach you where to find the mobile app
    - What it can do
    - What it cannot do
 
@@ -36,44 +36,42 @@ The web and mobile apps help developers interact with the IoT Developer Kit with
 - **Question** - What is the T-Mobile DevEdge IoT Developer Kit Web App?
 - **Answer** – The T-Mobile DevEdge IoT Developer Kit Web App is a URL that allows you to see basic stats on your IoT Developer Kit. An example can be seen below: 
 
+<br>
 
+- **Question** – Where can I find a the web app?
+- **Answer** – You can find the web app here: https://devkitwebapp.devedge.t-mobile.com. 
 
+<br>
 
+- **Question** - What can I do with the web app?
+- **Answer** – You can see the temperature of your kit, glimpse at its accelerometer forces data, note its LTE signal strength, and eventually connect to AWS. 
 
-Question – Where can I find a the web app?
-Answer – You can find the web app here: https://devkitwebapp.devedge.t-mobile.com. 
+<br>
 
+- **Question** - How can I access / pair my IoT Developer Kit to https://devkitwebapp.devedge.t-mobile.com?
+- **Answer** – In your box, there will be an access code. Enter the access code then click Next. 
 
-Question - What can I do with the web app?
-Answer – You can see the temperature of your kit, glimpse at its accelerometer forces data, note its LTE signal strength, and eventually connect to AWS. 
+<br>
 
+- **Question** - What are the main differences between the web app and the mobile app?
+- **Answer** - Through the web app, you can view temperature, GPS, and LTE data. However, you cannot toggle the LED on and off and you cannot actuate the buzzer to make any sounds. These actions, however, can be taken in the mobile app. In addition, the mobile app has debugging logs, based on Segger technology, that allow the user to troubleshoot the kit. 
 
-Question - How can I access / pair my IoT Developer Kit to https://devkitwebapp.devedge.t-mobile.com?
-Answer – In your box, there will be an access code. Enter the access code then click Next. 
+<br>
 
+### Mobile App
+#### General
+- **Question** - What is the T-Mobile DevEdge IoT Developer Kit mobile app?
+- **Answer** -  Also known as the DevEdge IoT app, this app allows the user to see "signs of life" in the kit without having to use commands at CLI. 
 
+<br>
 
-Question - What are the main differences between the web app and the mobile app?
-Answer - Through the web app, you can view temperature, GPS, and LTE data. However, you cannot toggle the LED on and off and you cannot actuate the buzzer to make any sounds. These actions, however, can be taken in the mobile app. In addition, the mobile app has debugging logs, based on Segger technology, that allow the user to troubleshoot the kit. 
-Mobile App
-General
-Question - What is the T-Mobile DevEdge IoT Developer Kit mobile app?
-Answer -  Also known as the DevEdge IoT app, this app allows the user to see "signs of life" in the kit without having to use commands at CLI. 
+- **Question** - What can I do with the T-Mobile DevEdge IoT Developer Kit mobile app?
+- **Answer** - You can turn the lights of the kit on and off, turn the buzzer on and off, glimpse at acceleramotor forces data, view not only the signal strength of the LTE-M towers near you but how many towers are near you, observe pressure and temperature readings, and note the kit's power levels. Plus, you can use the Debug tab, based on Segger technology, to troubleshoot your kit. 
 
-
-
-
-
-Question - What can I do with the T-Mobile DevEdge IoT Developer Kit mobile app?
-Answer - You can turn the lights of the kit on and off, turn the buzzer on and off, glimpse at acceleramotor forces data, view not only the signal strength of the LTE-M towers near you but how many towers are near you, observe pressure and temperature readings, and note the kit's power levels. Plus, you can use the Debug tab, based on Segger technology, to troubleshoot your kit. 
-
-
-Turn LED lights on and off	
-In the DevEdge IoT mobile app > I/O tap any of the LED's.
-
-
-
-The green LED lights up. 
+   | Capability | In the Mobile App | On the Kit |
+   | ----- | ----- | ----- |
+   | Turn LED lights on and off | In the DevEdge IoT mobile app > I/O tap any of the LED's. | The green LED lights up. |
+   | k | k | j |
 
 
 
@@ -146,45 +144,25 @@ Android
 Question - Where can I find the Android T-Mobile DevEdge IoT Developer Kit mobile app?
 Answer - On your Android smartphone, in Google Play store, search for DevEdge IoT. Download and install the app. 
 
-Troubleshooting 
+## Troubleshooting 
 On your mobile phone, if you do not find "T-Mobile DevEdge" in the Bluetooth pairing list, try the following:
 
-On your smartphone, navigate to the Settings app.
+1. On your smartphone, navigate to the Settings app.
+2. Search for "DevEdge IoT". Tap on DevEdge IoT.
+3. Delete anything that exists in the "Prefix" field. 
+4. Return to the DevEdge IoT app. 
+5. A list appears with any Bluetooth enabled devices that are near the IoT Developer Kit.
+6. If a list does not appear, tap "Devices".
+7. Tap "T-Mobile DevEdge".
+8. The DevEdge IoT companion app home screen opens and is now populated with data from the IoT Developer Kit. 
 
-apple settings icon 19 or  
+<br>
 
-Search for "DevEdge IoT". Tap on DevEdge IoT.
-
-
-
-Delete anything that exists in the "Prefix" field. 
-
-
-
-Return to the DevEdge IoT app. 
-
-
-
-A list appears with any Bluetooth enabled devices that are near the IoT Developer Kit.
-
-
-
-If a list does not appear, tap "Devices".
-
-
-
-Tap "T-Mobile DevEdge".
-
-The DevEdge IoT companion app home screen opens and is now populated with data from the IoT Developer Kit. 
-
-
-
-
-FAQ
-Question - Will connecting to AWS via the Web App be available for this beta? 
-Answer - Unfortunately it will not be. But please do stay tuned. 
-
-
-
+## FAQ
+- **Question** - Will connecting to AWS via the Web App be available for this beta? 
+- **Answer** - Unfortunately it will not be. But please do stay tuned. 
+   
+<br>   
+   
 ***
 [<< Go back](08-Interacting-with-the-Kit-at-CLI-via-the-tmo_shell.md) &nbsp; | &nbsp; [Up next >>](10-Use-Cases.md)
