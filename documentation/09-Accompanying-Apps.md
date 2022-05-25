@@ -1,18 +1,22 @@
 # Accompanying Apps
 
 ## Introduction
-This document describes the different apps that accompany the T-Mobile DevEdge IoT Developer Kit. There are two in total.
+This document describes the different apps that accompany the [T-Mobile DevEdge IoT Developer Kit](https://devedge.t-mobile.com/solutions/iot-developer-kit). There are two in total.
 
 1. A web app
 2. A mobile app
 
 Each has its different uses which will be covered below.
 
+<br>
+
 ## Prerequisites
 - A smartphone
-   - iPhone with iOS version 15.3.1 or higher installed on it
-   - Android with version 11 or higher installed on it
+   - iPhone with iOS version 15.3.1 or later installed on it
+   - Android with version 11 or later installed on it
 - A web browser
+
+<br>
 
 ## What is the ultimate goal of this document?
 1. For the web app
@@ -24,10 +28,12 @@ Each has its different uses which will be covered below.
    - What it can do
    - What it cannot do
 
+<br>
 
 ## Why would l want to implement the steps in this document?
 The web and mobile apps help developers interact with the IoT Developer Kit without the need to enter commands at CLI. If you want to see signs of life from the IoT Developer Kit immediately, using either one of these apps can help you achieve this goal. 
 
+<br>
 
 ## Getting Started
 
@@ -49,7 +55,8 @@ The web and mobile apps help developers interact with the IoT Developer Kit with
 <br>
 
 - **Question** - How can I access / pair my IoT Developer Kit to https://devkitwebapp.devedge.t-mobile.com?
-- **Answer** – In your box, there will be an access code. Enter the access code then click Next. 
+- **Answer** – In your box, there will be an access code. Enter the access code then click ***Next***.<br><br><img src="https://user-images.githubusercontent.com/60194531/170376883-9aaf6d1d-3fef-497f-ad39-8f7ac2cd2e99.png" width="675">
+
 
 <br>
 
@@ -61,7 +68,7 @@ The web and mobile apps help developers interact with the IoT Developer Kit with
 ### Mobile App
 #### General
 - **Question** - What is the T-Mobile DevEdge IoT Developer Kit mobile app?
-- **Answer** -  Also known as the DevEdge IoT app, this app allows the user to see "signs of life" in the kit without having to use commands at CLI. 
+- **Answer** -  Also known as the *DevEdge IoT* app, this app allows the user to see "signs of life" in the kit without having to use commands at CLI.<br><br><img src="https://user-images.githubusercontent.com/60194531/170148377-18e1ef03-bc51-472b-ab95-ad8fb840aa2b.png" width="250"> <img src="https://user-images.githubusercontent.com/60194531/170351961-56cab654-705d-49fc-ab15-1cf2568a0470.png" width="250"> 
 
 <br>
 
@@ -72,7 +79,7 @@ The web and mobile apps help developers interact with the IoT Developer Kit with
 
    | Capability | In the Mobile App | On the Kit |
    | ----- | ----- | ----- |
-   | Turn LED lights on and off | In the DevEdge IoT mobile app > I/O tap any of the LED's. | The green LED lights up. |
+   | Turn LED lights on and off | In the DevEdge IoT mobile app > I/O tap any of the LED's.<br><img src="https://user-images.githubusercontent.com/60194531/170354880-185f2df5-eb06-4ebd-8c6d-8f64d20806e9.png" width="200"> | The green LED lights up.<br><img src="https://user-images.githubusercontent.com/60194531/170355650-ac8fc661-067e-4179-9ea4-05fc659dfede.png" width="250"> |
    | Activate the buzzer | In the DevEdge IoT mobile app tap I/O then tap Activate Buzzer. | The buzzer buzzes. |
    | Observe acceleramotor forces | In the DevEdge IoT Mobile app tap Motion tab. | Flip and turn the IoT Developer Kit and watch it move in real-time in the app. |
    | View LTE-M signal strength | NOTE: You must have a T-Mobiel SIM card installed in order to see signal strength. <SS> | Not applicable. |
