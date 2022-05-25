@@ -113,36 +113,21 @@ NOTE: The battery does not work on this beta model. You will only see the plugge
 Not applicable. 
 Debug	Based on Segger technology, you can see the debug log in the DevEdge IoT mobile app Debug tab.
 <ss> 	Not applicable. 
-Question - How do I pair my DevEdge IoT mobile app to my kit? 
-Answer - 
-On your smartphone, open the DevEdge IoT companion app.
 
-
-
-Using Bluetooth, the DevEdge IoT companion app will search for your IoT Developer Kit.
-
-
-
-Next, the DevEdge IoT companion app provides a list.
-
-
-
-Select "T-Mobile DevEdge".
-
-
-The DevEdge IoT home screen opens and is now populated with data from the IoT Developer Kit. 
-iPhone
-Question - Where can I find the iPhone T-Mobile DevEdge IoT Developer Kit mobile app?
-
-
-Answer - For this pilot you can find it in TestFlight. Note that you will have to ask for access. If you do not have access, please reach out to us using this contact form. If you did ask for access and still do not see the DevEdge IoT mobile app in TestFlight, again, please reach out to us using this contact form.
+- **Question** - How do I pair my DevEdge IoT mobile app to my kit? 
+- **Answer** - <ol><li>On your smartphone, open the DevEdge IoT companion app.</li><li>Using Bluetooth, the DevEdge IoT companion app will search for your IoT Developer Kit.</li><li>Next, the DevEdge IoT companion app provides a list.</li><li>Select "T-Mobile DevEdge".</li><li>The DevEdge IoT home screen opens and is now populated with data from the IoT Developer Kit.</li></ol>
+   
+   
+#### iPhone
+- **Question** - Where can I find the iPhone T-Mobile DevEdge IoT Developer Kit mobile app?
+- **Answer** - For this pilot you can find it in TestFlight. Note that you will have to ask for access. If you do not have access, please reach out to us using this contact form. If you did ask for access and still do not see the DevEdge IoT mobile app in TestFlight, again, please reach out to us using this contact form.
 
 
 
 
-Android
-Question - Where can I find the Android T-Mobile DevEdge IoT Developer Kit mobile app?
-Answer - On your Android smartphone, in Google Play store, search for DevEdge IoT. Download and install the app. 
+#### Android
+- **Question** - Where can I find the Android T-Mobile DevEdge IoT Developer Kit mobile app?
+- **Answer** - On your Android smartphone, in Google Play store, search for DevEdge IoT. Download and install the app. 
 
 ## Troubleshooting 
 On your mobile phone, if you do not find "T-Mobile DevEdge" in the Bluetooth pairing list, try the following:
