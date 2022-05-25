@@ -92,9 +92,9 @@ To accomplish the above tasks we will be using the accompanying mobile app. To l
 
 
 ## Troubleshooting
-If you do not find "T-Mobile DevEdge" in the list, try the following:
-1. On your smartphone, navigate to the Settings app.
-2. Search for "DevEdge IoT". Tap on DevEdge IoT.
+On your smartphone, if you do not find "T-Mobile DevEdge" in the Bluetooth list, try the following:
+1. Navigate to the *Settings* app.<br><br><img src="https://user-images.githubusercontent.com/60194531/170349458-ffd69d9e-7eec-4928-8738-79a94b2a97a9.jpg" width="75"> or <img src="https://user-images.githubusercontent.com/60194531/170349343-67301e3d-112b-4ef3-9823-8b937b67b690.png" width="75"><br><br>
+2. Search for "DevEdge IoT". Tap on DevEdge IoT.<br><br><img src="https://user-images.githubusercontent.com/60194531/170350372-9a613138-1bf0-4321-89a7-8ed3277a7d80.png" width="300">
 3. Delete anything that exists in the "Prefix" field. 
 4. Return to the DevEdge IoT app. 
 5. A list appears with any Bluetooth enabled devices that are near the IoT Developer Kit.
