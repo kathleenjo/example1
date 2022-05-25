@@ -84,10 +84,11 @@ To accomplish the above tasks we will be using the accompanying mobile app. To l
 5. Repeat the exercise as much as you wish.
 
 ### Option 2 - Turning the LED On and Off
-1. In your smartphone DevEdge IoT companion app, tap the Home icon. 
-2. Tap I/O.
-3. Tap any of the switches to turn the LED on and off.
-4. On the IoT Developer Kit watch the LED turn on and off. 
+1. In your smartphone *DevEdge IoT* companion app, tap the ***Home*** icon.<br><br>
+2. Tap ***I/O***.<br><br>
+3. Tap any of the switches to turn the LED on and off.<br><br><img src="https://user-images.githubusercontent.com/60194531/170354880-185f2df5-eb06-4ebd-8c6d-8f64d20806e9.png" width="300"><br><br>
+4. On the IoT Developer Kit watch the LED turn on and off.<br><br>![image](https://user-images.githubusercontent.com/60194531/170355650-ac8fc661-067e-4179-9ea4-05fc659dfede.png)
+<br><br> 
 5. Repeat the exercise as much as you wish.
 
 
