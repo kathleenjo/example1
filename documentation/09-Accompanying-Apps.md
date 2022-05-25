@@ -68,53 +68,22 @@ The web and mobile apps help developers interact with the IoT Developer Kit with
 - **Question** - What can I do with the T-Mobile DevEdge IoT Developer Kit mobile app?
 - **Answer** - You can turn the lights of the kit on and off, turn the buzzer on and off, glimpse at acceleramotor forces data, view not only the signal strength of the LTE-M towers near you but how many towers are near you, observe pressure and temperature readings, and note the kit's power levels. Plus, you can use the Debug tab, based on Segger technology, to troubleshoot your kit. 
 
+<br>
+
    | Capability | In the Mobile App | On the Kit |
    | ----- | ----- | ----- |
    | Turn LED lights on and off | In the DevEdge IoT mobile app > I/O tap any of the LED's. | The green LED lights up. |
-   | k | k | j |
+   | Activate the buzzer | In the DevEdge IoT mobile app tap I/O then tap Activate Buzzer. | The buzzer buzzes. |
+   | Observe acceleramotor forces | In the DevEdge IoT Mobile app tap Motion tab. | Flip and turn the IoT Developer Kit and watch it move in real-time in the app. |
+   | View LTE-M signal strength | NOTE: You must have a T-Mobiel SIM card installed in order to see signal strength. <SS> | Not applicable. |
+   | Observe pressure data	| In the DevEdge IoT mobile app tap Environment then tap Pressure. | Not applicable. |
+   | Observe temperature data	| In the DevEdge IoT mobile app tap Environment then tap Temperature. | Breath on the kit and watch the temperature data change. |
+   | Observe power levels data | NOTE: The battery does not work on this beta model. You will only see the plugged in power supply. <SS> | Not applicable.  |
+   | Debug | Based on Segger technology, you can see the debug log in the DevEdge IoT mobile app Debug tab. <ss> | Not applicable. |
 
-
-
-
-
-Activate the buzzer	
-In the DevEdge IoT mobile app tap I/O then tap Activate Buzzer.
-
-
-The buzzer buzzes. 
-
-VID_20220517_110712697.mp4
-
-Observe acceleramotor forces	
-In the DevEdge IoT Mobile app tap Motion tab.  
-
-
-
-Flip and turn the IoT Developer Kit and watch it move in real-time in the app. 
-View LTE-M signal strength	NOTE: You must have a T-Mobiel SIM card installed in order to see signal strength. 
-<SS>	Not applicable.
-Observe pressure data	
-In the DevEdge IoT mobile app tap Environment then tap Pressure.
-
-
-
-Not applicable. 
-Observe temperature data	
-In the DevEdge IoT mobile app tap Environment then tap Temperature.
-
-
-
-Breath on the kit and watch the temperature data change. 
-Observe power levels data	
-NOTE: The battery does not work on this beta model. You will only see the plugged in power supply.
-
-<SS> 
-
-Not applicable. 
-Debug	Based on Segger technology, you can see the debug log in the DevEdge IoT mobile app Debug tab.
-<ss> 	Not applicable. 
-
-- **Question** - How do I pair my DevEdge IoT mobile app to my kit? 
+   <br>
+   
+- **Question** - How do I pair my DevEdge IoT mobile app to my kit?
 - **Answer** - <ol><li>On your smartphone, open the DevEdge IoT companion app.</li><li>Using Bluetooth, the DevEdge IoT companion app will search for your IoT Developer Kit.</li><li>Next, the DevEdge IoT companion app provides a list.</li><li>Select "T-Mobile DevEdge".</li><li>The DevEdge IoT home screen opens and is now populated with data from the IoT Developer Kit.</li></ol>
    
    
