@@ -79,8 +79,8 @@ The web and mobile apps help developers interact with the IoT Developer Kit with
 
    | Capability | In the Mobile App | On the Kit |
    | ----- | ----- | ----- |
-   | Turn LED lights on and off | In the DevEdge IoT mobile app > I/O tap any of the LED's.<br><img src="https://user-images.githubusercontent.com/60194531/170354880-185f2df5-eb06-4ebd-8c6d-8f64d20806e9.png" width="200"> | The green LED lights up.<br><img src="https://user-images.githubusercontent.com/60194531/170355650-ac8fc661-067e-4179-9ea4-05fc659dfede.png" width="250"> |
-   | Activate the buzzer | In the DevEdge IoT mobile app tap I/O then tap Activate Buzzer. | The buzzer buzzes. |
+   | Turn LED lights on and off. | In the DevEdge IoT mobile app > I/O tap any of the LED's.<br><img src="https://user-images.githubusercontent.com/60194531/170354880-185f2df5-eb06-4ebd-8c6d-8f64d20806e9.png" width="200"> | The green LED lights up.<br><img src="https://user-images.githubusercontent.com/60194531/170355650-ac8fc661-067e-4179-9ea4-05fc659dfede.png" width="250"> |
+   | Activate the buzzer. | In the *DevEdge IoT* mobile app tap ***I/O*** then tap ***Activate Buzzer***.<br><br><img src="https://user-images.githubusercontent.com/60194531/170356845-dca9dcd0-d97a-4f5d-9890-3e9bc7c3bc6e.png" width="200"> | The buzzer buzzes.<br><br>https://user-images.githubusercontent.com/60194531/170573010-8edf0fe6-15dd-4a23-b44c-4f3d2b9f70ff.mp4 |
    | Observe acceleramotor forces | In the DevEdge IoT Mobile app tap Motion tab. | Flip and turn the IoT Developer Kit and watch it move in real-time in the app. |
    | View LTE-M signal strength | NOTE: You must have a T-Mobiel SIM card installed in order to see signal strength. <SS> | Not applicable. |
    | Observe pressure data	| In the DevEdge IoT mobile app tap Environment then tap Pressure. | Not applicable. |
