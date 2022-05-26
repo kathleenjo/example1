@@ -90,20 +90,22 @@ The web and mobile apps help developers interact with the IoT Developer Kit with
 
    <br>
    
-- **Question** - How do I pair my DevEdge IoT mobile app to my kit?
-- **Answer** - <ol><li>On your smartphone, open the DevEdge IoT companion app.</li><li>Using Bluetooth, the DevEdge IoT companion app will search for your IoT Developer Kit.</li><li>Next, the DevEdge IoT companion app provides a list.</li><li>Select "T-Mobile DevEdge".</li><li>The DevEdge IoT home screen opens and is now populated with data from the IoT Developer Kit.</li></ol>
+- **Question** - How do I pair my *DevEdge IoT* mobile app to my kit?
+- **Answer** - <ol><li>On your smartphone, open the *DevEdge IoT* companion app.<br><br><img src="https://user-images.githubusercontent.com/60194531/170148377-18e1ef03-bc51-472b-ab95-ad8fb840aa2b.png" width="300"><br><br></li><li>Using Bluetooth, the *DevEdge IoT* companion app will search for your IoT Developer Kit.</li><li>Next, the DevEdge IoT companion app provides a list.</li><li>Select "T-Mobile DevEdge".</li><li>The DevEdge IoT home screen opens and is now populated with data from the IoT Developer Kit.</li></ol>
    
+<br>
    
 #### iPhone
-- **Question** - Where can I find the iPhone T-Mobile DevEdge IoT Developer Kit mobile app?
-- **Answer** - For this pilot you can find it in [TestFlight](https://apps.apple.com/us/app/testflight/id899247664). Note that you will have to ask for access. If you do not have access, please reach out to us using [this contact form](https://devedge.t-mobile.com/contact). If you did ask for access and still do not see the DevEdge IoT mobile app in [TestFlight](https://apps.apple.com/us/app/testflight/id899247664), again, please reach out to us using [this contact form](https://devedge.t-mobile.com).
+- **Question** - Where can I find the iPhone T-Mobile DevEdge IoT Developer Kit mobile app?<br><br><img src="https://user-images.githubusercontent.com/60194531/170148377-18e1ef03-bc51-472b-ab95-ad8fb840aa2b.png" width="300"><br><br>
+- **Answer** - For this pilot you can find it in [TestFlight](https://apps.apple.com/us/app/testflight/id899247664). Note that you will have to ask for access. If you do not have access, please reach out to us using [this contact form](https://devedge.t-mobile.com/contact). If you did ask for access and still do not see the DevEdge IoT mobile app in [TestFlight](https://apps.apple.com/us/app/testflight/id899247664), again, please reach out to us using [this contact form](https://devedge.t-mobile.com).<br><br><img src="https://user-images.githubusercontent.com/60194531/170549827-15312c85-ffd5-4531-8eec-37bb59616c56.png" width="300"><br><br>
 
-
-
+<br>
 
 #### Android
 - **Question** - Where can I find the Android T-Mobile DevEdge IoT Developer Kit mobile app?
 - **Answer** - On your Android smartphone, in Google Play store, search for DevEdge IoT. Download and install the app. 
+   
+<br>
 
 ## Troubleshooting 
 On your smartphone, if you do not find "T-Mobile DevEdge" in the Bluetooth list, try the following:
