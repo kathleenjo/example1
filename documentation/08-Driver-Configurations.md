@@ -13,11 +13,13 @@ To learn more about the tmo_shell CLI calls, please read the document Interactin
 
 | Driver | Available tmo_shell CLI Calls | Subcommands | Subcommand descriptions | Parameters | Response |
 | ----- | ----- | ----- | ----- | ----- | ----- |
-| Accelerometer | sensor get LIS2DW12 | get | Get sensor data |  | `{ "accelerometer": {"x": 0.210568,"y": 1.234696,"z": 9.94457},` |
-| Accelerometer | sensor get LIS2DW12 | get | Get sensor data |  | `{ "accelerometer": {"x": 0.210568,"y": 1.234696,"z": 9.94457},` |
-| Accelerometer | sensor get LIS2DW12 | get | Get sensor data |  | `{ "accelerometer": {"x": 0.210568,"y": 1.234696,"z": 9.94457},` |
-| Accelerometer | sensor get LIS2DW12 | get | Get sensor data |  | `{ "accelerometer": {"x": 0.210568,"y": 1.234696,"z": 9.94457},` |
-| Accelerometer | sensor get LIS2DW12 | get | Get sensor data |  | `{ "accelerometer": {"x": 0.210568,"y": 1.234696,"z": 9.94457},` |
+| Accelerometer | sensor get LIS2DW12 | get | Get sensor data |  | <pre>{<br>  "accelerometer": {<br>    "x": 0.210568,<br>    "y": 1.234696,<br>    "z": 9.94457<br>},</pre> |
+| Accelerometer | sensor get LIS2DW12 | get | Get sensor data |  | <pre>{<br>  "accelerometer": {<br>    "x": 0.210568,<br>    "y": 1.234696,<br>    "z": 9.94457<br>},</pre> |
+| Accelerometer | sensor get LIS2DW12 | get | Get sensor data |  | <pre>{<br>  "accelerometer": {<br>    "x": 0.210568,<br>    "y": 1.234696,<br>    "z": 9.94457<br>},</pre> |
+| Accelerometer | sensor get LIS2DW12 | get | Get sensor data |  | <pre>{<br>  "accelerometer": {<br>    "x": 0.210568,<br>    "y": 1.234696,<br>    "z": 9.94457<br>},</pre> |
+| Accelerometer | sensor get LIS2DW12 | get | Get sensor data |  | <pre>{<br>  "accelerometer": {<br>    "x": 0.210568,<br>    "y": 1.234696,<br>    "z": 9.94457<br>},</pre> |
+| Accelerometer | sensor get LIS2DW12 | get | Get sensor data |  | <pre>{<br>  "accelerometer": {<br>    "x": 0.210568,<br>    "y": 1.234696,<br>    "z": 9.94457<br>},</pre> |
+| Accelerometer | sensor get LIS2DW12 | get | Get sensor data |  | <pre>{<br>  "accelerometer": {<br>    "x": 0.210568,<br>    "y": 1.234696,<br>    "z": 9.94457<br>},</pre> |
 
 ***
 [<< Go back](07-Data-Sheet.md) &nbsp; | &nbsp; [Up next >>](09-Upgrading-your-IoT-Developer-Kit.md)
