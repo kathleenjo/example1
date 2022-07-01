@@ -10,4 +10,4 @@
 
 <br><br>
 ***
-[<< Go back](13-Troubleshooting.md)
+[<< Go back](13-FAQ.md)
