@@ -193,4 +193,4 @@ Check the Wi-Fi status of an interface.
 3. dolor
 
 ***
-[<< Go back](07-Driver-Configurations.md) &nbsp; | &nbsp; [Up next >>](09-Accompanying-Apps.md)
+[<< Go back](05-Your-Developer-Kit-Your-Way.md) &nbsp; | &nbsp; [Up next >>](07-Data-Sheet.md)
