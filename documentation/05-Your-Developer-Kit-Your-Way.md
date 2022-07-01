@@ -61,4 +61,4 @@ Code for the device drivers can be found here: https://github.com/tmobile/iot-de
 
 
 ***
-[<< Go back](04-Connecting-to-the-T-Mobile-LTE-M-Network.md) &nbsp; | &nbsp; [Up next >>](06-Data-Sheet.md)
+[<< Go back](04-Connecting-to-the-T-Mobile-LTE-M-Network.md) &nbsp; | &nbsp; [Up next >>](06-Interacting-with-the-Kit-at-CLI-via-the-tmo_shell.md)
