@@ -74,4 +74,4 @@ The T-Mobile DevEdge IoT Developer Kit has the following specifications.
 
 
 ***
-[<< Go back](05-Your-Developer-Kit-Your-Way.md) &nbsp; | &nbsp; [Up next >>](07-Driver-Configurations.md)
+[<< Go back](06-Interacting-with-the-Kit-at-CLI-via-tmo-shell.md) &nbsp; | &nbsp; [Up next >>](08-Driver-Configurations.md)
