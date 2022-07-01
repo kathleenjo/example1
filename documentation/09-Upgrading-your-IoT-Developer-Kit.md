@@ -36,5 +36,6 @@ If you already have Zephyr west installed on your computer, follow the configura
 1. Go to
 2. Download the
 
-<hr> 
+***
 [<< Go back](08-Driver-Configurations.md) &nbsp; | &nbsp; [Up next >>](10-Accompanying-Apps.md)
+
