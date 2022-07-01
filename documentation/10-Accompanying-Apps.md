@@ -129,4 +129,4 @@ On your smartphone, if you do not find "T-Mobile DevEdge" in the Bluetooth list,
 <br>   
    
 ***
-[<< Go back](08-Interacting-with-the-Kit-at-CLI-via-the-tmo_shell.md) &nbsp; | &nbsp; [Up next >>](10-Use-Cases.md)
+[<< Go back](09-Upgrading-your-IoT-Developer-Kit.md) &nbsp; | &nbsp; [Up next >>](11-Use-Cases.md)
