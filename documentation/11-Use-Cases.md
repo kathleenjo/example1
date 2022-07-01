@@ -9,4 +9,4 @@ Coming soon...
 
 
 ***
-[<< Go back](09-Accompanying-Apps.md) &nbsp; | &nbsp; [Up next >>](11-Troubleshooting.md)
+[<< Go back](10-Accompanying-Apps.md) &nbsp; | &nbsp; [Up next >>](12-Troubleshooting.md)
