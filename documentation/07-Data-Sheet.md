@@ -25,6 +25,12 @@ The T-Mobile DevEdge IoT Developer Kit has the following specifications.
 - Type-C USB connector
 <br><br>
 
+## Top of the Board
+<img src="https://user-images.githubusercontent.com/60194531/170107259-b2531d9e-9eb2-4f91-8018-e56ffd5e66a0.png" width="450">
+
+## Bottom of the Board
+<img src="https://user-images.githubusercontent.com/60194531/170107966-6d11c7d9-e193-4452-a442-327dfadd47e9.png" width="450">
+
 ## Block Diagram
 ![image](https://user-images.githubusercontent.com/60194531/169599811-db9b29d7-31c4-497c-ad05-e21341b3a38c.png)
 <br><br>
@@ -74,4 +80,4 @@ The T-Mobile DevEdge IoT Developer Kit has the following specifications.
 
 
 ***
-[<< Go back](06-Interacting-with-the-Kit-at-CLI-via-tmo-shell.md) &nbsp; | &nbsp; [Up next >>](08-Driver-Configurations.md)
+[<< Go back](06-Interacting-with-the-Kit-at-CLI-via-tmo_shell.md) &nbsp; | &nbsp; [Up next >>](08-Driver-Configurations.md)
