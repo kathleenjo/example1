@@ -1,24 +1,34 @@
 # How to See Signs of Life
 
 ## Introduction
-This document guides the reader on how to see signs of life from your [T-Mobile DevEdge IoT Developer Kit](https://devedge.t-mobile.com/solutions/iot-developer-kit). 
+This document describes how to see signs of life from your [T-Mobile DevEdge IoT Developer Kit](https://devedge.t-mobile.com/solutions/iot-developer-kit). 
 
 Seeing signs of life includes the following:
 1. Hearing the T-Mobile jingle.
 2. Turning on the buzzer.
 3. Switching the LED lights on and off.
 
-To accomplish the above tasks we will be using the accompanying mobile app. To learn more about the accompanying mobile app, please read [this document](09-Accompanying-Apps.md).
+To accomplish the above tasks we will be using the accompanying mobile app. To learn more about the accompanying mobile app, please read [this document](10-Accompanying-Apps.md).
 
 ## Prerequisites
 - The [T-Mobile DevEdge IoT Developer Kit](https://devedge.t-mobile.com/solutions/iot-developer-kit).
+- A USB-A to USB-C cord
+- A USB-A power adapter
 - A smartphone
   - If it is an iPhone
     - iOS version 15.3.1 and later installed on the iPhone
+    - The [TestFlight](https://apps.apple.com/us/app/testflight/id899247664) app. 
     - The *DevEdge IoT* companion app installed on the iPhone. 
   - If it is an Android
-    - Android OS version 11 and later installed on the phone
+    - Android OS version 11 and later installed on the phone.
     - The *DevEdge IoT* companion app installed on the phone.
+    - Note that as of this writing the Android app is not fully ready for pilot/beta. It will be coming soon, however. 
+
+<br>
+
+## Step A - Hearing the T-Mobile Jingle
+1. Plug int
+2. 
 
 ## Step A - Install the Companion App on your Smart Phone
 ### Apple iPhone
