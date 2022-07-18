@@ -83,16 +83,15 @@ Coming soon for Android mobile devices.
 #### Option 1 - Turn the Buzzer On and Off
 1. In your smartphone *DevEdge IoT* companion app, tap the ***Home*** icon.<br><br>
 2. Tap ***I/O***.<br><br>
-3. Tap ***Activate Buzzer***.<br><br><img src="https://user-images.githubusercontent.com/60194531/170356845-dca9dcd0-d97a-4f5d-9890-3e9bc7c3bc6e.png" width="300"><br><br>
+3. Tap ***Activate Buzzer***.<br><br><img src="https://user-images.githubusercontent.com/60194531/179617384-bcaa7016-dea4-4595-b0c6-f150e464116a.png" width="300"><br><br>
 4. On the IoT Developer Kit hear the buzzer turn on and off.<br><br><img width="450" alt="iot-developer-kit-board-buzzer-t-mobile" src="https://user-images.githubusercontent.com/60194531/170358578-75bf4e54-e3fa-487c-a487-cd06048fa2f0.png"><br><br>
 5. Repeat the exercise as much as you wish.<br><br>
 
 #### Option 2 - Turning the LED On and Off
 1. In your smartphone *DevEdge IoT* companion app, tap the ***Home*** icon.<br><br>
 2. Tap ***I/O***.<br><br>
-3. Tap any of the switches to turn the LED on and off.<br><br><img src="https://user-images.githubusercontent.com/60194531/170354880-185f2df5-eb06-4ebd-8c6d-8f64d20806e9.png" width="300"><br><br>
-4. On the IoT Developer Kit watch the LED turn on and off.<br><br>![image](https://user-images.githubusercontent.com/60194531/170355650-ac8fc661-067e-4179-9ea4-05fc659dfede.png)
-<br><br> 
+3. Tap any of the switches to turn the LED on and off.<br><br><img src="https://user-images.githubusercontent.com/60194531/179618174-b619da26-06ae-48cb-8546-83470631984c.png" width="300"><br><br>
+4. On the IoT Developer Kit watch the LED turn on and off.<br><br>![image](https://user-images.githubusercontent.com/60194531/179619223-b32a8ecd-b9ac-4c01-8bc9-66ec9ed50cd6.png)<br><br> 
 5. Repeat the exercise as much as you wish.
 
 <br>
