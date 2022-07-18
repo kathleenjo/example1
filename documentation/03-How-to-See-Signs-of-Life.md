@@ -27,8 +27,8 @@ To accomplish the above tasks we will be using the accompanying mobile app. To l
     - Note that as of this writing the Android app is not fully ready for pilot/beta. It will be coming soon, however. 
 
 <br>
-
-## Step A - Hearing the T-Mobile Jingle
+## Configuration
+### Step A - Hearing the T-Mobile Jingle
 1. Plug in the USB-C end of your USB-C to USB-A cord to the [T-Mobile DevEdge IoT Developer Kit](https://devedge.t-mobile.com/solutions/iot-developer-kit)'s Modem USB-C Debug port.<br><br><img src="https://user-images.githubusercontent.com/60194531/179603727-c800da4e-6eb6-4374-8edc-0add46c1343b.png" width="350" ><br><br>
 2. Plug the USB-A end of your *USB-C to USB-A* cord to the USB-A power adapter.<br><br>
 3. Plug in the power adapter to a power outlet.<br><br>
@@ -37,8 +37,8 @@ To accomplish the above tasks we will be using the accompanying mobile app. To l
 
 <br>
 
-## Step B - Install the Companion App on your Smart Phone
-### Apple iPhone
+### Step B - Install the Companion App on your Smart Phone
+#### Apple iPhone
 1. On your iPhone, open the App Store app.<br><br><img src="https://user-images.githubusercontent.com/60194531/170142918-d40a123f-c003-4c19-868e-b18903355e26.png" width="75" ><br>
 2. Search for the [TestFlight](https://apps.apple.com/us/app/testflight/id899247664) app.<br><br><img width="300" alt="Search for TestFlight" src="https://user-images.githubusercontent.com/60194531/170145557-269f2a76-b8ae-436a-8b5e-58828cf54784.png"><br>
 3. Tap to install the *TestFlight* app.<br>
@@ -62,7 +62,7 @@ To accomplish the above tasks we will be using the accompanying mobile app. To l
     - **Cellular** - Displays the speed at which the data is being transferred from the kit and the number of cell towers the kit has to transfer data to.<br><br>Example of the mobile app without data in dark appearance:<br><br><img src="https://user-images.githubusercontent.com/60194531/170149712-9a0dd3cf-9c35-460e-b8f0-41343c20f7c5.png" width="300">
 15. For this document, the section we care about the most is **I/O**. 
 
-### Android
+#### Android
 1. On your Android mobile device, open the Google Play store app. 
 2. Search for "DevEdge IoT". 
 3. Tap to install the *DevEdge IoT* app.
@@ -79,7 +79,7 @@ To accomplish the above tasks we will be using the accompanying mobile app. To l
     
 <br>
 
-## Step C - Connect the IoT Developer Kit to the DevEdge IoT companion app
+### Step C - Connect the IoT Developer Kit to the DevEdge IoT companion app
 1. On your smartphone, open the *DevEdge IoT* companion app.<br><br><img src="https://user-images.githubusercontent.com/60194531/170148377-18e1ef03-bc51-472b-ab95-ad8fb840aa2b.png" width="300"><br><br>
 2. Using Bluetooth, the DevEdge IoT companion app will search for your IoT Developer Kit. Tap ***Connect*** then ***OK***.<br><br><img src="https://user-images.githubusercontent.com/60194531/170360988-69757d04-b014-4650-ac41-75fa2aa14913.png" width="300"><br><br><img src="https://user-images.githubusercontent.com/60194531/170361294-94af3800-4aa2-4dae-b9a6-eff790473383.png" width="300"><br><br>
 4. Next, the DevEdge IoT companion app provides a list.<br><br><img src="https://user-images.githubusercontent.com/60194531/170331541-44149edb-0b23-45cc-91e3-e6f7ff0a5bbd.png" width="300"><br><br>
@@ -88,15 +88,15 @@ To accomplish the above tasks we will be using the accompanying mobile app. To l
 
 <br>
 
-## Step D - Observe Data Updates in the Companion App
-### Option 1 - Turn the Buzzer On and Off
+### Step D - Observe Data Updates in the Companion App
+#### Option 1 - Turn the Buzzer On and Off
 1. In your smartphone *DevEdge IoT* companion app, tap the ***Home*** icon.<br><br>
 2. Tap ***I/O***.<br><br>
 3. Tap ***Activate Buzzer***.<br><br><img src="https://user-images.githubusercontent.com/60194531/170356845-dca9dcd0-d97a-4f5d-9890-3e9bc7c3bc6e.png" width="300"><br><br>
 4. On the IoT Developer Kit hear the buzzer turn on and off.<br><br><img width="450" alt="iot-developer-kit-board-buzzer-t-mobile" src="https://user-images.githubusercontent.com/60194531/170358578-75bf4e54-e3fa-487c-a487-cd06048fa2f0.png"><br><br>
 5. Repeat the exercise as much as you wish.<br><br>
 
-### Option 2 - Turning the LED On and Off
+#### Option 2 - Turning the LED On and Off
 1. In your smartphone *DevEdge IoT* companion app, tap the ***Home*** icon.<br><br>
 2. Tap ***I/O***.<br><br>
 3. Tap any of the switches to turn the LED on and off.<br><br><img src="https://user-images.githubusercontent.com/60194531/170354880-185f2df5-eb06-4ebd-8c6d-8f64d20806e9.png" width="300"><br><br>
@@ -117,6 +117,24 @@ On your smartphone, if you do not find "T-Mobile DevEdge" in the Bluetooth list,
 7. Tap "T-Mobile DevEdge".<br><br>
 8. The DevEdge IoT companion app home screen opens and is now populated with data from the IoT Developer Kit.<br><br><img src="https://user-images.githubusercontent.com/60194531/170351961-56cab654-705d-49fc-ab15-1cf2568a0470.png" width="300">
 
+<br>
+
+## FAQ
+- **Question** -
+- **Answer** - 
+
+
+- **Question** -
+- **Answer** - 
+
+
+- **Question** -
+- **Answer** - 
+
+
+
+
+<br>
 
 ***
 [<< Go back](02-Whats-in-the-Box.md) &nbsp; | &nbsp; [Up next >>](04-Connecting-to-the-T-Mobile-LTE-M-Network.md)
