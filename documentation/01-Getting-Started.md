@@ -3,6 +3,8 @@
 ## Introduction
 This documentation guides the reader on how to get up and running quickly with the T-Mobile DevEdge IoT Developer Kit. 
 
+<br>
+
 ## Prerequisites
 
 - The [T-Mobile DevEdge IoT Developer Kit](https://devedge.t-mobile.com/solutions/iot-developer-kit).
@@ -13,10 +15,14 @@ This documentation guides the reader on how to get up and running quickly with t
   - If it is an Android
     - Android OS version 11 and later installed on the phone
     - The *DevEdge IoT* companion app installed on the phone.
+    - Note that as of this writing the Android app is not fully ready for pilot/beta. It will be coming soon, however. 
 - A computer with Windows, Mac, or Linux operating system with available USB ports.
 - Git installed on the computer.
-- Windows terminal app capable of serial port communication, e.g. [Tera Term](https://ttssh2.osdn.jp/index.html.en) or [PuTTY](https://www.putty.org/).
+- Windows terminal app capable of serial port communication, e.g. [Tera Term](https://ttssh2.osdn.jp/index.html.en), [PuTTY](https://www.putty.org/), or [Serial](https://apps.apple.com/us/app/serial/id877615577?mt=12).
+- Extra USB-A to USB-C cables. 
 - You remember that this [T-Mobile DevEdge IoT Developer Kit](https://devedge.t-mobile.com/solutions/iot-developer-kit) is a pre-production, beta version. If you find bugs, things wrong, frustrating things... wwwweeeellllll yeah...
+
+<br>
 
 ## What are the ultimate goals of this documentation?
 To teach the reader how to:
@@ -26,6 +32,8 @@ To teach the reader how to:
 3. Turn the LED lights on and off. 
 4. Connect to T-Mobile's LTE-M network. 
 5. Install a Zephyr development environment in order to update the device firmware.
+
+<br>
 
 ## Some Important Things to Note
 The T-Mobile DevEdge IoT Developer Kit comes pre-installed with the following:
