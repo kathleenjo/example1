@@ -8,7 +8,9 @@ Seeing signs of life includes the following:
 2. Turning on the buzzer.
 3. Switching the LED lights on and off.
 
-To accomplish the above tasks we will be using the accompanying mobile app. To learn more about the accompanying mobile app, please read [this document](10-Accompanying-Apps.md).
+To accomplish the above tasks we will be using the accompanying mobile app. To learn more about the accompanying mobile app, please read the [Accompanying Apps](10-Accompanying-Apps.md) document.
+
+<br>
 
 ## Prerequisites
 - The [T-Mobile DevEdge IoT Developer Kit](https://devedge.t-mobile.com/solutions/iot-developer-kit).
@@ -27,13 +29,18 @@ To accomplish the above tasks we will be using the accompanying mobile app. To l
 <br>
 
 ## Step A - Hearing the T-Mobile Jingle
-1. Plug int
-2. 
+1. Plug in the USB-C end of your USB-C to USB-A cord to the [T-Mobile DevEdge IoT Developer Kit](https://devedge.t-mobile.com/solutions/iot-developer-kit)'s Modem USB-C Debug port.<br><br><img src="https://user-images.githubusercontent.com/60194531/179603727-c800da4e-6eb6-4374-8edc-0add46c1343b.png" width="350" ><br><br>
+2. Plug the USB-A end of your *USB-C to USB-A* cord to the USB-A power adapter.<br><br>
+3. Plug in the power adapter to a power outlet.<br><br>
+4. On the kit, push the ***User Button***.<br><br><img src="https://user-images.githubusercontent.com/60194531/179604563-b725afd6-e957-4b5b-b071-c29408c5a143.png" width="350"><br><br> 
+5. Listen to the T-Mobile jingle.
 
-## Step A - Install the Companion App on your Smart Phone
+<br>
+
+## Step B - Install the Companion App on your Smart Phone
 ### Apple iPhone
 1. On your iPhone, open the App Store app.<br><br><img src="https://user-images.githubusercontent.com/60194531/170142918-d40a123f-c003-4c19-868e-b18903355e26.png" width="75" ><br>
-2. Search for the *TestFlight* app.<br><br><img width="300" alt="Search for TestFlight" src="https://user-images.githubusercontent.com/60194531/170145557-269f2a76-b8ae-436a-8b5e-58828cf54784.png"><br>
+2. Search for the [TestFlight](https://apps.apple.com/us/app/testflight/id899247664) app.<br><br><img width="300" alt="Search for TestFlight" src="https://user-images.githubusercontent.com/60194531/170145557-269f2a76-b8ae-436a-8b5e-58828cf54784.png"><br>
 3. Tap to install the *TestFlight* app.<br>
 4. On your iPhone, check the Apple ID email address that is associated with your iPhone for an invitation from *TestFlight*.<br><br><img width="300" alt="TestFlight T-Mobile IoT Developer Kit Invitation" src="https://user-images.githubusercontent.com/60194531/170144632-8421cb3c-3544-4bbe-9365-d6f6232b4ae4.png">
    <br>
@@ -69,13 +76,8 @@ To accomplish the above tasks we will be using the accompanying mobile app. To l
     - **I/O** – Displays the input / output information for the kit. This includes whether your IoT Device is connected to WiFi, whether or not the LED is on or off, and more.
     - **Cellular** – Displays the speed at which the data is being transferred from the kit and the number of cell towers the kit has to transfer data to.<br><br>(screenshot)
 9. For this document, the section we care about the most is **I/O**.
-
-## Step B - Turn on the IoT Developer Kit
-1. Plug in the USB-C to USB-A to a power source. We recommend plugging it into the Modem USB-C Debug port.<br><img src="https://user-images.githubusercontent.com/60194531/170146594-aa063ff9-b3b8-4457-ab0d-a36300145686.png" width="450"><br> 
-2. Notice the following on the IoT Developer Kit:
-    - The board playing the T-Mobile jingle.
-    - The LED lights flashing.<br><img src="https://user-images.githubusercontent.com/60194531/170147025-85fdba71-c30d-4196-8023-7a5039dd17ef.png" width="450">
     
+<br>
 
 ## Step C - Connect the IoT Developer Kit to the DevEdge IoT companion app
 1. On your smartphone, open the *DevEdge IoT* companion app.<br><br><img src="https://user-images.githubusercontent.com/60194531/170148377-18e1ef03-bc51-472b-ab95-ad8fb840aa2b.png" width="300"><br><br>
@@ -84,6 +86,7 @@ To accomplish the above tasks we will be using the accompanying mobile app. To l
 5. Select "T-Mobile DevEdge".<br><br>
 6. The DevEdge IoT home screen opens and is now populated with data from the IoT Developer Kit.<br><br> 
 
+<br>
 
 ## Step D - Observe Data Updates in the Companion App
 ### Option 1 - Turn the Buzzer On and Off
@@ -101,6 +104,7 @@ To accomplish the above tasks we will be using the accompanying mobile app. To l
 <br><br> 
 5. Repeat the exercise as much as you wish.
 
+<br>
 
 ## Troubleshooting
 On your smartphone, if you do not find "T-Mobile DevEdge" in the Bluetooth list, try the following:
