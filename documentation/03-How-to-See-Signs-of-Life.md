@@ -70,10 +70,10 @@ Coming soon for Android mobile devices.
     
 <br>
 
-### Step C - Connect the IoT Developer Kit to the DevEdge IoT companion app
-1. On your smartphone, open the *DevEdge IoT* companion app.<br><br><img src="https://user-images.githubusercontent.com/60194531/170148377-18e1ef03-bc51-472b-ab95-ad8fb840aa2b.png" width="300"><br><br>
+### Step C - Connect the Kit to the Mobile Companion App
+1. On your smartphone, open the *DevEdge IoT* companion app.<br><br><img src="https://user-images.githubusercontent.com/60194531/179608757-fdfbbce7-43ae-43f7-951e-6641d662dc4b.png" width="300"><br><br>
 2. Using Bluetooth, the DevEdge IoT companion app will search for your IoT Developer Kit. Tap ***Connect*** then ***OK***.<br><br><img src="https://user-images.githubusercontent.com/60194531/170360988-69757d04-b014-4650-ac41-75fa2aa14913.png" width="300"><br><br><img src="https://user-images.githubusercontent.com/60194531/170361294-94af3800-4aa2-4dae-b9a6-eff790473383.png" width="300"><br><br>
-4. Next, the DevEdge IoT companion app provides a list.<br><br><img src="https://user-images.githubusercontent.com/60194531/170331541-44149edb-0b23-45cc-91e3-e6f7ff0a5bbd.png" width="300"><br><br>
+4. Next, the *DevEdge IoT* companion app provides a list.<br><br><img src="https://user-images.githubusercontent.com/60194531/170331541-44149edb-0b23-45cc-91e3-e6f7ff0a5bbd.png" width="300"><br><br>
 5. Select "T-Mobile DevEdge".<br><br>
 6. The DevEdge IoT home screen opens and is now populated with data from the IoT Developer Kit.<br><br> 
 
