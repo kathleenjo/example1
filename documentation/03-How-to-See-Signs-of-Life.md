@@ -110,19 +110,23 @@ On your smartphone, if you do not find "T-Mobile DevEdge" in the Bluetooth list,
 <br>
 
 ## FAQ
-- **Question** -
-- **Answer** - 
+- **Question** - I have not received an invitation from TestFlight. What should I do? 
+- **Answer** - Please reach out to us via this [contact form](https://devedge.t-mobile.com/contact) and ask to be added to the IoT Developer Kit Pilot Beta.
 
+<br>
 
-- **Question** -
-- **Answer** - 
+- **Question** - My battery's power is always at 75% in the mobile app. But I do not have a battery installed on my IoT Developer Kit. Is this a known bug?
+- **Answer** - Not a bug but rather a mocked value to demonstrate what the battery Power level would look like if it were working. As of this beta release, the battery Power level is not working. <img src="https://user-images.githubusercontent.com/60194531/179621133-d9b2341c-2da2-4811-ab29-c6b25a675a3b.png" width="300">
 
+<br>
 
-- **Question** -
-- **Answer** - 
+- **Question** - What else can I do to see signs of life from my IoT Developer Kit?
+- **Answer** - Please read the document Accompanying Apps to learn more.
 
+<br>
 
-
+- **Question** - Will the mobile app work on an iPad or Android tablet?
+- **Answer** - Yes it will. 
 
 <br>
 
