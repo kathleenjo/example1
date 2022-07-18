@@ -130,5 +130,10 @@ On your smartphone, if you do not find "T-Mobile DevEdge" in the Bluetooth list,
 
 <br>
 
+- **Question** - When I press the **User Button** on the kit it no longer plays the T-Mobile jingle. Why is this happening?
+- **Answer** - When the mobile app is connected to the developer kit it will no longer play the jingle. Instead the **User Button** will change the status of the **Home** > **I/O** > **Button Status** to "Pressed".<b><img src="https://user-images.githubusercontent.com/60194531/179625099-dfaed06b-f444-49f3-ab1e-86fd53891e95.png" width="300">
+
+  <br>
+
 ***
 [<< Go back](02-Whats-in-the-Box.md) &nbsp; | &nbsp; [Up next >>](04-Connecting-to-the-T-Mobile-LTE-M-Network.md)
