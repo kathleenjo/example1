@@ -121,7 +121,7 @@ On your smartphone, if you do not find "T-Mobile DevEdge" in the Bluetooth list,
 <br>
 
 - **Question** - What else can I do to see signs of life from my IoT Developer Kit?
-- **Answer** - Please read the document Accompanying Apps to learn more.
+- **Answer** - Please read the document [Accompanying Apps](10-Accompanying-Apps.md) to learn more.
 
 <br>
 
