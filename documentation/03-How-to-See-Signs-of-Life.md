@@ -27,7 +27,9 @@ To accomplish the above tasks we will be using the accompanying mobile app. To l
     - Note that as of this writing the Android app is not fully ready for pilot/beta. It will be coming soon, however. 
 
 <br>
+
 ## Configuration
+
 ### Step A - Hearing the T-Mobile Jingle
 1. Plug in the USB-C end of your USB-C to USB-A cord to the [T-Mobile DevEdge IoT Developer Kit](https://devedge.t-mobile.com/solutions/iot-developer-kit)'s Modem USB-C Debug port.<br><br><img src="https://user-images.githubusercontent.com/60194531/179603727-c800da4e-6eb6-4374-8edc-0add46c1343b.png" width="350" ><br><br>
 2. Plug the USB-A end of your *USB-C to USB-A* cord to the USB-A power adapter.<br><br>
@@ -39,43 +41,32 @@ To accomplish the above tasks we will be using the accompanying mobile app. To l
 
 ### Step B - Install the Companion App on your Smart Phone
 #### Apple iPhone
-1. On your iPhone, open the App Store app.<br><br><img src="https://user-images.githubusercontent.com/60194531/170142918-d40a123f-c003-4c19-868e-b18903355e26.png" width="75" ><br>
+1. On your iPhone, or iPad, open the App Store app.<br><br><img src="https://user-images.githubusercontent.com/60194531/170142918-d40a123f-c003-4c19-868e-b18903355e26.png" width="75" ><br>
 2. Search for the [TestFlight](https://apps.apple.com/us/app/testflight/id899247664) app.<br><br><img width="300" alt="Search for TestFlight" src="https://user-images.githubusercontent.com/60194531/170145557-269f2a76-b8ae-436a-8b5e-58828cf54784.png"><br>
-3. Tap to install the *TestFlight* app.<br>
+3. Tap to install the [TestFlight](https://apps.apple.com/us/app/testflight/id899247664) app.<br>
 4. On your iPhone, check the Apple ID email address that is associated with your iPhone for an invitation from *TestFlight*.<br><br><img width="300" alt="TestFlight T-Mobile IoT Developer Kit Invitation" src="https://user-images.githubusercontent.com/60194531/170144632-8421cb3c-3544-4bbe-9365-d6f6232b4ae4.png">
    <br>
-   > **NOTE:** If you have not received this invitation please reach out to us using [this contact form](https://devedge.t-mobile.com/contact). 
+   > **NOTE:** If you have not received this invitation please reach out to us using [this contact form](https://devedge.t-mobile.com/contact) and ask to be added to the IoT Developer Kit Pilot Beta. You will not receive this email if you are not a part of this pilot beta. Please give us the email address that is associated with the iPhone mobile device's Apple ID. 
 5. Accept the invitation to join the T-Mobile DevEdge Companion App by tapping ***View in TestFlight***.<br><br><img width="300" alt="Tap View in TestFlight" src="https://user-images.githubusercontent.com/60194531/170145143-3bfe08e5-ece3-4e21-93be-c360b4c5a659.png">
 
 6. Allow *TestFlight* to send you notifications.<br><br><img src="https://user-images.githubusercontent.com/60194531/170146307-bfa460df-f6be-4b60-ac71-52d1369b76f5.png" width="300">
 7. Tap ***Continue***.
 8. Tap ***Accept*** then ***Done***.
 9. Tap ***Install***.
-10. Tap ***Open***. This opens the T-Mobile *DevEdge IoT* companion app.<br><br><img src="https://user-images.githubusercontent.com/60194531/170148377-18e1ef03-bc51-472b-ab95-ad8fb840aa2b.png" width="300"><br>
+10. Tap ***Open***. This opens the T-Mobile *DevEdge IoT* companion app.<br><br><img src="https://user-images.githubusercontent.com/60194531/179608757-fdfbbce7-43ae-43f7-951e-6641d662dc4b.png" width="300"><br>
 11. Tap ***Next***.
 12. Tap ***Start Testing***.
 13. Tap ***Do it later***.
-14. The *DevEdge IoT* companion app has the following user interface (UI) sections that help developers understand the kit’s / sensor’s statuses. This includes:
-    - **Power** - Displays the amount of power in the battery and whether the device is plugged in or not.
-    - **Environment** - Displays temperature data from the temperature sensor and other sensors, like the pressure sensor.
-    - **I/O** - Displays the input / output information for the kit. This includes whether your IoT kit is connected to Wi-Fi, whether or not the LED is on or off, and more.
-    - **Cellular** - Displays the speed at which the data is being transferred from the kit and the number of cell towers the kit has to transfer data to.<br><br>Example of the mobile app without data in dark appearance:<br><br><img src="https://user-images.githubusercontent.com/60194531/170149712-9a0dd3cf-9c35-460e-b8f0-41343c20f7c5.png" width="300">
+14. The *DevEdge IoT* companion app has the following user interface (UI) sections that help developers easily access the kit's sensor data. This includes:
+    - **Power** - Displays the amount of power in the battery and whether the device is plugged in or not. For pilot purpose the battery is set to 75% as a mock value. 
+     - **Connectivity** - Displays the cell phone signal strength of the towers near the kit and if the kit is connected to Wi-Fi or not. 
+    - **Environment** - Displays current temperature and pressure of the kit. 
+    - **I/O** - Displays the input / output information for the kit. This includes whether or not the LED is on or off and more.
+<br><br>Example of the mobile app without data:<br><img src="https://user-images.githubusercontent.com/60194531/179609523-b86a9273-aa27-48c8-b1bc-1f704d8fe027.png" width="300"><br><br>Example of the mobile app with data:<br><img src="https://user-images.githubusercontent.com/60194531/179610173-17f7d684-3b77-4a9d-99ae-eb5c61628766.png" width="300">
 15. For this document, the section we care about the most is **I/O**. 
 
 #### Android
-1. On your Android mobile device, open the Google Play store app. 
-2. Search for "DevEdge IoT". 
-3. Tap to install the *DevEdge IoT* app.
-4. Open the *DevEdge IoT* app.
-5. Tap ***Next***.
-6. Tap ***Start Testing***. 
-7. Tap ***Do it later***. 
-8. The DevEdge IoT companion app has the following user interface (UI) sections that help developers understand the kit’s / sensor’s statuses. This includes:
-    - **Power** – Displays the amount of power in the battery and whether the device is plugged in or not.
-    - **Environment** – Displays temperature data from the temperature sensor and other sensors, like the pressure sensor.
-    - **I/O** – Displays the input / output information for the kit. This includes whether your IoT Device is connected to WiFi, whether or not the LED is on or off, and more.
-    - **Cellular** – Displays the speed at which the data is being transferred from the kit and the number of cell towers the kit has to transfer data to.<br><br>(screenshot)
-9. For this document, the section we care about the most is **I/O**.
+Coming soon for Android mobile devices. 
     
 <br>
 
