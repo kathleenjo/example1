@@ -52,22 +52,21 @@ You can find the code for the tmo_shell at https://github.com/tmobile/DevEdge-Io
 6. In the Tera Term command line console press enter on your keyboard. The Zephyr [uart](https://docs.zephyrproject.org/3.0.0/reference/peripherals/uart.html) command line appears.
    <p><img src="https://user-images.githubusercontent.com/60194531/167972999-03063375-fda0-4a22-9766-6263bebea131.png" width="500"></p>
    <p><img src="https://user-images.githubusercontent.com/60194531/167973184-3a7716b5-5f3b-4e7e-b34e-f1847dfe64e6.png" width="500"></p>
-7. Type `tmo`. This will display all of the commands available in the tmo_shell. 
-   > **NOTE:** The version of tmo_shell that is shipped with the pilot boards is 1.8.0. Many of the commands seen in the screenshot below are only available on version 1.10.0 of the tmo_shell. Please read the tmo_shell Commands table below to understand which commands are available for 1.10.0 version and which are available for 1.8.0. To upgrade go here. 
-
-   ![image](https://user-images.githubusercontent.com/60194531/179844172-ab9e5a5a-40ab-4a1d-a496-3b5db1ae108a.png)
-
+7. Type `tmo`. This will display all of the commands available in the tmo_shell.<br><br>
+   > **NOTE:** The version of tmo_shell that is shipped with the pilot boards is 1.8.0. Many of the commands seen in the screenshot below are only available on version 1.10.0 of the tmo_shell. Please read the tmo_shell Commands table below to understand which commands are available for 1.10.0 version and which are available for 1.8.0. To upgrade go [here](09-Upgrading-your-IoT-Developer-Kit.md). 
+   <p><img src="https://user-images.githubusercontent.com/60194531/179844172-ab9e5a5a-40ab-4a1d-a496-3b5db1ae108a.png" width="450"></p>
 8. Below is a list of things you may want to do at CLI. 
 
 <br>
 
 ## What are some things I would want to do at tmo_shell CLI?
 ### Connect to Wi-Fi
-1. Enter `tmo ifaces` in the terminal. Based on the Data Sheet, the murata.1sc is the LTE CAT-M1/NB1 cellular modem and the RS9116W is the Wi-Fi/BLE radio device.
-2. Scan for available networks by running `tmo wifi scan <iface_id>`.
+1. Enter `tmo ifaces` in the terminal. Based on the [Data Sheet](07-Data-Sheet.md), the murata.1sc is the LTE CAT-M1/NB1 cellular modem and the RS9116W is the Wi-Fi/BLE radio device.<p><img src="https://user-images.githubusercontent.com/60194531/179845978-485e369d-896b-48e6-adcb-d52511edfed9.png" width="450"></p>
+2. Scan for available networks by running `tmo wifi scan <iface_id>`.<p><img src="https://user-images.githubusercontent.com/60194531/179846317-d0834bba-33f2-43dc-ab5b-8993ca1b93ce.png" width="450">
+</p>
 3. Connect to a network by running `tmo wifi connect <iface_id> "<ssid>" 0 "<psk>"` or `tmo wifi connect <iface_id> "<ssid>"` if your network lacks a password:
 4. If the connection is successful you should receive a "Connected" response.
-5. Check the status of the Wi-Fi connection by entering `tmo wifi status <iface_id>`.
+5. 5. Check the status of the Wi-Fi connection by entering `tmo wifi status <iface_id>`.
    <p>You can also see that you are connected to your chosen Wi-Fi by looking at your smartphone > DevEdge IoT companion app > I/O.</p>
    <p> screenshot </p>
 
