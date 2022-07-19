@@ -18,7 +18,7 @@ This document describes how to connect your IoT Developer Kit to T-Mobile's LTE-
 
 ## Configuration
 
-1. Plug your IoT Developer Kit into a power outlet using the USB-A to USB-C cord and the USB-A power adapter.<br><br><img src="https://user-images.githubusercontent.com/60194531/179641348-9daea439-52ed-4ad0-bb1a-77753423bbf5.png" width="400" ><br><br>
+1. Plug your IoT Developer Kit in like in the screenshot below. The *Modem USB-C Debug* port must connect to power while the *J-Link USB-C Debug* port must connect to your computer.<br><br><img src="https://user-images.githubusercontent.com/60194531/179814209-78f1cd84-a032-4216-99b9-8243b8266d98.png" width="400" ><br><br>
 2. Insert the SIM card included in the box into the IoT Developer Kit.<br><br><img src="https://user-images.githubusercontent.com/60194531/179633229-bc13f6f3-bade-484f-ac92-3713bebdb66c.png" width="400"><br>
 3. To confirm you are connected to the T-Mobile LTE-M network.
     1. On your smartphone, look at your *DevEdge IoT* companion app > **Connectivity** section to confirm that you are connected to the T-Mobile LTE-M network.<br><br><div style="border:1px solid #000;">**IMPORTANT:** Completing this step assumes that you have already followed all of the instructions in the [How to See Signs of Life](03-How-to-See-Signs-of-Life.md) document.</div><br><img src="https://user-images.githubusercontent.com/60194531/179632902-98fd8ea0-d0fb-4eb0-9259-1f2d43358c40.png" width="300"><br><br>
