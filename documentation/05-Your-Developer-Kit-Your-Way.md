@@ -58,7 +58,7 @@ There you will find instructions on how to:
 >    
 >    ![image](https://user-images.githubusercontent.com/60194531/179831518-578bc2d5-c887-4fa6-b7c1-cdc5cf0521e1.png)
 > 
-> 2. Then install pyelftools based on that version of python, e.g. "pip3.9 install pyelftools".
+> 2. Then install *pyelftools* based on that version of python, e.g. "pip3.9 install pyelftools".
 > 
 >    `pip3.9 install pyelftools`
 >    
@@ -82,7 +82,14 @@ Code for the device drivers can be found here: https://github.com/tmobile/DevEdg
 ###  Binaries
 The default base URL for all current / latest chip firmware can be found here: https://devkit.devedge.t-mobile/bin/latest/. 
 
+<br>
 
+## FAQ
+
+- **Question** - If I tear down and rebuild my developer kit from scratch, will T-Mobile help me with any errors that might occur?
+- **Answer**- Unfortunately, since what you are trying to create is a custom we will not be able to help. 
+
+<br>
 
 ***
 [<< Go back](04-Connecting-to-the-T-Mobile-LTE-M-Network.md) &nbsp; | &nbsp; [Up next >>](06-Interacting-with-the-Kit-at-CLI-via-the-tmo_shell.md)
