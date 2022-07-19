@@ -1,9 +1,23 @@
 # Interacting with the Kit at CLI via the tmo_shell
 
 ## Introduction
+This document guides the reader on how to interact with the IoT Developer Kit at command line.
+
+<br>
 
 ## Prerequisites
+- The [T-Mobile DevEdge IoT Developer Kit](https://devedge.t-mobile.com/solutions/iot-developer-kit)
+- A computer with Windows 10 or later installed
+- [Git](https://git-scm.com/downloads) installed on your computer
+- Internet access
+- Several USB-A to USB-C cables
+- [Tera Term](https://ttssh2.osdn.jp/index.html.en) installed on your computer
 
+<br>
+
+> **NOTE:** For demonstration purposes we will be using [Tera Term](https://ttssh2.osdn.jp/index.html.en) in the rest of this document. Windows 10 is the operating system that Tera Term is installed on. Using a different serial app, however, on a different OS is perfectly acceptable. 
+
+<br>
 
 ## Interacting with the Kit at CLI via the tmo_shell
 
@@ -11,11 +25,11 @@
 The tmo_shell is T-Mobile's general-purpose interactive app for testing many features on the DevEdge IoT Developer Kit. It is an application based on the Zephyr RTOS. Note that the tmo_shell is already installed on the DevEdge IoT Developer Kit. 
 
 ### Where can I find the code for the tmo_shell?
-You can find the code for the tmo_shell at https://github.com/tmobile/iot-developer-kit/________. 
+You can find the code for the tmo_shell at https://github.com/tmobile/DevEdge-IoTDevKit-ZephyrSDK.
 
 ### How do I connect to the tmo_shell?
 
-1. On a computer with a USB-A port, install a serial app (e.g. Tera Term or PuTTY on Windows, 'screen' or picocom on Linux). You will need this app to communicate with the serial ports on the T-Mobile DevEdge IoT Developer Kit.
+1. On a computer with a USB-A port, install a serial app (e.g. [Tera Term](https://ttssh2.osdn.jp/index.html.en) or PuTTY on Windows, 'screen' or picocom on Linux). You will need this app to communicate with the serial ports on the T-Mobile DevEdge IoT Developer Kit.
    <br><br> 
     > **NOTE:** For demonstration purposes we will be using Tera Term in the rest of this document. Windows 10 is the operating system that Tera Term is installed on.
    <p>&nbsp;</p>
