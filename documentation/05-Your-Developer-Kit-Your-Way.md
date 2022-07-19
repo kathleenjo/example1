@@ -3,7 +3,23 @@
 ## Introduction
 This document highligts all the resources plus tips and tricks a developer might need if s/he wishes to tear down the board and rebuild it from the ground up. 
 
-## Zephyr RTOS
+<br>
+
+## Prerequisites
+- The [T-Mobile DevEdge IoT Developer Kit](https://devedge.t-mobile.com/solutions/iot-developer-kit)
+- [Git](https://git-scm.com/downloads) installed
+- Internet access
+
+<br>
+
+## Why would I want to implement the instructions in this document? 
+You wish to update the developer kit in a way that is not possible in the mobile app, web app, and/or at CLI.
+
+<br>
+
+## Resources
+
+### Zephyr SDK
 
 For those who wish to customize their T-Mobile DevEdge IoT Developer Kit, meaning your wish to tear down the board and rebuild it from the ground up, we invite you to visit the Zephyr Getting Started page found here:
 
@@ -42,20 +58,20 @@ There you will find instructions on how to:
 
 <br>
 
-## Board Files
+### Board Files
 Board definitions for the DevEdge IoT Developer Kit can be found here: https://github.com/zephyrproject-rtos/zephyr/tree/main/boards/arm/___________.
 
 Please extract the archive above into the zephyr/boards/arm/ directory of your SDK version. This is usually located under ~/ncs/<sdk-version>/zephyr/boards/arm/. Here you need to replace the existing files in the tmo_devedge________/ directory with the new ones from the archive.
 
 <br>
 
-## IoT Developer Kit SDK or Firmware
+### IoT Developer Kit SDK or Firmware
   
 To find the IoT Developer Kit SDK, or firmware, go to https://github.com/tmobile/iot-developer-kit/_______________.  
 
 <br>
 
-## Device Drivers
+### Device Drivers
 Code for the device drivers can be found here: https://github.com/tmobile/iot-developer-kit/_______________.  
 
 
