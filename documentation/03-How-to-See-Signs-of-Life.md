@@ -31,11 +31,9 @@ To accomplish the above tasks we will be using the accompanying mobile app. To l
 ## Configuration
 
 ### Step A - Hearing the T-Mobile Jingle
-1. Plug in the USB-C end of your USB-C to USB-A cord to the [T-Mobile DevEdge IoT Developer Kit](https://devedge.t-mobile.com/solutions/iot-developer-kit)'s Modem USB-C Debug port.<br><br><img src="https://user-images.githubusercontent.com/60194531/179603727-c800da4e-6eb6-4374-8edc-0add46c1343b.png" width="350" ><br><br>
-2. Plug the USB-A end of your *USB-C to USB-A* cord to the USB-A power adapter.<br><br>
-3. Plug in the power adapter to a power outlet.<br><br>
-4. On the kit, push the ***User Button***.<br><br><img src="https://user-images.githubusercontent.com/60194531/179604563-b725afd6-e957-4b5b-b071-c29408c5a143.png" width="350"><br><br> 
-5. Listen to the T-Mobile jingle.
+1. Plug in the USB-C ends of your USB-C to USB-A cords to the T-Mobile DevEdge IoT Developer Kit's USB-C ports like in the screenshot below. The Modem USB-C Debug port must connect to power while the J-Link USB-C Debug port must connect to your computer.<br><br><img src="https://user-images.githubusercontent.com/60194531/179814209-78f1cd84-a032-4216-99b9-8243b8266d98.png" width="350" ><br><br>
+2. On the kit, push the ***User Button***.<br><br><img src="https://user-images.githubusercontent.com/60194531/179814796-933e7112-17a0-407c-abc2-a9ccc8f05631.png" width="350"><br><br>
+3. Listen to the T-Mobile jingle.
 
 <br>
 
