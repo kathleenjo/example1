@@ -1,12 +1,19 @@
 # Interacting with the Kit at CLI via the tmo_shell
 
-## What is the tmo_shell?
+## Introduction
+
+## Prerequisites
+
+
+## Interacting with the Kit at CLI via the tmo_shell
+
+### What is the tmo_shell?
 The tmo_shell is T-Mobile's general-purpose interactive app for testing many features on the DevEdge IoT Developer Kit. It is an application based on the Zephyr RTOS. Note that the tmo_shell is already installed on the DevEdge IoT Developer Kit. 
 
-## Where can I find the code for the tmo_shell?
+### Where can I find the code for the tmo_shell?
 You can find the code for the tmo_shell at https://github.com/tmobile/iot-developer-kit/________. 
 
-## How do I connect to the tmo_shell?
+### How do I connect to the tmo_shell?
 
 1. On a computer with a USB-A port, install a serial app (e.g. Tera Term or PuTTY on Windows, 'screen' or picocom on Linux). You will need this app to communicate with the serial ports on the T-Mobile DevEdge IoT Developer Kit.
    <br><br> 
