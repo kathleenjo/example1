@@ -64,10 +64,8 @@ You can find the code for the tmo_shell at https://github.com/tmobile/DevEdge-Io
 1. Enter `tmo ifaces` in the terminal. Based on the [Data Sheet](07-Data-Sheet.md), the murata.1sc is the LTE CAT-M1/NB1 cellular modem and the RS9116W is the Wi-Fi/BLE radio device.<p><img src="https://user-images.githubusercontent.com/60194531/179845978-485e369d-896b-48e6-adcb-d52511edfed9.png" width="450"></p>
 2. Scan for available networks by running `tmo wifi scan <iface_id>`.<p><img src="https://user-images.githubusercontent.com/60194531/179846317-d0834bba-33f2-43dc-ab5b-8993ca1b93ce.png" width="450"></p>
 3. Connect to a network by running `tmo wifi connect <iface_id> "<ssid>" 0 "<psk>"` or `tmo wifi connect <iface_id> "<ssid>"` if your network lacks a password:<p><img src="https://user-images.githubusercontent.com/60194531/179849147-05231547-e600-4a82-92d8-8e29310df133.png" width="450"></p>
-4. If the connection is successful you should receive a "Connected" response.<p><img src="https://user-images.githubusercontent.com/60194531/179849619-8647c228-cdf9-4e2f-81b1-80024fd03dec.png" width="450"</p>
-5. Check the status of the Wi-Fi connection by entering `tmo wifi status <iface_id>`.
-   <p>You can also see that you are connected to your chosen Wi-Fi by looking at your smartphone > DevEdge IoT companion app > I/O.</p>
-   <p> screenshot </p>
+4. If the connection is successful you should receive a "Connected" response.<p><img src="https://user-images.githubusercontent.com/60194531/179849619-8647c228-cdf9-4e2f-81b1-80024fd03dec.png" width="450"></p>
+5. Check the status of the Wi-Fi connection by entering `tmo wifi status <iface_id>`.<p><img src="https://user-images.githubusercontent.com/60194531/179850018-b0958ab7-c46f-435d-a203-c4bbd83a6e8e.png" width="450"></p><p>You can also see that you are connected to your chosen Wi-Fi by looking at your smartphone > **DevEdge IoT** companion app > **Home** > **Connectivity**.</p><p><img src="https://user-images.githubusercontent.com/60194531/179851833-e33e5e3a-b95c-4a87-8e6e-d91fa44c0578.png" width="300" ></p>
 
 
 
