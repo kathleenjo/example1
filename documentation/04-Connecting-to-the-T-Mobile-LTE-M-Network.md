@@ -31,7 +31,7 @@ This document describes how to connect your IoT Developer Kit to T-Mobile's LTE-
 
 ## Troubleshooting
 - **Issue** - I inserted my SIM card, however, nothing is coming up on either the mobile app or the web app. What could be wrong?
-- **Suggested solution** - Your area may not have strong enough signal strength to connect to the T-Mobile LTE-M network. Please try moving to an area that does have strong enough signal strength and re-insert the card.<br><br>
+- **Suggested solution** - Your area may not have strong enough signal strength to connect to the T-Mobile LTE-M network. Please try moving to an area that does have strong enough signal strength (-85 decibels or better) and re-insert the card.<br><br>
 <img src="https://user-images.githubusercontent.com/60194531/179632902-98fd8ea0-d0fb-4eb0-9259-1f2d43358c40.png" width="300"><br><br>
 
 <br>
@@ -43,18 +43,8 @@ This document describes how to connect your IoT Developer Kit to T-Mobile's LTE-
 <br>
 
 ## FAQ
-- **Question** -
-- **Answer** -
-
-<br>
-
-- **Question** -
-- **Answer** -
-
-<br>
-
-- **Question** -
-- **Answer** -
+- **Question** - Can I retrieve my ICCID number from the SIM card once I insert my card into the IoT Developer Kit?
+- **Answer** - Yes you can. Please read the document [Interacting with the Kit at CLI via tmo_shell](06-Interacting-with-the-Kit-at-CLI-via-the-tmo_shell.md) to learn more.
 
 
 <br> 
