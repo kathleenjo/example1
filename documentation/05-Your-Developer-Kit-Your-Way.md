@@ -35,25 +35,34 @@ There you will find instructions on how to:
 - Testing
 - And more....
 
-> **IMPORTANT:** When getting the Zephyr source code using west, you will need to instead get the tmo_shell source code (an application based on the Zephyr RTOS) found here: https://github.com/tmobile/iot-developer-kit_____________
+> **IMPORTANT:** When getting the Zephyr source code using west, you will need to instead get the tmo_shell source code (an application based on the Zephyr RTOS) found here: https://github.com/tmobile/DevEdge-IoTDevKit-ZephyrSDK. 
 > 
 > ![image](https://user-images.githubusercontent.com/60194531/172735789-4c5f5a2b-71c9-4893-89ce-9d58e61d926c.png)
 > 
-> So the command would be
-> ```
-> west init -m https://github.com/tmobile/iot-developer-kit/_____________
-> cd https://github.com/tmobile/iot-developer-kit/_____________
+> So the command would be:
+>    ```
+> west init -m https://github.com/tmobile/DevEdge-IoTDevKit-ZephyrSDK
+> cd ~/zephyrproject
 > west update
 > ```
-> If you are on a Mac the above instructions might not install the required module called pyelftools. 
-> Check the version of Python that is associated with "python3":
-> ```
-> JLange2@TMC02D76EQMD6R:~/zephyrproject$ which python3
-> /usr/local/bin/python3
-> JLange2@TMC02D76EQMD6R:~/zephyrproject$ ls -l /usr/local/bin/python3
-> lrwxr-xr-x  1 JLange2  admin  39 Apr 12 21:29 /usr/local/bin/python3 -> ../Cellar/python@3.9/3.9.12/bin/python3
-> ```
-> Then install pyelftools based on that version of python, e.g. "pip3.9 install pyelftools".
+> If you are on a Mac the above instructions might not install the required module called *pyelftools*. To avoid this do the following:
+> 1. Check the version of Python that is associated with "python3":
+> 
+>    ```
+>    Kathleen.Jo@tm0498301 zephyrproject % which python3
+>    /opt/homebrew/bin/python3
+>    Kathleen.Jo@tm0498301 zephyrproject % ls -l /opt/homebrew/bin/python3
+>    lrwxr-xr-x  1 Kathleen.Jo  admin  41 Jun 15 13:54 /opt/homebrew/bin/python3 -> ../Cellar/python@3.9/3.9.13_1/bin/python3
+>    ```
+>    
+>    ![image](https://user-images.githubusercontent.com/60194531/179831518-578bc2d5-c887-4fa6-b7c1-cdc5cf0521e1.png)
+> 
+> 2. Then install pyelftools based on that version of python, e.g. "pip3.9 install pyelftools".
+> 
+>    `pip3.9 install pyelftools`
+>    
+>    ![image](https://user-images.githubusercontent.com/60194531/179831569-49c0f87e-9622-4d3f-b3cc-437b9d4bf3ae.png)
+> 
 > Everything else in the [Zephyr Getting Started Guide](https://docs.zephyrproject.org/latest/develop/getting_started/index.html) remains the same.
 
 <br>
