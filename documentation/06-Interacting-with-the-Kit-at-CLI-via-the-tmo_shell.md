@@ -24,33 +24,32 @@ This document guides the reader on how to interact with the IoT Developer Kit at
 ### What is the tmo_shell?
 The tmo_shell is T-Mobile's general-purpose interactive app for testing many features on the DevEdge IoT Developer Kit. It is an application based on the Zephyr RTOS. Note that the tmo_shell is already installed on the DevEdge IoT Developer Kit. 
 
+<br>
+
 ### Where can I find the code for the tmo_shell?
 You can find the code for the tmo_shell at https://github.com/tmobile/DevEdge-IoTDevKit-ZephyrSDK.
 
+<br>
+
 ### How do I connect to the tmo_shell?
 
-1. On a computer with a USB-A port, install a serial app (e.g. [Tera Term](https://ttssh2.osdn.jp/index.html.en) or PuTTY on Windows, 'screen' or picocom on Linux). You will need this app to communicate with the serial ports on the T-Mobile DevEdge IoT Developer Kit.
+1. On a computer with several USB-A ports, install a serial app (e.g. [Tera Term](https://ttssh2.osdn.jp/index.html.en) or [PuTTY](https://www.putty.org/) on Windows, 'screen' or picocom on Linux). You will need this app to communicate with the serial ports on the T-Mobile DevEdge IoT Developer Kit.
    <br><br> 
-    > **NOTE:** For demonstration purposes we will be using Tera Term in the rest of this document. Windows 10 is the operating system that Tera Term is installed on.
-   <p>&nbsp;</p>
-2. Connect your IoT Developer Kit to your computer using the "USB-A to FTDI". Please see the screenshot below. 
-   <br><br>
-    > **IMPORTANT:** Make sure that the FTDI cable is pointing to the **right hand side of** the board like in the screenshot below. If the cable is not pointed to the right (the opposite of Beyoncé's song [Irreplaceable](https://www.youtube.com/watch?v=2EwViQxSJJQ)) it will not be able to connect the kit to your Windows computer. 
-   <p>
-   <img src="https://user-images.githubusercontent.com/60194531/167969548-97aebc41-9d73-40ad-9ed5-a5289eb37f94.png" width="399">
+2. Connect your IoT Developer Kit to your computer using two "USB-A to USB-C". Please see the screenshot below. 
+   <br><br><img src="https://user-images.githubusercontent.com/60194531/179814209-78f1cd84-a032-4216-99b9-8243b8266d98.png" width="399">
    </p>
-3. On your computer, open the Tera Term app. The Tera Term: New Connection window opens.
+3. On your computer, open the Tera Term app. The *Tera Term: New Connection* window opens.
 4. Select the "Serial" radio button then from the drop down select the port that your T-Mobile DevEdge IoT Developer Kit is connected to. Click ***OK***. 
-   <p><img width="700" alt="image" src="https://user-images.githubusercontent.com/60194531/167970174-fa8a59ea-e35e-461a-abb4-2519affa5134.png"></p>
+   <p><img width="700" alt="image" src="https://user-images.githubusercontent.com/60194531/179841833-c9a1121d-840f-41d6-8e20-e51483718e51.png"></p>
 5. Under **Setup** > **Serial port**... the settings for the kit's port need to be assigned the following way or you will not be able to connect to the kit:
    1. Speed / Baud Rate: 9600 
    2. Data: 8
    3. Parity: none
    4. Stop bits: 1
    5. Flow control: none
-   6. Click New setting if you had to change any of these values. Cancel if you did not. The Tera Term command line appears. 
-   <p><img width="500" alt="image" src="https://user-images.githubusercontent.com/60194531/167970314-79d87ca1-b381-4688-bc9e-9c21c829b9df.png"></p>
-6. In the Tera Term command line console press enter on your keyboard. The Zephyr uart peripheral appears.
+   6. Click ***New setting*** if you had to change any of these values. ***Cancel*** if you did not. The Tera Term command line appears. 
+   <p><img width="500" alt="image" src="https://user-images.githubusercontent.com/60194531/179842675-29b2f720-7a49-4431-9dc1-90b13f635f01.png"></p>
+6. In the Tera Term command line console press enter on your keyboard. The Zephyr [uart](https://docs.zephyrproject.org/3.0.0/reference/peripherals/uart.html) command line appears.
    <p><img src="https://user-images.githubusercontent.com/60194531/167972999-03063375-fda0-4a22-9766-6263bebea131.png" width="500"></p>
    <p><img src="https://user-images.githubusercontent.com/60194531/167973184-3a7716b5-5f3b-4e7e-b34e-f1847dfe64e6.png" width="500"></p>
 7. Type `tmo`. This will display all of the commands available in the tmo_shell. Below is a table describing the commands and available subcommands with descriptions.
