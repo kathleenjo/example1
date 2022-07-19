@@ -52,120 +52,14 @@ You can find the code for the tmo_shell at https://github.com/tmobile/DevEdge-Io
 6. In the Tera Term command line console press enter on your keyboard. The Zephyr [uart](https://docs.zephyrproject.org/3.0.0/reference/peripherals/uart.html) command line appears.
    <p><img src="https://user-images.githubusercontent.com/60194531/167972999-03063375-fda0-4a22-9766-6263bebea131.png" width="500"></p>
    <p><img src="https://user-images.githubusercontent.com/60194531/167973184-3a7716b5-5f3b-4e7e-b34e-f1847dfe64e6.png" width="500"></p>
-7. Type `tmo`. This will display all of the commands available in the tmo_shell. Below is a table describing the commands and available subcommands with descriptions.
+7. Type `tmo`. This will display all of the commands available in the tmo_shell. 
+   > **NOTE:** The version of tmo_shell that is shipped with the pilot boards is 1.8.0. Many of the commands seen in the screenshot below are only available on version 1.10.0 of the tmo_shell. Please read the tmo_shell Commands table below to understand which commands are available for 1.10.0 version and which are available for 1.8.0. To upgrade go here. 
 
-      |   What's in the box   |   Product Features   |
-      |   -----   |   -----   |
-      | • IoT Developer Kit main board<br>• Protective case<br>• Battery <br>• Power adapter<br>• USB Charging Cable<br>• Quick Start Guide<br>• SIM with 500 MB of data<br>• Mobile and web apps that will assist in IoT Development<br>• Code snippets|The kit comes pre-bundled with connectivity and is sold exclusively through DevEdge.<br/>Specifications:<br>• 32-bit ARM Cortex M4 MCU<br>• LTE CAT-M Module <br>• 2.4GHz Wi-Fi<br>• BLE Bluetooth <br>• GNSS <br>• RGB LED <br>• White LED <br>• Temperature sensor <br>• Accelerometer<br>• Ambient Light Sensor<br>• Pressure Sensor<br>• Buzzer<br>• Button<br>• Li-ion Battery<br>• I2C Expansion Connector <br>• Type-C USB Connector  |
+   ![image](https://user-images.githubusercontent.com/60194531/179844172-ab9e5a5a-40ab-4a1d-a496-3b5db1ae108a.png)
 
-<!-- 
+8. Below is a list of things you may want to do at CLI. 
 
-
-Commands
-Command Description
-Subcommands
-Subcommand Descriptions
-Required Arguments
-dns	Performs a DNS lookup.	None	Not applicable	<devid> <hostname> 
-http	Get http URL.	None	Not applicable	<devid> <URL>
-ifaces	List all the interfaces available on the kit with their ID number. 	None	Not applicable	Not applicable. 
-mdm_data	Request modem data.	None	Not applicable	<iface> <cmd_str>
-smp	BLE SMP Controls or Bluetooth controls. 	
-enable
-disable
-callbacks
-toggle
-respond
-Enable Security Manager Protocol (SMP)
-Disable Security Manager Protocol (SMP)
-Show enabled callbacks.
-Toggle callbacks.
-Send response.
-Not applicable
-sockets	Lists all the open sockets available on the kit. 	None	Not applicable	Not applicable
-tcp	Send/receive TCP packets.	
-create
-secure_create
-connect
-send
-recv
-sendb
-recvb
-sendsms
-recvsms
-close
-Create TCP packets.
-Create secure TCP packets.
-Connect to another TCP.
-Send TCP packets.
-Receive TCP packets.
-Send larger TCP packets, up to 5000 KB.
-Receive larger TCP packets, up to 5000 KB.
-Send text message.
-Receive text message.
-Close TCP socket.  
-<iface>
-<iface>
-<socket> <ip> <port>
-<socket> <payload>
-<socket>
-<socket> <size>
-<socket> <size>
-<socket> <phone number> <message>
-<socket> <wait time <seconds>
-<socket> 
-udp	Send/receive UDP packets.	
-create
-connect
-send
-sendto
-sendb
-recv
-recvb
-recvfrom
-sendsms
-recvsms
-close
-Create UDP packets.
-Connect to a another UDP. 
-Send UDP packets.
-Send UDP packets to a specific port.
-Send large UDP packets, up to 5000 KB.
-Receive UDP packets.
-Receive large UDP packets, up to 5000 KB.
-Receive UDP packets from a sender.
-Send text message.
-Receive text message.
-Close UDP socket. 
-<iface>
-<socket> <ip> <port>
-<socket> <payload>
-<socket> <ip> <port> <payload>
-<socket> <size>
-<socket> 
-<socket> <size>
-<socket> <ip> <port>
-<socket> <phone number> <message>
-<socket>
-<socket>
-wifi	Wi-Fi controls. Connect to Wi-Fi using these commands. 	
-connect
-disconnect
-scan
-status
-Connect to Wi-Fi.
-Disconnect from Wi-Fi.
-Scan for Wi-Fi SSIDs.
-Check the Wi-Fi status of an interface. 
-<iface> "<SSID>"
-<channel number (optional), 0 mean all>
-<PSK (optional: valid only for secured SSIDs)>
-<iface>
-<iface>
-<iface> -->
-8. Use the above commands to interact with the tmo_shell. 
-
-9. Some common use cases can be found below. 
+<br>
 
 ## What are some things I would want to do at tmo_shell CLI?
 ### Connect to Wi-Fi
