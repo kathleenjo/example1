@@ -73,18 +73,24 @@ You can find the code for the tmo_shell at https://github.com/tmobile/DevEdge-Io
 ### Testing TCP connect/send/recv/close
 1. Create a TCP socket by entering `tmo tcp create <iface_id>`.
    <br><br>
-   > **NOTE:** For this to work, you must be connected to Wi-Fi. The error "Socket creation failed, errno = 22" indicates that you are not connected to Wi-Fi and, as a result, the TCP socket cannot be created. 
-   <p>&nbsp;</p>
-2. If the socket is created properly a <socket_number> will appear. In the case of the screenshot below the socket number is 0. 
-3. To list all open sockets type `tmo sockets`.
-4. To connect the socket to a server, call `tmo tcp connect <socket_number> <ip_addr> <port>`:
+   > **NOTE:** For this to work, you must be connected to Wi-Fi. The error "Socket creation failed, errno = 0" indicates that you are not connected to Wi-Fi and, as a result, the TCP socket cannot be created. 
+   <p><img src="https://user-images.githubusercontent.com/60194531/180078282-e8ac8867-0d0e-4083-bc78-7562102b94a2.png" width="450">
+</p>
+2. If the socket is created properly a <socket_number> will appear. In the case of the screenshot below the socket number is 0.<p><img src="https://user-images.githubusercontent.com/60194531/180078952-8e8bb376-4a70-4bb8-b666-793ab42deb6b.png" width="500"></p> 
+3. To list all open sockets type `tmo sockets`.<p>![image](https://user-images.githubusercontent.com/60194531/180079573-5fdd8869-7512-4647-a0b5-b9c26112eae1.png)
+</p>
+4. Connect the socket to a server by calling `tmo tcp connect <socket_number> <ip_addr> <port>`:
    <br><br>
    > **NOTE:** You will need a echo server IP address in order to complete this part of the exercise. 
-   <p>&nbsp;</p>
-5. The message "Connected socket 0" if the call was made successfully. 
-6. To send data, call `tmo tcp send <socket_number> "<data>"`. When you hit enter on your keyboard Tera Term will simple go back to the uart prompt. 
-7. To see the data you just sent, call `tmo tcp recv <socket_number>`. 
-8. To close the socket, call `tmo tcp close <socket_number>`.
+   <p>![image](https://user-images.githubusercontent.com/60194531/180079846-05107d19-fb50-466c-8ceb-97f7292c9e6b.png)
+</p>The message "Connected socket 0" if the call was made successfully.<p>![image](https://user-images.githubusercontent.com/60194531/180079964-eeea1685-1e04-4d8c-a6e0-4ccb3eb22b92.png)
+</p> 
+5. Send data by calling `tmo tcp send <socket_number> "<data>"`. When you hit ***Enter*** on your keyboard Tera Term will simple go back to the uart prompt.<p>![image](https://user-images.githubusercontent.com/60194531/180080204-0f659eca-c7f8-4264-9833-5275d1928c45.png)
+</p> 
+6. To see the data you just sent, call `tmo tcp recv <socket_number>`.<br><br>![image](https://user-images.githubusercontent.com/60194531/180080254-118fb360-8ad2-4be4-9bc2-5f32e7920493.png)
+<br>![image](https://user-images.githubusercontent.com/60194531/180080283-27fb5f6b-a06f-4a6f-a8fa-11de8143290a.png)
+7. Close the socket calling `tmo tcp close <socket_number>`.
+![image](https://user-images.githubusercontent.com/60194531/180080331-111d3b53-b3d7-4608-80ee-ddd7fbfcea01.png)
 
 
 ### Testing UDP connect/send/recv/close
