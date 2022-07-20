@@ -38,7 +38,7 @@ You can find the code for the tmo_shell at https://github.com/tmobile/DevEdge-Io
 2. Connect your IoT Developer Kit to your computer using two "USB-A to USB-C". Please see the screenshot below. 
    <br><br><img src="https://user-images.githubusercontent.com/60194531/179814209-78f1cd84-a032-4216-99b9-8243b8266d98.png" width="399">
    </p>
-3. On your computer, open the Tera Term app. The *Tera Term: New Connection* window opens.
+3. On your computer, open the Tera Term app. The *Tera Term: New Connection* window opens.<br><br>
 4. Select the "Serial" radio button then from the drop down select the port that your T-Mobile DevEdge IoT Developer Kit is connected to. Click ***OK***. 
    <p><img width="700" alt="image" src="https://user-images.githubusercontent.com/60194531/179841833-c9a1121d-840f-41d6-8e20-e51483718e51.png"></p>
 5. Under **Setup** > **Serial port**... the settings for the kit's port need to be assigned the following way or you will not be able to connect to the kit:
@@ -53,7 +53,7 @@ You can find the code for the tmo_shell at https://github.com/tmobile/DevEdge-Io
    <p><img src="https://user-images.githubusercontent.com/60194531/167972999-03063375-fda0-4a22-9766-6263bebea131.png" width="500"></p>
    <p><img src="https://user-images.githubusercontent.com/60194531/167973184-3a7716b5-5f3b-4e7e-b34e-f1847dfe64e6.png" width="500"></p>
 7. Type `tmo`. This will display all of the commands available in the tmo_shell.<br><br>
-   > **NOTE:** The version of tmo_shell that is shipped with the pilot boards is 1.8.0. Many of the commands seen in the screenshot below are only available on version 1.10.0 of the tmo_shell. Please read the tmo_shell Commands table below to understand which commands are available for 1.10.0 version and which are available for 1.8.0. To upgrade go [here](09-Upgrading-your-IoT-Developer-Kit.md). 
+   > **NOTE:** The version of tmo_shell that is shipped with the pilot boards is 1.8.0. Many of the commands seen in the screenshot below are only available on version 1.10.0 of the tmo_shell. Please read the [tmo_shell Commands](06-Interacting-with-the-Kit-at-CLI-via-the-tmo_shell.md) table below to understand which commands are available for 1.10.0 version and which are available for 1.8.0. To upgrade go [here](09-Upgrading-your-IoT-Developer-Kit.md). 
    <p><img src="https://user-images.githubusercontent.com/60194531/179844172-ab9e5a5a-40ab-4a1d-a496-3b5db1ae108a.png" width="450"></p>
 8. Below is a list of things you may want to do at CLI. 
 
