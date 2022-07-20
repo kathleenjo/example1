@@ -67,8 +67,7 @@ You can find the code for the tmo_shell at https://github.com/tmobile/DevEdge-Io
 4. If the connection is successful you should receive a "Connected" response.<p><img src="https://user-images.githubusercontent.com/60194531/179849619-8647c228-cdf9-4e2f-81b1-80024fd03dec.png" width="450"></p>
 5. Check the status of the Wi-Fi connection by entering `tmo wifi status <iface_id>`.<p><img src="https://user-images.githubusercontent.com/60194531/179850018-b0958ab7-c46f-435d-a203-c4bbd83a6e8e.png" width="450"></p><p>You can also see that you are connected to your chosen Wi-Fi by looking at your smartphone > **DevEdge IoT** companion app > **Home** > **Connectivity**.</p><p><img src="https://user-images.githubusercontent.com/60194531/179851833-e33e5e3a-b95c-4a87-8e6e-d91fa44c0578.png" width="300" ></p>
 
-
-
+<br>
 
 ### Testing TCP connect/send/recv/close
 1. Create a TCP socket by calling `tmo tcp create <iface_id>`.<p>**NOTE:** For this to work, you must be connected to Wi-Fi. The error "Socket creation failed, errno = 0" indicates that you are not connected to Wi-Fi and, as a result, the TCP socket cannot be created.</p><p><img src="https://user-images.githubusercontent.com/60194531/180078282-e8ac8867-0d0e-4083-bc78-7562102b94a2.png" width="550"></p><br>
@@ -79,6 +78,7 @@ You can find the code for the tmo_shell at https://github.com/tmobile/DevEdge-Io
 6. To see the data you just sent, call `tmo tcp recv <socket_number>`.<br><br><img src="https://user-images.githubusercontent.com/60194531/180080254-118fb360-8ad2-4be4-9bc2-5f32e7920493.png" width="550"><br><img src="https://user-images.githubusercontent.com/60194531/180080283-27fb5f6b-a06f-4a6f-a8fa-11de8143290a.png" width="550"><br>
 7. Close the socket calling `tmo tcp close <socket_number>`.<br><br><img src="https://user-images.githubusercontent.com/60194531/180080331-111d3b53-b3d7-4608-80ee-ddd7fbfcea01.png" width="550"><br>
 
+<br>
 
 ### Testing UDP connect/send/recv/close
 1. Create a UDP socket by calling `tmo udp create <iface>`.<p>**NOTE:** For this to work, you must be connected to Wi-Fi. The error "Socket creation failed, errno = 0" indicates that you are not connected to Wi-Fi and, as a result, the UDP socket cannot be created.</p> 
@@ -90,6 +90,8 @@ You can find the code for the tmo_shell at https://github.com/tmobile/DevEdge-Io
 7. Close the socket by calling `tmo udp close <socket_number>`.<br><br><img src="https://user-images.githubusercontent.com/60194531/180087873-23a7d924-539b-47ee-a258-dcb3dcfaca84.png" width="550"><br><br>
 8. To check that the socket is closed type tmo sockets.
 
+<br>
+
 ### Testing UDP sendto/recvfrom
 1. Create a UDP socket by calling `tmo udp create <iface>`. <p>**NOTE:** For this to work, you must be connected to Wi-Fi. The error "Socket creation failed, errno = 0" indicates that you are not connected to Wi-Fi and, as a result, the UDP socket cannot be created.</p>
 2. If the socket is created properly a <socket_number> will appear. In the case of the screenshot below the socket number is 0.<br><br> 
@@ -97,11 +99,26 @@ You can find the code for the tmo_shell at https://github.com/tmobile/DevEdge-Io
 4. Receive data by calling `tmo udp recvfrom <socket_number>`.<br><br> 
 5. Close the socket by calling `tmo udp close <socket_number>`.<br><br><img src="https://user-images.githubusercontent.com/60194531/180089372-d1155f25-4b2b-4d7e-bd3b-82b9c0a9b816.png" width="550">
 
+<br>
 
-### Testing UDP sendto/recvfrom
-1. lorem
-2. ipsum
-3. dolor
+### Testing SMS send message
+1. Enter `modem list`.<br><br>
+2. Enter `modem sms send <modem index> <phone number> <message>`.<p><img src="https://user-images.githubusercontent.com/60194531/180090170-d26a45cf-1ca3-4b7e-9de1-dc683e87945c.png" width="550"></p><p>**NOTE:** Remember to replace 5555555555 with your cell phone number.</p>
+3. Check you phone for a text message from your IoT Developer Kit. 
+
+<br>
+
+### Testing DNS Resolution
+To perform DNS resolve, use the syntax shown below. 
+
+> **NOTE:** For this to work, you must be connected to Wi-Fi. The error "Socket creation failed, errno = 0" indicates that you are not connected to Wi-Fi and, as a result, the UDP socket cannot be created. 
+
+1. Enter `tmo ifaces`.<br><br>
+2. Enter `tmo dns <iface> t-mobile.com`.<br><br>
+3. The IoT Developer Kit returns address information, IP address and more.<p><img src="https://user-images.githubusercontent.com/60194531/180090567-14b4e7f2-68a1-4a63-9b39-f79d997861a8.png" width="550"></p>
+
+
+
 
 ***
 [<< Go back](05-Your-Developer-Kit-Your-Way.md) &nbsp; | &nbsp; [Up next >>](07-Data-Sheet.md)
