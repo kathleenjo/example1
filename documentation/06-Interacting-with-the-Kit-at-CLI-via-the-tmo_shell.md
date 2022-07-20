@@ -81,9 +81,14 @@ You can find the code for the tmo_shell at https://github.com/tmobile/DevEdge-Io
 
 
 ### Testing UDP connect/send/recv/close
-1. kjo
-2. kjo
-3. kjo
+1. Create a UDP socket by calling `tmo udp create <iface>`.<p>**NOTE:** For this to work, you must be connected to Wi-Fi. The error "Socket creation failed, errno = 22" indicates that you are not connected to Wi-Fi and, as a result, the UDP socket cannot be created.</p> 
+2. If the socket is created properly a <socket_number> will appear. In the case of the screenshot below the socket number is 0.<br><br>
+3. Connect the socket to a server by calling `tmo udp connect <socket_number> <ip_addr> <port>`.<br><p>**NOTE:** You will need an echo server IP address in order to complete this part of the exercise.</p>
+4. The message "Connected socket 0" appears if the call was made successfully.<br><br>
+5. Send data by calling `tmo udp send <socket_number> "<data>"`.<br><br>
+6. Receive data by calling `tmo udp recv <socket_number>`.<br><br>
+7. Close the socket by calling `tmo udp close <socket_number>`.<br><br><img src="https://user-images.githubusercontent.com/60194531/180087873-23a7d924-539b-47ee-a258-dcb3dcfaca84.png" width="550"><br><br>
+8. To check that the socket is closed type tmo sockets.
 
 ### Testing UDP bind
 1. lorem
