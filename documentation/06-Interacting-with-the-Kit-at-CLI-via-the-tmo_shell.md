@@ -128,12 +128,32 @@ To perform DNS resolve, use the syntax shown below.
    > **NOTE:** This will only work on tmo_shell version 1.8.0. If you have upgraded to tmo_shell version 1.10.0 the command will be tmo modem 1 imei  instead. Upgrade [here](09-Upgrading-your-IoT-Developer-Kit.md).
 
    <img src="https://user-images.githubusercontent.com/60194531/180099789-371f72ab-9f20-4c58-baf7-bd95d1c1ba4d.png" width="550">
+   
+<br>
 
 ### View JSON Data
 1. Enter `tmo json payload` then press ***Emter*** on your keyboard.<p><img src="https://user-images.githubusercontent.com/60194531/180100223-ed086fcf-36ec-4ec0-9498-7a86f3875f13.png" width="550">
 </p>
 
+<br>
 
+### Turn on the Green LED
+> **NOTE:** This command is utilizing the [Zephyr shell](https://docs.zephyrproject.org/3.0.0/reference/shell/index.html) instead of the tmo_shell. Please see the document [Driver Configurations](08-Driver-Configurations.md) to learn more.<p><img src="https://user-images.githubusercontent.com/60194531/180101056-3b4a076b-47e8-463f-9278-9cee4e588721.png" width="550"></p> 
+1. Enter `led on pwmleds 2`.<p><img src="https://user-images.githubusercontent.com/60194531/180100861-5a1926c4-2797-4bed-8855-2024201bd12c.png" width="550"></p>
+2. The green light on the IoT Developer Kit turns on.<p><img src="https://user-images.githubusercontent.com/60194531/180101341-483f9156-0257-45d3-9b30-8531604a0b4c.png" width="400"></p>
+
+<br>
+
+### Find the tmo_shell / SDK Version Number
+> **NOTE:** Only available with tmo_shell version 1.10.x and later. Upgrade [here](09-Upgrading-your-IoT-Developer-Kit.md).
+1. Type `tmo version` then press ***Enter*** on your keyboard.<p><img src="https://user-images.githubusercontent.com/60194531/180101713-dd0d0a34-bdca-4b55-a893-e9561add8a92.png" width="550"></p>
+
+<br>
+
+## Further Resources
+Beyond the list above, there are other commands available at tmo_shell. Take a look at the table below. 
+
+### tmo_shell Commands
 
 <br>
 
