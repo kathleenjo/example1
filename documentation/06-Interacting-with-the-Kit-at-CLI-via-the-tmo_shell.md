@@ -155,6 +155,11 @@ Beyond the list above, there are other commands available at tmo_shell. Take a l
 
 ### tmo_shell Commands
 
+| Commands | Command Description | Subcommands | Subcommand Descriptions | Required Arguments | Example Syntax |
+| ----- | ----- | ----- | ----- | ----- | ----- |
+| `ble` | Various Bluetooth Low Energy (BLE) commands.<br><br>Only available with tmo_shell version 1.10.x and later. Upgrade [here](09-Upgrading-your-IoT-Developer-Kit.md). | 1. smp<br>2. adv | 1. BLE SMP Controls<br>2. BLE advertisement test controls | | 1. `tmo ble adv ibeacon` |
+| `buzzer` | Buzzer test.<br><br>Only available with tmo_shell version 1.10.x and later. Upgrade [here](09-Upgrading-your-IoT-Developer-Kit.md). | 1. jingle<br>2. ramp<br>3.tone | 1. Play TMO jingle<br>2. Play ramp tune<br>3. Play a tone for a time. | 1. Not applicable<br>2. Not applicable<br>3.<freq in Hz> <time in msecs> | 1. `tmo buzzer jingle`<br>2. `tmo buzzer ramp`<br>3. `tmo buzzer tone <freq in Hz> <time in msecs>` |
+
 <br>
 
 ***
