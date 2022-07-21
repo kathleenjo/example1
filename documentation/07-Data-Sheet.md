@@ -11,17 +11,19 @@ The T-Mobile DevEdge IoT Developer Kit has the following specifications.
 - LTE CAT-M Module - [Murata 1SC](https://www.t-mobile.com/content/dam/tfb/pdf/tfb-iot/LBADXX01SC_Data_Sheet_v1.7.pdf)
 - 2.4GHz Wi-Fi - [SiLabs RS9116W](https://www.silabs.com/wireless/wi-fi/rs9116-wi-fi-ncp-modules/device.rs9116w-sb00-aa0)
 - BLE Bluetooth - [SiLabs RS9116W](https://www.silabs.com/wireless/wi-fi/rs9116-wi-fi-ncp-modules/device.rs9116w-sb00-aa0)
-- GNSS
-- RGB LED
-- Temperature sensor
-- Accelerometer
-- ~Ambient light sensor~
-- Pressure sensor
-- Buzzer
+- ~GNSS - [Sony CXD5605AGF](https://www.sony-semicon.co.jp/e/products/lsi/gps/product.html)~
+- 8MB external FLASH - [Winbond W25Q64](https://www.winbond.com/resource-files/w25q64fv%20revq%2006142016.pdf)
+- RGB LED - [Kingbright APFA3010](https://www.kingbrightusa.com/images/catalog/SPEC/APFA3010LSEEZGKQBKC.pdf)
+- White LED - [Inolux IN-S63AS](https://www.inolux-corp.com/datasheet/SMDLED/Mono%20Color%20Side%20View/IN-S63AS%20Series_V1.0.pdf)
+- Temperature sensor - [AMS AS6212](https://ams.com/en/as621x)
+- Accelerometer - [STMicro LIS2DW12](https://www.st.com/resource/en/datasheet/lis2dw12.pdf)
+- Ambient light sensor - [AMS TSL25403](https://ams.com/documents/20143/36005/TSL2540_DS000564_4-00.pdf/39728ac4-098c-9eca-b5ca-61d9c6f3a588)
+- Pressure sensor - [STMicro LPS22HHTP](https://www.st.com/resource/en/datasheet/lps22hh.pdf)
+- Buzzer - [PAM8904E](https://www.diodes.com/assets/Datasheets/PAM8904E.pdf)
+- Segger J-Link programming interface - [NXP MK22FN128VMP10](https://www.nxp.com/part/MK22FN128VMP10#/)
+- ~Lithium-ion Battery - PHD Energy 603033~
 - Button
-- ~Lithium-ion battery~
-- Segger J-Link programming interface
-- I<sup>2</sup>C expansion connector
+- QWIIC I<sup>2</sup>C expansion connector
 - Type-C USB connector
 <br><br>
 
