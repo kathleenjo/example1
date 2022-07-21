@@ -19,7 +19,7 @@ To learn more about the tmo_shell CLI calls, please read the document Interactin
 | Ambient Light | `sensor get TSL2540` | get | Get sensor data. | TSL2540 | <pre>},<br>  "ambientLight": {<br>    "visibleLux": 44.36,<br>    "irLux": 95.36<br>}</pre> |
 | Air Pressure | `sensor get LPS22HH` | get | Get sensor data. | LPS22HH | <pre>},<br>  "pressure": {<br>    "kPa": 99.9<br>},</pre> |
 | Temperature | `sensor get TEMP_0` | get | Get sensor data. | TEMP_0 | <pre>},<br>  "temperature": {<br>    "temperatureCelsius": 25.3<br>},</pre> |
-| LED | `led on pwmleds 0` | <ol><li>off</li><li>on</li><li>get_info</li><li>set_brightness</li><li>set_color</li><li>set_channel</li><li>write_channels</li></ol>  |  |  |  |
+| LED | `led on pwmleds 0` | <ol><li>off</li><li>on</li><li>get_info</li><li>set_brightness</li><li>set_color</li><li>set_channel</li><li>write_channels</li></ol>  | <ol><li>Turns the LED off.</li><li>Turns the LED on.</li><li>Gets information for the LED.</li><li>Sets the brightness of the LED.</li><li>Sets the color of the LED.</li><li>ets the channel of the LED.</li><li>?????</li></ol> | <ul><li>0 = white LED</li><li>1 = red LED</li><li>2 = green LED</li><li>3 = blue LED</li></ul> | ????? |
 | Accelerometer | sensor get LIS2DW12 | get | Get sensor data |  | <pre>{<br>  "accelerometer": {<br>    "x": 0.210568,<br>    "y": 1.234696,<br>    "z": 9.94457<br>},</pre> |
 | Accelerometer | sensor get LIS2DW12 | get | Get sensor data |  | <pre>{<br>  "accelerometer": {<br>    "x": 0.210568,<br>    "y": 1.234696,<br>    "z": 9.94457<br>},</pre> |
 
