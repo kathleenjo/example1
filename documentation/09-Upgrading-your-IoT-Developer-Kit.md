@@ -54,20 +54,20 @@ If you already have [Zephyr west](https://docs.zephyrproject.org/latest/develop/
 ### Option A.2 - SEGGER J-Flash Lite
 The T-Mobile DevEdge IoT Developer Kit comes with a SEGGER chip. As a result, you do not need a [SEGGER J-Link](https://www.mouser.com/ProductDetail/Segger-Microcontroller/8.08.00?qs=sGAEpiMZZMuRZxwUfDU0mj7SZp0j2IIkjt1vgBTHRyw%3D) to perform this flash. Only two USB-C to USB-A cables are necessary to perform this flash. 
 
-1. Go to https://devkit.devedge.t-mobile.com/bin/latest/.
-2. Download the 1.10.x.hex file. Remember where you downloaded this file. You will need its location for Step 11 below.
-3. Connect your IoT Developer Kit to your computer based on the screenshot below. The Modem USB-C Debug port (port on the left) must connect to a power outlet while the J-Link USB-C Debug port (port on the right) must connect to a computer.
-4. Open your J-Flash Lite app on your computer. If you do not have J-Flash Lite on your computer go here.
-5. Click O.K.
-6. Set the "Interface" to SWD and 4000 kHz.
-7. Select the ellipsis button under "Device".
-8. Enter EFM32PG12BXX in the "Device" field, then select EFM32PG12BXXF1024. Click OK. You are returned to the SEGGER J-Flash Lite screen.
-9. Click OK.
-10. Click the ellipsis under "Data File".
-11. Navigate to where you downloaded the 1.10.x.hex file on your computer in Step 1.
-12. Select the 1.10.x.hex file then click Open. You are returned to the SEGGER J-Flash Lite screen.
-13. Click Program Device. A progress pane and the "Log" section of the SEGGER J-Flash Lite screen shows the progress of your flash. 
-14. Close the SEGGER J-Flash Lite screen when the "Log" states Done. 
+1. Go to https://devkit.devedge.t-mobile.com/bin/latest/.<br><br>
+2. Download the 1.10.x.hex file. Remember where you downloaded this file. You will need its location for Step 11 below.<br><br>
+3. Connect your IoT Developer Kit to your computer based on the screenshot below. The **Modem USB-C Debug** port (port on the left) must connect to a power outlet while the **J-Link USB-C Debug** port (port on the right) must connect to a computer.<br><img src="https://user-images.githubusercontent.com/60194531/180322791-9ea6d51c-a65d-4b88-987c-e72d19c4b888.png" width="350"><br><br>
+4. Open your J-Flash Lite app on your computer. If you do not have J-Flash Lite on your computer go [here](https://www.segger.com/downloads/jlink).<br>![image](https://user-images.githubusercontent.com/60194531/180324489-e8097aab-157e-4fb3-aa75-308434bbeb0f.png)<br><br>
+5. Click ***O.K.***<br>![image](https://user-images.githubusercontent.com/60194531/180324534-302bda95-2407-4278-a9d4-332de80566c9.png)<br><br>
+6. Set the "Interface" to SWD and 4000 kHz.<br>![image](https://user-images.githubusercontent.com/60194531/180324672-b88ce6d1-4510-4892-b61d-3384d5409254.png)<br><br>
+7. Select the ellipsis button under "Device".<br>![image](https://user-images.githubusercontent.com/60194531/180324695-200a9e38-feba-4c09-8a8e-1ab03cb84d53.png)<br><br>
+8. Enter EFM32PG12BXX in the "Device" field, then select EFM32PG12BXXF1024. Click ***OK***. You are returned to the SEGGER J-Flash Lite screen.<br>![image](https://user-images.githubusercontent.com/60194531/180324762-5032e128-0320-4049-9060-bec59ca69ebd.png)<br><br>
+9. Click ***OK***.<br>![image](https://user-images.githubusercontent.com/60194531/180324811-f09741e6-1ff7-4548-9dce-6be84cd29866.png)<br><br>
+10. Click the ellipsis under "Data File".<br>![image](https://user-images.githubusercontent.com/60194531/180324842-b33a1d7b-65e2-4588-b1ff-f525519b52e8.png)<br><br>
+11. Navigate to where you downloaded the 1.10.x.hex file on your computer in Step 1.<br><br>
+12. Select the 1.10.x.hex file then click ***Open***. You are returned to the SEGGER J-Flash Lite screen.<br>![image](https://user-images.githubusercontent.com/60194531/180324927-e44c38d7-0d80-4dae-909f-b4c313b4e925.png)<br><br>
+13. Click ***Program Device***. A progress pane and the "Log" section of the SEGGER J-Flash Lite screen shows the progress of your flash.<br>![image](https://user-images.githubusercontent.com/60194531/180324991-d10d284d-20a9-4a1d-90ea-701bfa5683ad.png)<br><br>![image](https://user-images.githubusercontent.com/60194531/180325013-b2194db6-fe1e-4b1a-9f7b-963ce702d7a1.png)<br><br>
+14. Close the SEGGER J-Flash Lite screen when the "Log" states Done.<br>![image](https://user-images.githubusercontent.com/60194531/180325042-1132372b-83d9-49d1-a174-b4961e6fbc95.png)<br><br>
 15. Go to Step B. 
 
 
