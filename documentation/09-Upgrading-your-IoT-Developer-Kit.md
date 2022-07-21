@@ -52,61 +52,23 @@ If you already have [Zephyr west](https://docs.zephyrproject.org/latest/develop/
 
 
 ### Option A.2 - SEGGER J-Flash Lite
-The T-Mobile DevEdge IoT Developer Kit comes with a SEGGER chip. As a result, you do not need a SEGGER J-Link to perform this flash. Only two USB-C to USB-A cables are necessary to perform this flash. 
+The T-Mobile DevEdge IoT Developer Kit comes with a SEGGER chip. As a result, you do not need a [SEGGER J-Link](https://www.mouser.com/ProductDetail/Segger-Microcontroller/8.08.00?qs=sGAEpiMZZMuRZxwUfDU0mj7SZp0j2IIkjt1vgBTHRyw%3D) to perform this flash. Only two USB-C to USB-A cables are necessary to perform this flash. 
 
-Go to https://devkit.devedge.t-mobile.com/bin/latest/.
-
-Download the 1.10.x.hex file. Remember where you downloaded this file. You will need its location for Step 11 below. 
-
-Connect your IoT Developer Kit to your computer based on the screenshot below. The Modem USB-C Debug port (port on the left) must connect to a power outlet while the J-Link USB-C Debug port (port on the right) must connect to a computer. 
- 
-
-
-Open your J-Flash Lite app on your computer. If you do not have J-Flash Lite on your computer go here. 
-
-
-
-Click O.K.
-
-
-
-Set the "Interface" to SWD and 4000 kHz.
-
-
-
-Select the ellipsis button under "Device".
-
-
-
-Enter EFM32PG12BXX in the "Device" field, then select EFM32PG12BXXF1024. Click OK. You are returned to the SEGGER J-Flash Lite screen. 
-
-
-
-Click OK.
-
-
-
-Click the ellipsis under "Data File".
-
-
-
-Navigate to where you downloaded the 1.10.x.hex file on your computer in Step 1.
-
-Select the 1.10.x.hex file then click Open. You are returned to the SEGGER J-Flash Lite screen.
-
-
-
-Click Program Device. A progress pane and the "Log" section of the SEGGER J-Flash Lite screen shows the progress of your flash. 
-
-
-
-
-
-Close the SEGGER J-Flash Lite screen when the "Log" states Done. 
-
-
-
-Go to Step B. 
+1. Go to https://devkit.devedge.t-mobile.com/bin/latest/.
+2. Download the 1.10.x.hex file. Remember where you downloaded this file. You will need its location for Step 11 below.
+3. Connect your IoT Developer Kit to your computer based on the screenshot below. The Modem USB-C Debug port (port on the left) must connect to a power outlet while the J-Link USB-C Debug port (port on the right) must connect to a computer.
+4. Open your J-Flash Lite app on your computer. If you do not have J-Flash Lite on your computer go here.
+5. Click O.K.
+6. Set the "Interface" to SWD and 4000 kHz.
+7. Select the ellipsis button under "Device".
+8. Enter EFM32PG12BXX in the "Device" field, then select EFM32PG12BXXF1024. Click OK. You are returned to the SEGGER J-Flash Lite screen.
+9. Click OK.
+10. Click the ellipsis under "Data File".
+11. Navigate to where you downloaded the 1.10.x.hex file on your computer in Step 1.
+12. Select the 1.10.x.hex file then click Open. You are returned to the SEGGER J-Flash Lite screen.
+13. Click Program Device. A progress pane and the "Log" section of the SEGGER J-Flash Lite screen shows the progress of your flash. 
+14. Close the SEGGER J-Flash Lite screen when the "Log" states Done. 
+15. Go to Step B. 
 
 
 #### Option A.3 - Full Zephyr Install
@@ -163,7 +125,7 @@ west flash
 Go to Step B. 
 
 
-Step B - Upgrade Firmware
+### Step B - Upgrade Firmware
 In this step we will upgrade the required firmware needed for the RS9116W and GNSS drivers. The Modem (Murata 1SC) is an optional upgrade. Please see the Data Sheet to learn more. 
 
 Execute the following command if you flashed the Blinky sample on your board in the previous step:
@@ -261,7 +223,7 @@ tmo dfu update 1 0
 
 Once the update completes your IoT Developer Kit will reboot. 
  
-Step C - Reboot
+### Step C - Reboot
 Once the firmware updates are complete. Push the Reset button on the DevEdge Developer Kit.
 
 
@@ -274,8 +236,8 @@ Your serial app will display the kit running through a series of system checks.
 
 
 
-Step D - Test that the RS9116W and GNSS Work
-Step D.1 - Testing the RS9116W
+### Step D - Test that the RS9116W and GNSS Work
+#### Step D.1 - Testing the RS9116W
 Open your serial app. For demonstration purposes we will use Serial on a Mac. 
 
 Enter tmo wifi scan 2. Hit Return on your keyboard. A list of available Wi-Fi networks appears. 
@@ -319,7 +281,7 @@ Before upgrade.
 After upgrade.
 
 
-Step D.2 - Testing the GNSS
+#### Step D.2 - Testing the GNSS
 Open your serial app. For demonstration purposes we will use Serial on a Mac. 
 
 Enter tmo location then hit Return on your keyboard. The latitude, longitude, HDOP, TTFF, and 1PPS appear. 
@@ -336,7 +298,9 @@ Before upgrade. The "GNSS FW version is" empty because version 1.8.0 of the tmo_
 
 After upgrade.
 <ss>
-Step E - Buzz the Buzzer
+
+   
+### Step E - Buzz the Buzzer
 Open your serial app. For demonstration purposes we will use Serial on a Mac.
 
 Type tmo buzzer jingle then press Enter on your keyboard to hear the buzzer play the T-Mobile Jingle. 
