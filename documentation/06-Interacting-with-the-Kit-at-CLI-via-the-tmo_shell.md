@@ -161,7 +161,7 @@ Beyond the list above, there are other commands available at tmo_shell. Take a l
 | ----- | ----- | 
 | FTDI | An acronym for **F**uture **T**echnology **D**evices **I**nternational. |
 | HDOP | An acronym for the phrase "**H**orizontal **D**ilution **O**f **P**recision". Please read [this Wikipedia article](https://en.wikipedia.org/wiki/Dilution_of_precision_(navigation)) to learn more about this GNSS data value. |
-| &lt;iface:gt; | Interface ID. |
+| &lt;iface&gt; | Interface ID. |
 | &lt;payload&gt; | The data to be sent. |
 | &lt;psk&gt; | Password for your SSID or Wi-Fi network. |
 | &lt;port&gt; | Port number |
