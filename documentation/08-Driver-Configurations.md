@@ -28,8 +28,8 @@ To learn more about the tmo_shell CLI calls, please read the document [Interacti
 ## Network Devices
 | Driver | Available tmo_shell CLI Calls | Subcommands | Subcommand Descriptions | Parameters / Required Arugments | Response |
 | ----- | ----- | ----- | ----- | ----- | ----- |
-| Modem | `modem list`<br><br>or<br><br>`modem list 0` | list | At tmo_shell CLI lists all the modems with their ID number and iface device, manufacturer, model, firmware version (a.k.a. Revision), IMEI, and more. | &lt;modem_id&gt; | ![image](https://user-images.githubusercontent.com/60194531/180312410-fd992cb2-a7fd-4959-bda0-fdbe7fadece9.png) |
-| Accelerometer | sensor get LIS2DW12 | get | Get sensor data |  | <pre>{<br>  "accelerometer": {<br>    "x": 0.210568,<br>    "y": 1.234696,<br>    "z": 9.94457<br>},</pre> |
+| Modem (Zephyr command) | `modem list`<br><br>or<br><br>`modem list 0` | list | At tmo_shell CLI lists all the modems with their ID number and iface device, manufacturer, model, firmware version (a.k.a. Revision), IMEI, and more. | &lt;modem_id&gt; | ![image](https://user-images.githubusercontent.com/60194531/180312410-fd992cb2-a7fd-4959-bda0-fdbe7fadece9.png) |
+| Modem (tmo_shell command) | `tmo mdm_data`<br>(for version 1.8.x)<br><br>`tmo modem`<br>(for version 1.10.x) | Not applicable. | Not applicable. | <iface> <cmd_str><br><br>cmd_str  has the following available arguments:<imei><imsi<iccid><ssi><sim><msisdn><apn><conn_sts><ip><version> Please see this document for further details.   | ![image](https://user-images.githubusercontent.com/60194531/180313989-985aa426-a20c-497e-b4fc-a453aafc38e5.png) |
 | Accelerometer | sensor get LIS2DW12 | get | Get sensor data |  | <pre>{<br>  "accelerometer": {<br>    "x": 0.210568,<br>    "y": 1.234696,<br>    "z": 9.94457<br>},</pre> |
 
 <br>
