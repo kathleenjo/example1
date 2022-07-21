@@ -18,25 +18,29 @@ This document provides instructions on how to upgrade your T-Mobile DevEdge IoT 
 <br>
 
 ## Why would I want to implement the instructions in this document? 
-- When you receive your beta T-Mobile DevEdge IoT Developer Kit the tmo_shell will be at version 1.8.0. However, version 1.10.x will be available for you to flash onto your IoT Developer Kit. If you would like the latest version of the tmo_shell, you should follow the configurations below. Version 1.10.x includes the following features:
+- When you receive your beta [T-Mobile DevEdge IoT Developer Kit](https://devedge.t-mobile.com/solutions/iot-developer-kit) the tmo_shell will be at version 1.8.0. However, version 1.10.x will be available for you to flash onto your IoT Developer Kit. If you would like the latest version of the [tmo_shell](06-Interacting-with-the-Kit-at-CLI-via-the-tmo_shell.md), you should follow the configurations below. Version 1.10.x includes the following features:
    - Direct download of firmware updates to the kit. 
      - `tmo dfu download` 
    - Buzzer API calls at CLI 
      - `tmo buzzer jingle`
    - Connecting to the Web App
      - Version 1.10.x can connect to the web app found here https://devkit.devedge.t-mobile.com/.
-     - To connect to your IoT Developer Kit to the web app, please read the document Accompanying Apps. 
+     - To connect to your IoT Developer Kit to the web app, please read the document [Accompanying Apps](10-Accompanying-Apps.md). 
    - One USB-A to USB-C cable versus two
      - An upgrade to version 1.10.x means that you will no longer need two USB-A to USB-C cables. Only one cable will be needed to interact with the tmo_shell at CLI.  
 
-## What are the ultimate goals of this document?
-To teach the reader how to upgrade their beta T-Mobile DevEdge IoT Developer Kit tmo_shell from 1.8.0 1o 1.10.x. 
+<br>
 
-Configuration
-Step A - Flash your Developer Kit
+## What are the ultimate goals of this document?
+To teach the reader how to upgrade their beta [T-Mobile DevEdge IoT Developer Kit](https://devedge.t-mobile.com/solutions/iot-developer-kit) tmo_shell from 1.8.0 1o 1.10.x. 
+
+<br>
+
+## Configuration
+### Step A - Flash your Developer Kit
 There are three ways to flash the 1.10.x image onto your kit. You can use Zephyr west, the SEGGER J-Flash Lite app, or do a full install of Zephyr. All three options are covered below.
 
-Option A.1 - Zephyr west
+#### Option A.1 - Zephyr west
 If you already have Zephyr west installed on your computer, follow the configurations below. 
 
 Go to https://devkit.devedge.t-mobile.com/bin/latest/.
@@ -62,7 +66,7 @@ west flash --hex-file <full or relative path to .hex file>
 When version 1.10.x of the tmo_shell finishes flashing, go to Step B. 
 
 
-Option A.2 - SEGGER J-Flash Lite
+### Option A.2 - SEGGER J-Flash Lite
 The T-Mobile DevEdge IoT Developer Kit comes with a SEGGER chip. As a result, you do not need a SEGGER J-Link to perform this flash. Only two USB-C to USB-A cables are necessary to perform this flash. 
 
 Go to https://devkit.devedge.t-mobile.com/bin/latest/.
@@ -120,7 +124,7 @@ Close the SEGGER J-Flash Lite screen when the "Log" states Done.
 Go to Step B. 
 
 
-Option A.3 - Full Zephyr Install
+#### Option A.3 - Full Zephyr Install
 For those who do not have a Zephyr development environment installed on their computers, let alone west, you can do a full install of Zephyr in order to upgrade to tmo_shell 1.10.x. Follow the configurations below.
 
 Go to https://docs.zephyrproject.org/latest/develop/getting_started/index.html.
@@ -357,7 +361,7 @@ Type tmo buzzer jingle then press Enter on your keyboard to hear the buzzer play
 Other commands can be found for the buzzer can be found on the Interacting with the Kit at CLI via tmo_shell document. 
 
 
-Troubleshooting
+## Troubleshooting
 Issue - I cannot download the firmware update. What might be the problem?
 Suggested solution - Check to see if you have connected to Wi-Fi. Connect to Wi-Fi by entering tmo wifi connect 2 "<SSID>" 0 "<psk>" in Serial. Hit Return on your keyboard.
 
