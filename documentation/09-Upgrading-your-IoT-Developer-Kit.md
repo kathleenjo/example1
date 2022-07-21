@@ -1,19 +1,21 @@
 # Upgrading your IoT Developer Kit
 
 ## Introduction
-This document provides instructions on how to upgrade your T-Mobile DevEdge IoT Developer Kit's Zephyr SDK, also known as the tmo_shell. To learn more about the tmo_shell, please read the Interacting with the Kit at CLI via tmo_shell document. 
+This document provides instructions on how to upgrade your T-Mobile DevEdge IoT Developer Kit's Zephyr SDK, also known as the tmo_shell. To learn more about the tmo_shell, please read the [Interacting with the Kit at CLI via tmo_shell](06-Interacting-with-the-Kit-at-CLI-via-the-tmo_shell.md) document. 
 
-
+<br>
 
 ## Prerequisites
-- The T-Mobile DevEdge IoT Developer Kit. 
-- Git installed
-- Zephyr west installed if you are going to install the upgrade using west.
+- The [T-Mobile DevEdge IoT Developer Kit](https://devedge.t-mobile.com/solutions/iot-developer-kit). 
+- [Git](https://git-scm.com/downloads) installed
+- [Zephyr west](https://docs.zephyrproject.org/latest/develop/west/index.html) installed if you are going to install the upgrade using west.
    - Two USB-A to USB-C cables.
-- The J-Flash Lite app from SEGGER if you are going to install the upgrade using J-Flash Lite. If you do not have J-Flash Lite installed, please go here. 
+- The J-Flash Lite app from SEGGER if you are going to install the upgrade using J-Flash Lite. If you do not have J-Flash Lite installed, please go [here](https://www.segger.com/downloads/jlink). 
    - Two USB-A to USB-C cables.
-- A serial app like Tera Term, PuTTY, or Serial. 
+- A serial app like [Tera Term](https://ttssh2.osdn.jp/index.html.en), PuTTY, or [Serial](https://apps.apple.com/us/app/serial/id877615577?mt=12). 
 - An Internet connection over Wi-Fi.
+
+<br>
 
 ## Why would I want to implement the instructions in this document? 
 - When you receive your beta T-Mobile DevEdge IoT Developer Kit the tmo_shell will be at version 1.8.0. However, version 1.10.x will be available for you to flash onto your IoT Developer Kit. If you would like the latest version of the tmo_shell, you should follow the configurations below. Version 1.10.x includes the following features:
