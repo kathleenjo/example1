@@ -7,10 +7,10 @@ This document gives the reader specifications, a block diagram, pin descriptions
 ## Specifications
 The T-Mobile DevEdge IoT Developer Kit has the following specifications.
 > **NOTE:** The features that are struck through are yet to be implemented on this beta version of the IoT Developer Kit. 
-- 32-bit ARM Cortex M4 MCU
-- LTE CAT-M Module
-- 2.4GHz Wi-Fi
-- BLE Bluetooth
+- SiLabs EFM32 Pearl Gecko 32-bit ARM Cortex M4 MCU - [SiLabs EFM32 Pearl Gecko](https://www.silabs.com/mcu/32-bit-microcontrollers/efm32-pearl-gecko)
+- LTE CAT-M Module - [Murata 1SC](https://www.t-mobile.com/content/dam/tfb/pdf/tfb-iot/LBADXX01SC_Data_Sheet_v1.7.pdf)
+- 2.4GHz Wi-Fi - [SiLabs RS9116W](https://www.silabs.com/wireless/wi-fi/rs9116-wi-fi-ncp-modules/device.rs9116w-sb00-aa0)
+- BLE Bluetooth - [SiLabs RS9116W](https://www.silabs.com/wireless/wi-fi/rs9116-wi-fi-ncp-modules/device.rs9116w-sb00-aa0)
 - GNSS
 - RGB LED
 - Temperature sensor
