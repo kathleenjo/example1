@@ -11,7 +11,7 @@ This document lists all available calls, parameters, errors, and responses for t
 <br>
 
 ## Sensors
-To learn more about the tmo_shell CLI calls, please read the document Interacting with the Kit at CLI via tmo_shell. 
+To learn more about the tmo_shell CLI calls, please read the document [Interacting with the Kit at CLI via tmo_shell](06-Interacting-with-the-Kit-at-CLI-via-the-tmo_shell.md). 
 
 | Driver | Available tmo_shell CLI Calls | Subcommands | Subcommand Descriptions | Parameters / Required Arugments | Response |
 | ----- | ----- | ----- | ----- | ----- | ----- |
@@ -28,7 +28,7 @@ To learn more about the tmo_shell CLI calls, please read the document Interactin
 ## Network Devices
 | Driver | Available tmo_shell CLI Calls | Subcommands | Subcommand Descriptions | Parameters / Required Arugments | Response |
 | ----- | ----- | ----- | ----- | ----- | ----- |
-| Accelerometer | sensor get LIS2DW12 | get | Get sensor data |  | <pre>{<br>  "accelerometer": {<br>    "x": 0.210568,<br>    "y": 1.234696,<br>    "z": 9.94457<br>},</pre> |
+| Modem | `modem list`<br><br>or<br><br>`modem list 0` | list | At tmo_shell CLI lists all the modems with their ID number and iface device, manufacturer, model, firmware version (a.k.a. Revision), IMEI, and more. | &lt;modem_id&gt; | ![image](https://user-images.githubusercontent.com/60194531/180312410-fd992cb2-a7fd-4959-bda0-fdbe7fadece9.png) |
 | Accelerometer | sensor get LIS2DW12 | get | Get sensor data |  | <pre>{<br>  "accelerometer": {<br>    "x": 0.210568,<br>    "y": 1.234696,<br>    "z": 9.94457<br>},</pre> |
 | Accelerometer | sensor get LIS2DW12 | get | Get sensor data |  | <pre>{<br>  "accelerometer": {<br>    "x": 0.210568,<br>    "y": 1.234696,<br>    "z": 9.94457<br>},</pre> |
 
