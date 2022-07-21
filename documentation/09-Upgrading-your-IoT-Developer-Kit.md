@@ -74,55 +74,17 @@ The T-Mobile DevEdge IoT Developer Kit comes with a SEGGER chip. As a result, yo
 #### Option A.3 - Full Zephyr Install
 For those who do not have a Zephyr development environment installed on their computers, let alone west, you can do a full install of Zephyr in order to upgrade to tmo_shell 1.10.x. Follow the configurations below.
 
-Go to https://docs.zephyrproject.org/latest/develop/getting_started/index.html.
-
-Follow the instructions in this Getting Started Guide until you arrive at the "Get the Zephyr source code" step:
-
-A screenshot of that step can be seen below.  
-
-
-
-When you get to the above step please change the command to the following: 
-
-
-1
-west init -m https://github.com/tmobile/DevEdge-IoTDevKit-ZephyrSDK
-For those on a Mac the above instructions might not install the required module called pyelftools. To avoid this do the following:
-
-Check the version of Python that is associated with "python3" at Terminal.
-
-1
-2
-3
-4
-Kathleen.Jo@tm0498301 zephyrproject % which python3
-/opt/homebrew/bin/python3
-Kathleen.Jo@tm0498301 zephyrproject % ls -l /opt/homebrew/bin/python3
-lrwxr-xr-x  1 Kathleen.Jo  admin  41 Jun 15 13:54 /opt/homebrew/bin/python3 -> ../Cellar/python@3.9/3.9.13_1/bin/python3
-
-
-
-
-Then install pyelftools based on that version of python.
-
-
-1
-pip3.9 install pyelftools
-
-
-
-Everything else in the Zephyr Getting Started Guide remains the same.
-
-
-Connect your IoT Developer Kit via two USB-A to USB-C cables to your computer when you are ready to flash your Blinky sample onto the board. 
-
-
-
-Flash the board.
-
-1
-west flash
-Go to Step B. 
+1. Go to https://docs.zephyrproject.org/latest/develop/getting_started/index.html.
+2. Follow the instructions in this Getting Started Guide until you arrive at the "Get the Zephyr source code" step:
+   - A screenshot of that step can be seen below.  
+   - When you get to the above step please change the command to the following: <br><br>`west init -m https://github.com/tmobile/DevEdge-IoTDevKit-ZephyrSDK`
+   - For those on a Mac the above instructions might not install the required module called pyelftools. To avoid this do the following:
+     - Check the version of Python that is associated with "python3" at Terminal.<br><br><pre>Kathleen.Jo@tm0498301 zephyrproject % which python3<br>/opt/homebrew/bin/python3<br>Kathleen.Jo@tm0498301 zephyrproject % ls -l /opt/homebrew/bin/python3<br>lrwxr-xr-x  1 Kathleen.Jo  admin  41 Jun 15 13:54 /opt/homebrew/bin/python3 -> ../Cellar/python@3.9/3.9.13_1/bin/python3</pre>
+     - Then install pyelftools based on that version of python.<br><pre>pip3.9 install pyelftools</pre><br><br>
+3. Everything else in the Zephyr Getting Started Guide remains the same.
+4. Connect your IoT Developer Kit via two USB-A to USB-C cables to your computer when you are ready to flash your Blinky sample onto the board. 
+5. Flash the board.<br><br>`west flash`<br><br>
+6. Go to Step B. 
 
 
 ### Step B - Upgrade Firmware
