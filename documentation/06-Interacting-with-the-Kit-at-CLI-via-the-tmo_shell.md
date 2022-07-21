@@ -178,28 +178,31 @@ Beyond the list above, there are other commands available at tmo_shell. Take a l
 <br>
 
 ## FAQ
-- **Question** - 
-- **Answer** - 
+- **Question** - What API calls can I make to the sensors via CLI?
+- **Answer** - Please read the Driver Configurations document to learn more.
 
 <br>
 
-- **Question** - 
-- **Answer** - 
+- **Question** - What format is the resulting sensor data in?
+- **Answer** - JSON
 
 <br>
 
-- **Question** - 
-- **Answer** - 
+- **Question** - Why am I seeing a "Disconnected from 01:23:45:67:89:01 (random) (reason 0x13)" message in Tera Term / my serial app? What is the caused from?
+- **Answer** - When you disconnect the Bluetooth *DevEdge IoT* mobile app from the DevEdge IoT Developer Kit, the above message is what appears in your serial app.
+   - In your mobile app:<br><img src="https://user-images.githubusercontent.com/60194531/180285753-96a2fa29-c9ea-42e3-a373-02ac7f3a37aa.png" width="300">
+   - In your serial app:<br><img src="https://user-images.githubusercontent.com/60194531/180285882-e8a4cf74-fede-4d71-9b4d-353c3d02e2c5.png" width="550">
 
 <br>
 
-- **Question** - 
-- **Answer** - 
-
+- **Question** - Why am I seeing a "Connected 01:23:45:67:89:01 (random)" message in Tera Term / my serial app?
+- **Answer** - In the mobile app, when you tap the T-Mobile DevEdge device, the bluetooth connection creates this message.
+   - In your mobile app:<br><img src="https://user-images.githubusercontent.com/60194531/180286280-26362815-2a36-48df-bb4b-e4795e002f6e.png" width="300">
+   - In your serial app:<br><img src="https://user-images.githubusercontent.com/60194531/180286409-39c5dac7-99ab-4c8e-a04c-3e4b3267b94c.png" width="550" >
 <br>
 
-- **Question** - 
-- **Answer** - 
+- **Question** - When using the command `tmo wifi connect "<SSID>" 0 "<psk>"` I get the following error: "Connection request failed (8)". What does this mean? 
+- **Answer** - Your password is not being accepting by the Wi-Fi connection. Re-check your password and try again. 
 
 <br>
 
