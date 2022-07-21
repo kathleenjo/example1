@@ -6,7 +6,7 @@ This document lists all available calls, parameters, errors, and responses for t
 
 
 ## Prerequisites
-- The T-Mobile DevEdge IoT Developer Kit. 
+- The [T-Mobile DevEdge IoT Developer Kit](https://devedge.t-mobile.com/solutions/iot-developer-kit). 
 
 ## Sensors
 To learn more about the tmo_shell CLI calls, please read the document Interacting with the Kit at CLI via tmo_shell. 
