@@ -37,7 +37,7 @@ To learn more about the tmo_shell CLI calls, please read the document [Interacti
 ## Bluetooth Devices
 | Driver | Available tmo_shell CLI Calls | Subcommands | Subcommand Descriptions | Parameters / Required Arugments | Response |
 | ----- | ----- | ----- | ----- | ----- | ----- |
-| Accelerometer | sensor get LIS2DW12 | get | Get sensor data |  | <pre>{<br>  "accelerometer": {<br>    "x": 0.210568,<br>    "y": 1.234696,<br>    "z": 9.94457<br>},</pre> |
+| BLE | `tmo smp enable<br>(for version 1.8.x)`<br><br>`tmo ble smp enable<br>(for version 1.10.x)` | Please read the document [Interacting with the Kit at CLI via tmo_shell](06-Interacting-with-the-Kit-at-CLI-via-the-tmo_shell.md) to learn more. | Please read the document [Interacting with the Kit at CLI via tmo_shell](06-Interacting-with-the-Kit-at-CLI-via-the-tmo_shell.md) to learn more. | Please read the document [Interacting with the Kit at CLI via tmo_shell](06-Interacting-with-the-Kit-at-CLI-via-the-tmo_shell.md) to learn more. | ![image](https://user-images.githubusercontent.com/60194531/180318584-ab6f22b7-bc3b-4c85-9f68-489c65652db1.png)<br><br>![image](https://user-images.githubusercontent.com/60194531/180318611-76723918-f880-44c9-8292-f443c660b385.png) |
 
 <br>
 
@@ -69,6 +69,11 @@ To learn more about the tmo_shell CLI calls, please read the document [Interacti
   }
 }
 ```
+<br>
+
+## FAQ
+- **Question** - Why are there two CLI command syntaxes for the modem?
+- **Answer** - There are two because the [Zephyr shell](https://docs.zephyrproject.org/latest/services/shell/index.html) provides one way of obtaining modem data and the [tmo_shell](06-Interacting-with-the-Kit-at-CLI-via-the-tmo_shell.md) provides another way. Either method provides the same modem data. 
 
 <br>
 
