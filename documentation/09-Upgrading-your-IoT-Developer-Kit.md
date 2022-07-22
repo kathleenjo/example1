@@ -101,19 +101,19 @@ In this step we will upgrade the required firmware needed for the RS9116W and GN
 9. A "Connected" message appears if you have connected successfully to the network.<br><br>
 10. Enter tmo wifi status 2  then hit Return on your keyboard to check the status of your connection.<br>![image](https://user-images.githubusercontent.com/60194531/180333966-705ead57-163d-45ec-ba25-d58e9568ceb0.png)<br><br> 
 11. Type the following commands to download and update the RS9116W firmware driver:
-   - Download<br><br>`tmo dfu base_url https://raw.githubusercontent.com/SiliconLabs/wiseconnect-wifi-bt-sdk/master/firmware/`<br><br>... then ...<br><br>`tmo dfu download 2`<br><br>Allow the download to complete then...<br><br>
-   - Update<br><br>`tmo dfu update 2 0`<br><br>
-   - Once the update completes your IoT Developer Kit will reboot.<br><br>![image](https://user-images.githubusercontent.com/60194531/180335588-3a17905a-e0d2-4e22-b5fc-3604ebab2172.png)<br><br> 
+    - Download<br><br>`tmo dfu base_url https://raw.githubusercontent.com/SiliconLabs/wiseconnect-wifi-bt-sdk/master/firmware/`<br><br>... then ...<br><br>`tmo dfu download 2`<br><br>Allow the download to complete then...<br><br>
+    - Update<br><br>`tmo dfu update 2 0`<br><br>
+    - Once the update completes your IoT Developer Kit will reboot.<br><br>![image](https://user-images.githubusercontent.com/60194531/180335588-3a17905a-e0d2-4e22-b5fc-3604ebab2172.png)<br><br> 
 12. Type the following commands to download and update the GNSS firmware driver:
-   - Connect to Wi-Fi again by entering `tmo wifi connect 2 "<SSID>" 0 "<psk>"` in Serial. Hit ***Return*** on your keyboard.<br><br>
-   - Download<br><br>`tmo dfu download 3`<br><br>Allow the download to complete then...<br><br>
-   - Update<br><br>`tmo dfu update 3 0`<br><br>
-   - Once the update completes your IoT Developer Kit will reboot.<br><br> 
-13. Type the following commands to update the Murata 1SC modem.<br><br>**NOTE:** This firmware upgrade is optional. The previous two (RS9116W and GNSS) are not.<br>
-   - Connect to Wi-Fi again by entering `tmo wifi connect 2 "<SSID>" 0 "<psk>"` in Serial. Hit ***Return*** on your keyboard.<br><br>
-   - Download<br><br>`tmo dfu download 1`<br><br>Allow the download to complete then...<br><br>
-   - Update.<br><br>`tmo dfu update 1 0`<br><br>
-   - Once the update completes your IoT Developer Kit will reboot.<br><br> 
+    - Connect to Wi-Fi again by entering `tmo wifi connect 2 "<SSID>" 0 "<psk>"` in Serial. Hit ***Return*** on your keyboard.<br><br>
+    - Download<br><br>`tmo dfu download 3`<br><br>Allow the download to complete then...<br><br>
+    - Update<br><br>`tmo dfu update 3 0`<br><br>
+    - Once the update completes your IoT Developer Kit will reboot.<br><br> 
+13. Type the following commands to update the Murata 1SC modem.<br><br>  **NOTE:** This firmware upgrade is optional. The previous two (RS9116W and GNSS) are not.<br><br>
+    - Connect to Wi-Fi again by entering `tmo wifi connect 2 "<SSID>" 0 "<psk>"` in Serial. Hit ***Return*** on your keyboard.<br><br>
+    - Download<br><br>`tmo dfu download 1`<br><br>Allow the download to complete then...<br><br>
+    - Update.<br><br>`tmo dfu update 1 0`<br><br>
+    - Once the update completes your IoT Developer Kit will reboot.<br><br> 
 
 <br>
 
