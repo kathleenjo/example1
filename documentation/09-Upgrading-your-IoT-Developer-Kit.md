@@ -92,41 +92,41 @@ For those who do not have a Zephyr development environment installed on their co
 In this step we will upgrade the required firmware needed for the RS9116W and GNSS drivers. The Modem (Murata 1SC) is an optional upgrade. Please see the Data Sheet to learn more. 
 1. Execute the following command if you flashed the Blinky sample on your board in the previous step:<br><br>`west build -p -b tmo_dev_edge /home/johnsmith/zephyrproject/tmo-zephyr-sdk/samples/tmo_shell -- -DBOARD_ROOT=/home/johnsmith/zephyrproject/tmo-zephyr-sdk/`<br><br>
 2. Flash the board.<br><br>`west flash`<br><br>
-3. Connect your T-Mobile DevEdge IoT Developer Kit to your computer via two USB-A to USB-C cables.
-4. Or, since you are now upgraded to 1.10.x you can use just one cable. 
-5. Open your serial app. For demonstration purposes we will use Serial on a Mac. 
-6. Select the port that is connected to your IoT Developer Kit then click Open.
-7. Hit Return on your keyboard. The uart command line appears.
-8. Connect to Wi-Fi by entering tmo wifi connect 2 "<SSID>" 0 "<psk>" in Serial. Hit Return on your keyboard.
-9. A "Connected" message appears if you have connected successfully to the network.
-10. Enter tmo wifi status 2  then hit Return on your keyboard to check the status of your connection. 
+3. Connect your T-Mobile DevEdge IoT Developer Kit to your computer via two USB-A to USB-C cables.<br><img src="https://user-images.githubusercontent.com/60194531/180322791-9ea6d51c-a65d-4b88-987c-e72d19c4b888.png" width="350"><br><br>
+4. Or, since you are now upgraded to 1.10.x you can use just one cable.<br>![image](https://user-images.githubusercontent.com/60194531/180333805-eb9e0498-2673-4c54-993f-e737869a3589.png)<br><br> 
+5. Open your serial app. For demonstration purposes we will use Serial on a Mac.<br><br> 
+6. Select the port that is connected to your IoT Developer Kit then click Open.<br><br>
+7. Hit ***Return*** on your keyboard. The uart command line appears.<br>![image](https://user-images.githubusercontent.com/60194531/180333887-077dab9a-d8a3-461e-90a7-8f5aa0a548f6.png)<br><br>
+8. Connect to Wi-Fi by entering `tmo wifi connect 2 "<SSID>" 0 "<psk>"` in Serial. Hit ***Return*** on your keyboard.<br><br>
+9. A "Connected" message appears if you have connected successfully to the network.<br><br>
+10. Enter tmo wifi status 2  then hit Return on your keyboard to check the status of your connection.<br>![image](https://user-images.githubusercontent.com/60194531/180333966-705ead57-163d-45ec-ba25-d58e9568ceb0.png)<br><br> 
 11. Type the following commands to download and update the RS9116W firmware driver:
-   - Download<br><br>`tmo dfu base_url https://raw.githubusercontent.com/SiliconLabs/wiseconnect-wifi-bt-sdk/master/firmware/`<br><br>... then ...<br><br>`tmo dfu download 2`<br><br>Allow the download to complete then...
-   - Update<br><br>`tmo dfu update 2 0`
-   - Once the update completes your IoT Developer Kit will reboot. 
+   - Download<br><br>`tmo dfu base_url https://raw.githubusercontent.com/SiliconLabs/wiseconnect-wifi-bt-sdk/master/firmware/`<br><br>... then ...<br><br>`tmo dfu download 2`<br><br>Allow the download to complete then...<br><br>
+   - Update<br><br>`tmo dfu update 2 0`<br><br>
+   - Once the update completes your IoT Developer Kit will reboot.<br><br>![image](https://user-images.githubusercontent.com/60194531/180335588-3a17905a-e0d2-4e22-b5fc-3604ebab2172.png)<br><br> 
 12. Type the following commands to download and update the GNSS firmware driver:
-   - Connect to Wi-Fi again by entering tmo wifi connect 2 "<SSID>" 0 "<psk>" in Serial. Hit Return on your keyboard.
-   - Download<br><br>`tmo dfu download 3`<br><br>Allow the download to complete then...
-   - Update<br><br>`tmo dfu update 3 0`
-   - Once the update completes your IoT Developer Kit will reboot. 
-13. Type the following commands to update the Murata 1SC modem.<br><br>**NOTE:** This firmware upgrade is optional. The previous two (RS9116W and GNSS) are not.<br><br>
-   - Connect to Wi-Fi again by entering tmo wifi connect 2 "<SSID>" 0 "<psk>" in Serial. Hit Return on your keyboard.
-   - Download<br><br>`tmo dfu download 1`<br><br>Allow the download to complete then...<br><br>Allow the download to complete then...
-   - Update.<br><br>`tmo dfu update 1 0<br><br>
-   - Once the update completes your IoT Developer Kit will reboot. 
- 
+   - Connect to Wi-Fi again by entering `tmo wifi connect 2 "<SSID>" 0 "<psk>"` in Serial. Hit ***Return*** on your keyboard.<br><br>
+   - Download<br><br>`tmo dfu download 3`<br><br>Allow the download to complete then...<br><br>
+   - Update<br><br>`tmo dfu update 3 0`<br><br>
+   - Once the update completes your IoT Developer Kit will reboot.<br><br> 
+13. Type the following commands to update the Murata 1SC modem.<br><br>**NOTE:** This firmware upgrade is optional. The previous two (RS9116W and GNSS) are not.<br>
+   - Connect to Wi-Fi again by entering `tmo wifi connect 2 "<SSID>" 0 "<psk>"` in Serial. Hit ***Return*** on your keyboard.<br><br>
+   - Download<br><br>`tmo dfu download 1`<br><br>Allow the download to complete then...<br><br>
+   - Update.<br><br>`tmo dfu update 1 0`<br><br>
+   - Once the update completes your IoT Developer Kit will reboot.<br><br> 
+
+<br>
+
 ### Step C - Reboot
 Once the firmware updates are complete. Push the Reset button on the DevEdge Developer Kit.
 
-
-
-
+![image](https://user-images.githubusercontent.com/60194531/180336129-7276999b-b7fc-4bc1-8dfb-09b6111d4581.png)
 
 Your serial app will display the kit running through a series of system checks.
 
+![image](https://user-images.githubusercontent.com/60194531/180336152-f2c6f5d5-7ece-487f-ad0f-e4229212969e.png)
 
-
-
+<br>
 
 ### Step D - Test that the RS9116W and GNSS Work
 #### Step D.1 - Testing the RS9116W
