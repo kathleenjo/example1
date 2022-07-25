@@ -130,51 +130,28 @@ Your serial app will display the kit running through a series of system checks.
 
 ### Step D - Test that the RS9116W and GNSS Work
 #### Step D.1 - Testing the RS9116W
-Open your serial app. For demonstration purposes we will use Serial on a Mac. 
-
-Enter tmo wifi scan 2. Hit Return on your keyboard. A list of available Wi-Fi networks appears. 
-
-Connect to a network by entering tmo wifi connect 2 "<SSID>" 0 "<psk>" in Serial. Hit Return on your keyboard.  
-
-A "Connected" message appears if you have connected successfully to the network.
-
-Enter tmo wifi status 2  then hit Return on your keyboard to check the status of your connection. 
-
-
-
-To test your Wi-Fi connection is working properly enter tmo udp create <iface>.
-
-If the socket is created properly a <socket_number> will appear. In the case of the screenshot below the socket number is 0.
-
-Connect the socket to a server by calling tmo udp connect <socket_number> <ip_addr> <port>.
-
-NOTE: You will need an echo server IP address in order to complete this part of the exercise. 
-
-The message "Connected socket 0" appears if the connection was made successfully.
-
-Send data by calling tmo udp send <socket_number> "<data>" .
-
-Receive data by calling tmo udp recv <socket_number> .
-
-If you received your data back the test was successful.
-
-Close the socket by calling tmo udp close <socket_number>.
-
-To check that the socket is closed type tmo sockets. If the response has no <socket_number> the udp socket is closed. 
-
-
-
-The RS9116W firmware is successfully tested and working if you managed to complete all these steps. 
-
-In addition, you can also check the firmware version for your RS9116W by entering tmo dfu version 2. 
-Before upgrade.
-
-
-After upgrade.
+1. Open your serial app. For demonstration purposes we will use [Serial](https://apps.apple.com/us/app/serial/id877615577?mt=12) on a Mac.<br><br>
+2. Enter tmo wifi scan 2. Hit ***Return*** on your keyboard. A list of available Wi-Fi networks appears.<br><br>
+3. Connect to a network by entering `tmo wifi connect 2 "<SSID>" 0 "<psk>"` in Serial. Hit ***Return*** on your keyboard.<br><br> 
+4. A "Connected" message appears if you have connected successfully to the network.<br><br>
+5. Enter `tmo wifi status 2`  then hit ***Return*** on your keyboard to check the status of your connection.<br><br>![image](https://user-images.githubusercontent.com/60194531/180892166-4c0a8a4d-123d-4d32-bc23-30b15ab41120.png)<br><br>
+6. To test your Wi-Fi connection is working properly enter `tmo udp create <iface>`.<br><br>
+7. If the socket is created properly a `<socket_number>` will appear. In the case of the screenshot below the socket number is 0.<br><br>
+8. Connect the socket to a server by calling `tmo udp connect <socket_number> <ip_addr> <port>`.<p>**NOTE:** You will need an echo server IP address in order to complete this part of the exercise.</p>
+9. The message "Connected socket 0" appears if the connection was made successfully.<br><br>
+10. Send data by calling `tmo udp send <socket_number> "<data>"`.<br><br>
+11. Receive data by calling `tmo udp recv <socket_number>`.<br><br>
+12. If you received your data back the test was successful.<br><br>
+13. Close the socket by calling `tmo udp close <socket_number>`.<br><br>
+14. To check that the socket is closed type `tmo sockets`. If the response has no `<socket_number>` the udp socket is closed.<br><br>![image](https://user-images.githubusercontent.com/60194531/180893460-80e0d3ed-74c1-4039-821a-b2190c2808e3.png)<br><br>
+15. The RS9116W firmware is successfully tested and working if you managed to complete all these steps.<br><br>
+16. In addition, you can also check the firmware version for your RS9116W by entering tmo dfu version 2. 
+     - Before upgrade.<br>![image](https://user-images.githubusercontent.com/60194531/180893495-5e4657cc-8cc6-4f59-98c0-3f48848b12f9.png)<br><br>
+     - After upgrade.<br>![image](https://user-images.githubusercontent.com/60194531/180893585-234893a7-02cf-417f-a16f-ec32da71d550.png)
 
 
 #### Step D.2 - Testing the GNSS
-Open your serial app. For demonstration purposes we will use Serial on a Mac. 
+1. Open your serial app. For demonstration purposes we will use Serial on a Mac. 
 
 Enter tmo location then hit Return on your keyboard. The latitude, longitude, HDOP, TTFF, and 1PPS appear. 
 
