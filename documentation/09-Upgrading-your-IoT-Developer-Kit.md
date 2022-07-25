@@ -75,42 +75,42 @@ The T-Mobile DevEdge IoT Developer Kit comes with a SEGGER chip. As a result, yo
 For those who do not have a Zephyr development environment installed on their computers, let alone west, you can do a full install of Zephyr in order to upgrade to tmo_shell 1.10.x. Follow the configurations below.
 
 1. Go to https://docs.zephyrproject.org/latest/develop/getting_started/index.html.<br><br>
-2. Follow the instructions in this Getting Started Guide until you arrive at the "Get the Zephyr source code" step:
+2. Follow the instructions in this [Getting Started Guide](https://docs.zephyrproject.org/latest/develop/getting_started/index.html) until you arrive at the "Get the Zephyr source code" step:<br><br>
    - A screenshot of that step can be seen below.  
    ![image](https://user-images.githubusercontent.com/60194531/180328578-0b5d324e-861f-4794-9465-1a9884f3a17c.png)
    - When you get to the above step please change the command to the following: <br><br>`west init -m https://github.com/tmobile/DevEdge-IoTDevKit-ZephyrSDK`<br><br>
    - For those on a Mac the above instructions might not install the required module called pyelftools. To avoid this do the following:
      - Check the version of Python that is associated with "python3" at Terminal.<br><br><pre>Kathleen.Jo@tm0498301 zephyrproject % which python3<br>/opt/homebrew/bin/python3<br>Kathleen.Jo@tm0498301 zephyrproject % ls -l /opt/homebrew/bin/python3<br>lrwxr-xr-x  1 Kathleen.Jo  admin  41 Jun 15 13:54 /opt/homebrew/bin/python3 -> ../Cellar/python@3.9/3.9.13_1/bin/python3</pre><br>![image](https://user-images.githubusercontent.com/60194531/180328731-c0f1a11f-d3fd-4d76-99fc-ba0d50f2a64b.png)<br><br>
      - Then install pyelftools based on that version of python.<br><br><pre>pip3.9 install pyelftools</pre><br>![image](https://user-images.githubusercontent.com/60194531/180328869-27a713eb-7ee4-4bc3-87f4-5e023441f029.png)<br><br>
-3. Everything else in the Zephyr Getting Started Guide remains the same.<br><br>
+3. Everything else in the [Zephyr Getting Started Guide](https://docs.zephyrproject.org/latest/develop/getting_started/index.html) remains the same.<br><br>
 4. Connect your IoT Developer Kit via two USB-A to USB-C cables to your computer when you are ready to flash your Blinky sample onto the board.<br><img src="https://user-images.githubusercontent.com/60194531/180322791-9ea6d51c-a65d-4b88-987c-e72d19c4b888.png" width="350"><br><br> 
 5. Flash the board.<br><br>`west flash`<br><br>
 6. Go to Step B. 
 
 
 ### Step B - Upgrade Firmware
-In this step we will upgrade the required firmware needed for the RS9116W and GNSS drivers. The Modem (Murata 1SC) is an optional upgrade. Please see the Data Sheet to learn more. 
+In this step we will upgrade the required firmware needed for the RS9116W and GNSS drivers. The Modem (Murata 1SC) is an optional upgrade. Please see the Data Sheet to learn more.<br> 
 1. Execute the following command if you flashed the Blinky sample on your board in the previous step:<br><br>`west build -p -b tmo_dev_edge /home/johnsmith/zephyrproject/tmo-zephyr-sdk/samples/tmo_shell -- -DBOARD_ROOT=/home/johnsmith/zephyrproject/tmo-zephyr-sdk/`<br><br>
 2. Flash the board.<br><br>`west flash`<br><br>
-3. Connect your T-Mobile DevEdge IoT Developer Kit to your computer via two USB-A to USB-C cables.<br><img src="https://user-images.githubusercontent.com/60194531/180322791-9ea6d51c-a65d-4b88-987c-e72d19c4b888.png" width="350"><br><br>
+3. Connect your T-Mobile DevEdge IoT Developer Kit to your computer via two USB-A to USB-C cables.<br><br><img src="https://user-images.githubusercontent.com/60194531/180322791-9ea6d51c-a65d-4b88-987c-e72d19c4b888.png" width="350"><br><br>
 4. Or, since you are now upgraded to 1.10.x you can use just one cable.<br>![image](https://user-images.githubusercontent.com/60194531/180333805-eb9e0498-2673-4c54-993f-e737869a3589.png)<br><br> 
-5. Open your serial app. For demonstration purposes we will use Serial on a Mac.<br><br> 
-6. Select the port that is connected to your IoT Developer Kit then click Open.<br><br>
+5. Open your serial app. For demonstration purposes we will use [Serial](https://apps.apple.com/us/app/serial/id877615577?mt=12) on a Mac.<br><br> 
+6. Select the port that is connected to your IoT Developer Kit then click ***Open***.<br><br>
 7. Hit ***Return*** on your keyboard. The uart command line appears.<br>![image](https://user-images.githubusercontent.com/60194531/180333887-077dab9a-d8a3-461e-90a7-8f5aa0a548f6.png)<br><br>
-8. Connect to Wi-Fi by entering `tmo wifi connect 2 "<SSID>" 0 "<psk>"` in Serial. Hit ***Return*** on your keyboard.<br><br>
+8. Connect to Wi-Fi by entering `tmo wifi connect 2 "<SSID>" 0 "<psk>"` in [Serial](https://apps.apple.com/us/app/serial/id877615577?mt=12). Hit ***Return*** on your keyboard.<br><br>
 9. A "Connected" message appears if you have connected successfully to the network.<br><br>
-10. Enter tmo wifi status 2  then hit Return on your keyboard to check the status of your connection.<br>![image](https://user-images.githubusercontent.com/60194531/180333966-705ead57-163d-45ec-ba25-d58e9568ceb0.png)<br><br> 
+10. Enter tmo wifi status 2  then hit ***Return*** on your keyboard to check the status of your connection.<br><br>![image](https://user-images.githubusercontent.com/60194531/180333966-705ead57-163d-45ec-ba25-d58e9568ceb0.png)<br><br> 
 11. Type the following commands to download and update the RS9116W firmware driver:
     - Download<br><br>`tmo dfu base_url https://raw.githubusercontent.com/SiliconLabs/wiseconnect-wifi-bt-sdk/master/firmware/`<br><br>... then ...<br><br>`tmo dfu download 2`<br><br>Allow the download to complete then...<br><br>
     - Update<br><br>`tmo dfu update 2 0`<br><br>
     - Once the update completes your IoT Developer Kit will reboot.<br><br>![image](https://user-images.githubusercontent.com/60194531/180335588-3a17905a-e0d2-4e22-b5fc-3604ebab2172.png)<br><br> 
 12. Type the following commands to download and update the GNSS firmware driver:
-    - Connect to Wi-Fi again by entering `tmo wifi connect 2 "<SSID>" 0 "<psk>"` in Serial. Hit ***Return*** on your keyboard.<br><br>
+    - Connect to Wi-Fi again by entering `tmo wifi connect 2 "<SSID>" 0 "<psk>"` in [Serial](https://apps.apple.com/us/app/serial/id877615577?mt=12). Hit ***Return*** on your keyboard.<br><br>
     - Download<br><br>`tmo dfu download 3`<br><br>Allow the download to complete then...<br><br>
     - Update<br><br>`tmo dfu update 3 0`<br><br>
     - Once the update completes your IoT Developer Kit will reboot.<br><br> 
 13. Type the following commands to update the Murata 1SC modem.<br><br>  **NOTE:** This firmware upgrade is optional. The previous two (RS9116W and GNSS) are not.<br><br>
-    - Connect to Wi-Fi again by entering `tmo wifi connect 2 "<SSID>" 0 "<psk>"` in Serial. Hit ***Return*** on your keyboard.<br><br>
+    - Connect to Wi-Fi again by entering `tmo wifi connect 2 "<SSID>" 0 "<psk>"` in [Serial](https://apps.apple.com/us/app/serial/id877615577?mt=12). Hit ***Return*** on your keyboard.<br><br>
     - Download<br><br>`tmo dfu download 1`<br><br>Allow the download to complete then...<br><br>
     - Update.<br><br>`tmo dfu update 1 0`<br><br>
     - Once the update completes your IoT Developer Kit will reboot.<br><br> 
@@ -118,7 +118,7 @@ In this step we will upgrade the required firmware needed for the RS9116W and GN
 <br>
 
 ### Step C - Reboot
-Once the firmware updates are complete. Push the Reset button on the DevEdge Developer Kit.
+Once the firmware updates are complete. Push the ***Reset*** button on the DevEdge Developer Kit.
 
 ![image](https://user-images.githubusercontent.com/60194531/180336129-7276999b-b7fc-4bc1-8dfb-09b6111d4581.png)
 
