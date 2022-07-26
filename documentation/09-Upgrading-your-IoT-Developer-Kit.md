@@ -156,7 +156,7 @@ Your serial app will display the kit running through a series of system checks.
 
 #### Step D.2 - Testing the GNSS
 1. Open your serial app. For demonstration purposes we will use [Serial](https://apps.apple.com/us/app/serial/id877615577?mt=12) on a Mac.<br><br>
-2. Enter tmo location then hit Return on your keyboard. The latitude, longitude, HDOP, TTFF, and 1PPS appear.<br><br>![image](https://user-images.githubusercontent.com/60194531/180895780-607b65cb-2b70-4de3-a9e4-1270160eb3c4.png)<br><br> 
+2. Enter tmo location then hit ***Return*** on your keyboard. The latitude, longitude, HDOP, TTFF, and 1PPS appear.<br><br>![image](https://user-images.githubusercontent.com/60194531/180895780-607b65cb-2b70-4de3-a9e4-1270160eb3c4.png)<br><br> 
 3. The GNSS firmware is successfully tested and working if you managed to complete these steps AND receive data. Note, however, that the GNSS may or may not work after this upgrade. Again, T-Mobile would like to remind you that this is a beta kit that you are working with and that the GNSS is not entirely complete as of this writing.<br><br>You can, however, pick up the following amplifier from Amazon to see if you can boost the signal to the GNSS.<br><br>
 4. In addition, you can also check the firmware version for your GNSS by entering tmo dfu version 3.<br>
      - Before upgrade. The "GNSS FW version is" empty because version 1.8.0 of the [tmo_shell](06-Interacting-with-the-Kit-at-CLI-via-the-tmo_shell.md) does not have any firmware installed for the GNSS.<br><br>![image](https://user-images.githubusercontent.com/60194531/180895870-55ede4da-4763-4b10-91f9-512507158fd8.png)<br><br>
@@ -178,17 +178,17 @@ Your serial app will display the kit running through a series of system checks.
 <br>
 
 ## FAQ
-- **Question** - Is there a way to flash the IoT Developer Kit using the SEGGER J-Link? 
+- **Question** - Is there a way to flash the IoT Developer Kit using the [SEGGER J-Link](https://www.mouser.com/ProductDetail/Segger-Microcontroller/8.08.00?qs=sGAEpiMZZMuRZxwUfDU0mj7SZp0j2IIkjt1vgBTHRyw%3D)? 
 - **Answer** - Yes there is.
-    1. Connect your SEGGER J-Link to your IoT Developer Kit. This can be accomplished by using the J10 MCU SWD on the top, upper left hand corner of the board.
-    2. Connect your SEGGER J-Link to your computer via the USB-A connecter. 
-    3. Open the J-Flash Lite app on your computer.
+    1. Connect your [SEGGER J-Link](https://www.mouser.com/ProductDetail/Segger-Microcontroller/8.08.00?qs=sGAEpiMZZMuRZxwUfDU0mj7SZp0j2IIkjt1vgBTHRyw%3D) to your IoT Developer Kit. This can be accomplished by using the J10 MCU SWD on the top, upper left hand corner of the board.<br><br>![image](https://user-images.githubusercontent.com/60194531/180897245-b56f6520-decf-4fa0-9e7e-e03906be6292.png)<br><br>![image](https://user-images.githubusercontent.com/60194531/180897263-6e2db9b4-60dc-4f6a-a1c5-3a93c2b5de33.png)<br><br>
+    2. Connect your [SEGGER J-Link](https://www.mouser.com/ProductDetail/Segger-Microcontroller/8.08.00?qs=sGAEpiMZZMuRZxwUfDU0mj7SZp0j2IIkjt1vgBTHRyw%3D) to your computer via the USB-A connecter.<br><br> 
+    3. Open the J-Flash Lite app on your computer.<br><br>
     4. Follow steps 5-15 of the Option A.2 - SEGGER J-Flash Lite configuration. 
 
    <br><br>
 
 - **Question** - Is there a specific model of SEGGER that T-Mobile recommends using with the DevEdge IoT Developer Kit?
-- **Answer** - Yes there is. This specific model is recommended for the T-Mobile DevEdge IoT Developer Kit.
+- **Answer** - Yes there is. This [specific model](https://www.mouser.com/ProductDetail/Segger-Microcontroller/8.08.00?qs=sGAEpiMZZMuRZxwUfDU0mj7SZp0j2IIkjt1vgBTHRyw%3D) is recommended for the T-Mobile DevEdge IoT Developer Kit.
    
 <br>
 
