@@ -50,6 +50,7 @@ If you already have [Zephyr west](https://docs.zephyrproject.org/latest/develop/
 5. Enter the below code at command line.<br><br>`west flash --hex-file <full or relative path to .hex file>`<br><br><img src="https://user-images.githubusercontent.com/60194531/180322712-f4efdda0-367d-4c83-9b2a-860480cc2a05.png" width="550"><br><br>
 6. When version 1.10.x of the tmo_shell finishes flashing, go to Step B.<br><br> 
 
+<br>
 
 ### Option A.2 - SEGGER J-Flash Lite
 The T-Mobile DevEdge IoT Developer Kit comes with a SEGGER chip. As a result, you do not need a [SEGGER J-Link](https://www.mouser.com/ProductDetail/Segger-Microcontroller/8.08.00?qs=sGAEpiMZZMuRZxwUfDU0mj7SZp0j2IIkjt1vgBTHRyw%3D) to perform this flash. Only two USB-C to USB-A cables are necessary to perform this flash. 
@@ -70,6 +71,7 @@ The T-Mobile DevEdge IoT Developer Kit comes with a SEGGER chip. As a result, yo
 14. Close the SEGGER J-Flash Lite screen when the "Log" states Done.<br>![image](https://user-images.githubusercontent.com/60194531/180325042-1132372b-83d9-49d1-a174-b4961e6fbc95.png)<br><br>
 15. Go to Step B. 
 
+<br>
 
 #### Option A.3 - Full Zephyr Install
 For those who do not have a Zephyr development environment installed on their computers, let alone west, you can do a full install of Zephyr in order to upgrade to tmo_shell 1.10.x. Follow the configurations below.
@@ -87,6 +89,7 @@ For those who do not have a Zephyr development environment installed on their co
 5. Flash the board.<br><br>`west flash`<br><br>
 6. Go to Step B. 
 
+<br>
 
 ### Step B - Upgrade Firmware
 In this step we will upgrade the required firmware needed for the RS9116W and GNSS drivers. The Modem (Murata 1SC) is an optional upgrade. Please see the Data Sheet to learn more.<br> 
@@ -149,53 +152,43 @@ Your serial app will display the kit running through a series of system checks.
      - Before upgrade.<br>![image](https://user-images.githubusercontent.com/60194531/180893495-5e4657cc-8cc6-4f59-98c0-3f48848b12f9.png)<br><br>
      - After upgrade.<br>![image](https://user-images.githubusercontent.com/60194531/180893585-234893a7-02cf-417f-a16f-ec32da71d550.png)
 
+<br>
 
 #### Step D.2 - Testing the GNSS
-1. Open your serial app. For demonstration purposes we will use Serial on a Mac. 
+1. Open your serial app. For demonstration purposes we will use [Serial](https://apps.apple.com/us/app/serial/id877615577?mt=12) on a Mac.<br><br>
+2. Enter tmo location then hit Return on your keyboard. The latitude, longitude, HDOP, TTFF, and 1PPS appear.<br><br>![image](https://user-images.githubusercontent.com/60194531/180895780-607b65cb-2b70-4de3-a9e4-1270160eb3c4.png)<br><br> 
+3. The GNSS firmware is successfully tested and working if you managed to complete these steps AND receive data. Note, however, that the GNSS may or may not work after this upgrade. Again, T-Mobile would like to remind you that this is a beta kit that you are working with and that the GNSS is not entirely complete as of this writing.<br><br>You can, however, pick up the following amplifier from Amazon to see if you can boost the signal to the GNSS.<br><br>
+4. In addition, you can also check the firmware version for your GNSS by entering tmo dfu version 3.<br>
+     - Before upgrade. The "GNSS FW version is" empty because version 1.8.0 of the [tmo_shell](06-Interacting-with-the-Kit-at-CLI-via-the-tmo_shell.md) does not have any firmware installed for the GNSS.<br><br>![image](https://user-images.githubusercontent.com/60194531/180895870-55ede4da-4763-4b10-91f9-512507158fd8.png)<br><br>
+     - After upgrade.
 
-Enter tmo location then hit Return on your keyboard. The latitude, longitude, HDOP, TTFF, and 1PPS appear. 
-
-
-
-The GNSS firmware is successfully tested and working if you managed to complete these steps AND receive data. Note, however, that the GNSS may or may not work after this upgrade. Again, T-Mobile would like to remind you that this is a beta kit that you are working with and that the GNSS is not entirely complete as of this writing. 
-
-You can, however, pick up the following amplifier from Amazon to see if you can boost the signal to the GNSS. 
-
-In addition, you can also check the firmware version for your GNSS by entering tmo dfu version 3 . 
-Before upgrade. The "GNSS FW version is" empty because version 1.8.0 of the tmo_shell does not have any firmware installed for the GNSS. 
-
-
-After upgrade.
-<ss>
-
+<br>   
    
 ### Step E - Buzz the Buzzer
-Open your serial app. For demonstration purposes we will use Serial on a Mac.
+1. Open your serial app. For demonstration purposes we will use [Serial](https://apps.apple.com/us/app/serial/id877615577?mt=12) on a Mac.<br><br>
+2. Type `tmo buzzer jingle` then press ***Enter*** on your keyboard to hear the buzzer play the T-Mobile Jingle.<br<br>![image](https://user-images.githubusercontent.com/60194531/180896212-c65b2e27-d128-4630-b2f0-544e0e681024.png)<br><br> 
+3. Other commands can be found for the buzzer can be found on the [Interacting with the Kit at CLI via tmo_shell](06-Interacting-with-the-Kit-at-CLI-via-the-tmo_shell.md) document. 
 
-Type tmo buzzer jingle then press Enter on your keyboard to hear the buzzer play the T-Mobile Jingle. 
-
-
-
-Other commands can be found for the buzzer can be found on the Interacting with the Kit at CLI via tmo_shell document. 
-
+<br>
 
 ## Troubleshooting
-Issue - I cannot download the firmware update. What might be the problem?
-Suggested solution - Check to see if you have connected to Wi-Fi. Connect to Wi-Fi by entering tmo wifi connect 2 "<SSID>" 0 "<psk>" in Serial. Hit Return on your keyboard.
+- **Issue** - I cannot download the firmware update. What might be the problem?
+- **Suggested solution** - Check to see if you have connected to Wi-Fi. Connect to Wi-Fi by entering `tmo wifi connect 2 "<SSID>" 0 "<psk>"` in [Serial](https://apps.apple.com/us/app/serial/id877615577?mt=12). Hit ***Return*** on your keyboard.
 
+<br>
 
 ## FAQ
 - **Question** - Is there a way to flash the IoT Developer Kit using the SEGGER J-Link? 
 - **Answer** - Yes there is.
-   - Connect your SEGGER J-Link to your IoT Developer Kit. This can be accomplished by using the J10 MCU SWD on the top, upper left hand corner of the board.
-   - Connect your SEGGER J-Link to your computer via the USB-A connecter. 
-Open the J-Flash Lite app on your computer. 
+    1. Connect your SEGGER J-Link to your IoT Developer Kit. This can be accomplished by using the J10 MCU SWD on the top, upper left hand corner of the board.
+    2. Connect your SEGGER J-Link to your computer via the USB-A connecter. 
+    3. Open the J-Flash Lite app on your computer.
+    4. Follow steps 5-15 of the Option A.2 - SEGGER J-Flash Lite configuration. 
 
-Follow steps 5-15 of the Option A.2 - SEGGER J-Flash Lite configuration. 
+   <br><br>
 
-
-Question - Is there a specific model of SEGGER that T-Mobile recommends using with the DevEdge IoT Developer Kit?
-Answer - Yes there is. This specific model is recommended for the T-Mobile DevEdge IoT Developer Kit.
+- **Question** - Is there a specific model of SEGGER that T-Mobile recommends using with the DevEdge IoT Developer Kit?
+- **Answer** - Yes there is. This specific model is recommended for the T-Mobile DevEdge IoT Developer Kit.
    
 <br>
 
