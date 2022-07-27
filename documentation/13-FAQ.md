@@ -37,10 +37,13 @@
 - **Answer** - It means that your password is not valid. Please check your password and try connecting to your Wi-Fi network again. 
 <br><br><br>
 - **Question** - How do I access the modem CLI?
-- **Answer** - Please follow the instructions below. <ol><li>Plug in your USB-A to USB-C cable(s).<ol><li>If you are on tmo_shell / SDK version 1.8.0 please follow the below configuration.</li><li>If you are on tmo_shell / SDK version 1.10.0 please follow the below configuration. Upgrade here.</li></ol></li><li>Open your serial app. For demonstration purposes we will use Serial on a Mac.</li><li>Select the port that is associated with your modem then click Open.</li></ol>
+- **Answer** - Please follow the instructions below. <ol><li>Plug in your USB-A to USB-C cable(s).<ol><li>If you are on tmo_shell / SDK version 1.8.0 please follow the below configuration.</li><li>If you are on tmo_shell / SDK version 1.10.0 please follow the below configuration. Upgrade here.</li></ol></li><li>Open your serial app. For demonstration purposes we will use Serial on a Mac.</li><li>Select the port that is associated with your modem then click Open.</li><li>Update the speed / baud rate for this port to 115200 under Terminal > Settings > Line Settings > Baud Rate then click OK.</li><li>Press Enter on your keyboard. The command line prompt for your modem appears.</li><li>Type help -a then press Enter on your keyboard. This displays all the commands available for the modem.</li><li>Type any command then press Enter on your keyboard to see its subcommands.</li></ol>
 <br><br><br>
-- **Question** -
-- **Answer** - 
+- **Question** - What is the access orientation of the accelerometer?
+- **Answer** - Please see the below screenshot.<br><img src="https://user-images.githubusercontent.com/60194531/181390792-873f5804-d1de-4e87-aadb-09eb4586364f.png" width="500">
+<br><br><br>
+- **Question** - Is the battery slid in or pushed into the slot? 
+- **Answer** - The battery is pushed into the slot.<br><img src="https://user-images.githubusercontent.com/60194531/181390907-8469f999-a12a-45b4-bf6a-d9573f6633f0.png" width="300"> 
 <br><br><br>
 ***
 [<< Go back](12-Troubleshooting.md) &nbsp; | &nbsp; [Up next >>](14-Errata-Notice.md)
