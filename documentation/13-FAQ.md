@@ -15,23 +15,29 @@
     2. Shake the IoT Developer Kit and observe the data change in the *DevEdge IoT* companion app > **Motion** section. 
         <img width="350" src="https://user-images.githubusercontent.com/60194531/170578893-43e93061-9b31-4766-9f21-8535e911600d.png">
 <br><br><br>
-- **Question** - How do I update the reporting / polling interval in the mobile app? 
-- **Answer** - The polling interval's default is set to every other second. To change this value, go to your smartphone's Settings, search for "DevEdge IoT". Tap on "DevEdge IoT" then tap on "Poll for values every". Select a poll value then tap back. 
+- **Question** - What features are yet to be implemented on this beta version of the IoT Developer Kit?
+- **Answer** - Answer - The following features are still in development as of this writing:
+   - GNSS / GPS
+   - Android mobile app
+   - Lithium ion battery
 <br><br><br>
-- **Question** - What Segger does T-Mobile recommend using on the IoT CAT-M Developer Kit?
-- **Answer** - T-Mobile recommends the Segger J-Link BASE model. You can find this model here: https://www.mouser.com/new/segger/segger-j-link-base-debug-probes/. 
+- **Question** - How do I update the reporting / polling interval in the mobile app? 
+- **Answer** - The polling interval's default is set to every other second. To change this value, go to your ***mobile*** device Settings, search for "DevEdge IoT". Tap on "DevEdge IoT" then tap on "Poll for values every". Select a poll value then tap back.<br><br><img src="https://user-images.githubusercontent.com/60194531/181375670-04b216d9-8d14-4752-abb6-e92dda4e5d1a.png" width="300">
+<br><br><br>
+- **Question** - What SEGGER does T-Mobile recommend using on the IoT CAT-M Developer Kit?
+- **Answer** - T-Mobile recommends the SEGGER J-Link BASE model. You can find this model here: https://www.mouser.com/ProductDetail/Segger-Microcontroller/8.08.00?qs=sGAEpiMZZMuRZxwUfDU0mj7SZp0j2IIkjt1vgBTHRyw%3D . 
 <br><br><br>
 - **Question** - Where can I find information about the file system shell?
 - **Answer** - You can find information on the file system shell on Zephyr's website: https://docs.zephyrproject.org/latest/services/file_system/index.html
 <br><br><br>
-- **Question** -
-- **Answer** - 
+- **Question** - How do I connect to Wi-Fi?
+- **Answer** - Wi-Fi connection is done at the tmo_shell / CLI level. Please read the document {Interacting with the Kit at CLI via the tmo_shell](06-Interacting-with-the-Kit-at-CLI-via-the-tmo_shell.md) to learn more. 
 <br><br><br>
-- **Question** -
-- **Answer** - 
+- **Question** - I am getting a "Connection request failed (8)" message when I try to connect to Wi-Fi. What does this mean? 
+- **Answer** - It means that your password is not valid. Please check your password and try connecting to your Wi-Fi network again. 
 <br><br><br>
-- **Question** -
-- **Answer** - 
+- **Question** - How do I access the modem CLI?
+- **Answer** - Please follow the instructions below. <ol><li>Plug in your USB-A to USB-C cable(s).<ol><li>If you are on tmo_shell / SDK version 1.8.0 please follow the below configuration.</li><li>If you are on tmo_shell / SDK version 1.10.0 please follow the below configuration. Upgrade here.</li></ol></li><li>Open your serial app. For demonstration purposes we will use Serial on a Mac.</li><li>Select the port that is associated with your modem then click Open.</li></ol>
 <br><br><br>
 - **Question** -
 - **Answer** - 
