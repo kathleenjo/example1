@@ -13,7 +13,7 @@ Each has its different uses which will be covered below.
 ## Prerequisites
 - A smartphone
    - iPhone with iOS version 15.3.1 or later installed on it
-   - Android with version 11 or later installed on it
+   - Android with version 11 or later installed on it (Note that for pilot the Android mobile app will not be available.)
 - A web browser
 
 <br>
@@ -40,7 +40,7 @@ The web and mobile apps help developers interact with the IoT Developer Kit with
 ### Web App
 
 - **Question** - What is the T-Mobile DevEdge IoT Developer Kit Web App?
-- **Answer** – The T-Mobile DevEdge IoT Developer Kit Web App is a URL that allows you to see basic stats on your IoT Developer Kit. An example can be seen below: 
+- **Answer** – The T-Mobile DevEdge IoT Developer Kit Web App is a URL that allows you to see basic stats on your IoT Developer Kit. An example can be seen below:<br><br>![image](https://user-images.githubusercontent.com/60194531/181348571-d1bfa9a2-a2a4-47e4-bf8b-f89d7569d9d3.png) 
 
 <br>
 
@@ -50,18 +50,19 @@ The web and mobile apps help developers interact with the IoT Developer Kit with
 <br>
 
 - **Question** - What can I do with the web app?
-- **Answer** – You can see the temperature of your kit, glimpse at its accelerometer forces data, note its LTE signal strength, and eventually connect to AWS. 
+- **Answer** – You can see the temperature of your kit, glimpse at its accelerometer forces data, note its LTE signal strength, and glance at a JSON data structure. 
 
 <br>
 
 - **Question** - How can I access / pair my IoT Developer Kit to https://devkit.devedge.t-mobile.com?
-- **Answer** – In your box, there will be an access code. Enter the access code then click ***Next***.<br><br><img src="https://user-images.githubusercontent.com/60194531/170376883-9aaf6d1d-3fef-497f-ad39-8f7ac2cd2e99.png" width="675">
+- **Answer** – In your box, there will be an access code. Enter the access code then click ***Next***.<br><br>![image](https://user-images.githubusercontent.com/60194531/181348997-1848acba-1ea4-4cec-96f7-c76ddf2513a9.png)
+
 
 
 <br>
 
 - **Question** - What are the main differences between the web app and the mobile app?
-- **Answer** - Through the web app, you can view temperature, GPS, and LTE data. However, you cannot toggle the LED on and off and you cannot actuate the buzzer to make any sounds. These actions, however, can be taken in the mobile app. In addition, the mobile app has debugging logs, based on Segger technology, that allow the user to troubleshoot the kit. 
+- **Answer** - Through the web app, you can view temperature, GPS, and LTE data. However, you cannot toggle the LEDs on and off and you cannot actuate the buzzer to make any sounds. These actions, however, can be taken in the mobile app. In addition, the mobile app has debugging logs, based on SEGGER technology, that allow the user to troubleshoot the kit. 
 
 <br>
 
