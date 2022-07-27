@@ -25,8 +25,8 @@ Below are some common problems with you might encounter when interacting withe I
 Upgrade your iPhone to the latest version of iOS. Version 15.0 and higher is required.
 
 ### CLI Errors
-- **Error** - I am getting a "Socket creation failed, errno = 22" message when I try and create a TCP socket. What does this mean?
-- **Answer** - The "errno = 22" error indicates that you need to be connected to Wi-Fi before you can create the TCP socket. Please follow the instructions found in the Interacting with the Kit at CLI via the tmo_shell document to learn how to connect your IoT Developer Kit to Wi-Fi. 
+- **Error** - I am getting a "Socket creation failed, errno = 0" message when I try and create a TCP socket. What does this mean?
+- **Answer** - The "errno = 0" error indicates that you need to be connected to Wi-Fi before you can create the TCP socket. Please follow the instructions found in the Interacting with the Kit at CLI via the tmo_shell document to learn how to connect your IoT Developer Kit to Wi-Fi. 
 
 <br>
 
