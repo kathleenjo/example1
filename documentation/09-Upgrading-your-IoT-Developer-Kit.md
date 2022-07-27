@@ -179,7 +179,7 @@ Your serial app will display the kit running through a series of system checks.
 
 ## FAQ
 - **Question** - Is there a way to flash the IoT Developer Kit using the [SEGGER J-Link](https://www.mouser.com/ProductDetail/Segger-Microcontroller/8.08.00?qs=sGAEpiMZZMuRZxwUfDU0mj7SZp0j2IIkjt1vgBTHRyw%3D)? 
-- **Answer** - Yes there is.
+- **Answer** - Yes there is.<p>**NOTE:** Your kit already has a SEGGER chip on it. As a result, you do not need to use the a [SEGGER J-Link](https://www.mouser.com/ProductDetail/Segger-Microcontroller/8.08.00?qs=sGAEpiMZZMuRZxwUfDU0mj7SZp0j2IIkjt1vgBTHRyw%3D) in order to flash your kit. In fact, using the external SEGGER will result in having two J-Link interfaces and 4 ACM interfaces when working with your kit. </p>
     1. Connect your [SEGGER J-Link](https://www.mouser.com/ProductDetail/Segger-Microcontroller/8.08.00?qs=sGAEpiMZZMuRZxwUfDU0mj7SZp0j2IIkjt1vgBTHRyw%3D) to your IoT Developer Kit. This can be accomplished by using the J10 MCU SWD on the top, upper left hand corner of the board.<br><br>![image](https://user-images.githubusercontent.com/60194531/180897245-b56f6520-decf-4fa0-9e7e-e03906be6292.png)<br><br>![image](https://user-images.githubusercontent.com/60194531/180897263-6e2db9b4-60dc-4f6a-a1c5-3a93c2b5de33.png)<br><br>
     2. Connect your [SEGGER J-Link](https://www.mouser.com/ProductDetail/Segger-Microcontroller/8.08.00?qs=sGAEpiMZZMuRZxwUfDU0mj7SZp0j2IIkjt1vgBTHRyw%3D) to your computer via the USB-A connecter.<br><br> 
     3. Open the J-Flash Lite app on your computer.<br><br>
