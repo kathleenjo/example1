@@ -114,7 +114,7 @@ On your smartphone, if you do not find "T-Mobile DevEdge" in the Bluetooth list,
 <br>
 
 - **Question** - My battery's power is always at 75% in the mobile app. But I do not have a battery installed on my IoT Developer Kit. Is this a known bug?
-- **Answer** - Not a bug but rather a mocked value to demonstrate what the battery Power level would look like if it were working. As of this beta release, the battery Power level is not working. <img src="https://user-images.githubusercontent.com/60194531/179621133-d9b2341c-2da2-4811-ab29-c6b25a675a3b.png" width="300">
+- **Answer** - Not a bug but rather a mocked value to demonstrate what the battery Power level would look like if it were working. As of this beta release, the battery Power level is not working.<br><img src="https://user-images.githubusercontent.com/60194531/179621133-d9b2341c-2da2-4811-ab29-c6b25a675a3b.png" width="300">
 
 <br>
 
@@ -129,7 +129,7 @@ On your smartphone, if you do not find "T-Mobile DevEdge" in the Bluetooth list,
 <br>
 
 - **Question** - When I press the **User Button** on the kit it no longer plays the T-Mobile jingle. Why is this happening?
-- **Answer** - When the mobile app is connected to the developer kit it will no longer play the jingle. Instead the **User Button** will change the status of the **Home** > **I/O** > **Button Status** to "Pressed".<b><img src="https://user-images.githubusercontent.com/60194531/179625099-dfaed06b-f444-49f3-ab1e-86fd53891e95.png" width="300">
+- **Answer** - When the mobile app is connected to the developer kit it will no longer play the jingle. Instead the **User Button** will change the status of the **Home** > **I/O** > **Button Status** to "Pressed".<br><img src="https://user-images.githubusercontent.com/60194531/179625099-dfaed06b-f444-49f3-ab1e-86fd53891e95.png" width="300">
 
   <br>
 
