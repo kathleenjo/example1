@@ -122,10 +122,16 @@ On your smartphone, if you do not find "T-Mobile DevEdge" in the Bluetooth list,
 <br>
 
 ## FAQ
-- **Question** - Will connecting to AWS via the Web App be available for this beta? 
-- **Answer** - Unfortunately it will not be. But please do stay tuned. 
+- **Question** - What does *Button Status* do?
+- **Answer** - Button Status changes from "Not Pressed" to "Pressed" when you press the "User" button on the IoT Developer Kit. Note that the IoT Developer Kit needs to be connected to mobile app. If the kit is not connected to the mobile app, "User" button will play the T-Mobile jingle. 
+   | On the Kit | In the Mobile App | Capability |
+   | ----- | ----- | ----- |
+   | Press this button<br><br><img src="https://user-images.githubusercontent.com/60194531/181369599-358f90c9-319b-4111-8320-f9e158220ab0.png" width="250"> | In the *DevEdge IoT* mobile app tap ***Home*** > ***I/O***. This button changes color and message.<br><br><img src="https://user-images.githubusercontent.com/60194531/181369701-7cdf38d6-730b-406c-be12-2d171f79b4a3.png" width="200"> | <ol><li>Plays the T-Mobile jingle when not connected to the mobile app.</li><li>Changes the Button Status to "Pressed" when connected to the mobile app. </li></ol> |
    
 <br>   
+
+- **Question** - Is there a way to change the polling interval for the debug logs? 
+- **Answer** - Yes there is. <ol><li>On your smartphone, navigate to the Settings app.</liL><li>Search for "DevEdge IoT". Tap on ***DevEdge IoT***.</li><li>Tap Poll for reading every. Note that the default setting is "other second" or data for the debug logs will be read every other second.</li><li></li></ol>
    
 ***
 [<< Go back](09-Upgrading-your-IoT-Developer-Kit.md) &nbsp; | &nbsp; [Up next >>](11-Use-Cases.md)
