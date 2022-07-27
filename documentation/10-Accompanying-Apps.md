@@ -69,18 +69,18 @@ The web and mobile apps help developers interact with the IoT Developer Kit with
 ### Mobile App
 #### General
 - **Question** - What is the T-Mobile DevEdge IoT Developer Kit mobile app?
-- **Answer** -  Also known as the *DevEdge IoT* app, this app allows the user to see "signs of life" in the kit without having to use commands at CLI.<br><br><img src="https://user-images.githubusercontent.com/60194531/170148377-18e1ef03-bc51-472b-ab95-ad8fb840aa2b.png" width="250"> <img src="https://user-images.githubusercontent.com/60194531/170351961-56cab654-705d-49fc-ab15-1cf2568a0470.png" width="250"> 
+- **Answer** -  Also known as the *DevEdge IoT* app, this app allows the user to see "signs of life" in the kit without having to use commands at CLI.<br><br><img src="https://user-images.githubusercontent.com/60194531/179608757-fdfbbce7-43ae-43f7-951e-6641d662dc4b.png" width="250"> <img src="https://user-images.githubusercontent.com/60194531/179610173-17f7d684-3b77-4a9d-99ae-eb5c61628766.png" width="250"> 
 
 <br>
 
 - **Question** - What can I do with the T-Mobile DevEdge IoT Developer Kit mobile app?
-- **Answer** - You can turn the lights of the kit on and off, turn the buzzer on and off, glimpse at acceleramotor forces data, view not only the signal strength of the LTE-M towers near you but how many towers are near you, observe pressure and temperature readings, and note the kit's power levels. Plus, you can use the Debug tab, based on Segger technology, to troubleshoot your kit. 
+- **Answer** - You can turn the lights of the kit on and off, turn the buzzer on and off, glimpse at acceleramotor forces data, view not only the signal strength of the LTE-M towers near you but how many towers are near you, observe pressure and temperature readings, and note the kit's power levels. Plus, you can use the Debug tab, based on SEGGER technology, to troubleshoot your kit. 
 
 <br>
 
    | Capability | In the Mobile App | On the Kit |
    | ----- | ----- | ----- |
-   | Turn LED lights on and off. | In the DevEdge IoT mobile app > I/O tap any of the LED's.<br><img src="https://user-images.githubusercontent.com/60194531/170354880-185f2df5-eb06-4ebd-8c6d-8f64d20806e9.png" width="200"> | The green LED lights up.<br><img src="https://user-images.githubusercontent.com/60194531/170355650-ac8fc661-067e-4179-9ea4-05fc659dfede.png" width="250"> |
+   | Turn LED lights on and off. | In the *DevEdge IoT* mobile app tap ***Home*** > ***I/O*** > ***Green toggle*** button.<br><img src="https://user-images.githubusercontent.com/60194531/181352668-01a6ed34-2915-4771-9951-e3b3a7ff6e6e.png" width="200"> | The green LED lights up.<br><img src="https://user-images.githubusercontent.com/60194531/170355650-ac8fc661-067e-4179-9ea4-05fc659dfede.png" width="250"> |
    | Activate the buzzer. | In the *DevEdge IoT* mobile app tap ***I/O*** then tap ***Activate Buzzer***.<br><br><img src="https://user-images.githubusercontent.com/60194531/170356845-dca9dcd0-d97a-4f5d-9890-3e9bc7c3bc6e.png" width="200"> | The buzzer buzzes.<br><br><span style="border: 3px solid #94CA9F; background-color: #F3F9F4; padding: 4px;">**TIP:** Unmute the video to hear the buzzer.</span><br><br> <video class="d-block rounded-bottom-2 border-top width-fit" src="https://user-images.githubusercontent.com/60194531/170573010-8edf0fe6-15dd-4a23-b44c-4f3d2b9f70ff.mp4" data-canonical-src="https://user-images.githubusercontent.com/60194531/170573010-8edf0fe6-15dd-4a23-b44c-4f3d2b9f70ff.mp4" controls="controls" muted="" style="max-height:640px;"></video> |
    | Observe acceleramotor forces. | In the *DevEdge IoT* mobile app tap ***Motion*** tab.<br><br><img src="https://user-images.githubusercontent.com/60194531/170578893-43e93061-9b31-4766-9f21-8535e911600d.png" width="200"> | Flip and turn the IoT Developer Kit and watch it move in real-time in the app. |
    | View LTE-M signal strength. | NOTE: You must have a T-Mobiel SIM card installed in order to see signal strength. <SS> | Not applicable. |
