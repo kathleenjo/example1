@@ -43,7 +43,7 @@ There are three ways to flash the 1.10.x image onto your kit. You can use Zephyr
 #### Option A.1 - Zephyr west
 If you already have [Zephyr west](https://docs.zephyrproject.org/latest/develop/west/index.html) installed on your computer, follow the configurations below. 
 
-1. Go to https://devkit.devedge.t-mobile.com/bin/latest/.<br><br>
+1. Go to https://devkit.devedge.t-mobile.com/bin/latest/zephyr_v1.10.1.hex.<br><br>
 2. Download the 1.10.x .hex file. Remember where you downloaded this file.<br><br> 
 3. Connect your IoT Developer Kit via two USB-A to USB-C cables to your computer like in the screenshot below. Ensure that the **J-Link USB-C Debug** port (port on the right) is plugged into your computer and that the **Modem USB-C Debug** port (port on the left) is plugged into your power outlet like in the picture below. If you have them plugged in any other way you will not be able to connect to your kit.<br><img src="https://user-images.githubusercontent.com/60194531/180322791-9ea6d51c-a65d-4b88-987c-e72d19c4b888.png" width="350"><br><br>
 4. Open your command line app. For demonstration purposes we will use Terminal on a Mac.<br><br>
@@ -55,7 +55,7 @@ If you already have [Zephyr west](https://docs.zephyrproject.org/latest/develop/
 #### Option A.2 - SEGGER J-Flash Lite
 The T-Mobile DevEdge IoT Developer Kit comes with a SEGGER chip. As a result, you do not need a [SEGGER J-Link](https://www.mouser.com/ProductDetail/Segger-Microcontroller/8.08.00?qs=sGAEpiMZZMuRZxwUfDU0mj7SZp0j2IIkjt1vgBTHRyw%3D) to perform this flash. Only two USB-C to USB-A cables are necessary to perform this flash. 
 
-1. Go to https://devkit.devedge.t-mobile.com/bin/latest/.<br><br>
+1. Go to https://devkit.devedge.t-mobile.com/bin/latest/zephyr_v1.10.1.hex.<br><br>
 2. Download the 1.10.x.hex file. Remember where you downloaded this file. You will need its location for Step 11 below.<br><br>
 3. Connect your IoT Developer Kit to your computer based on the screenshot below. The **Modem USB-C Debug** port (port on the left) must connect to a power outlet while the **J-Link USB-C Debug** port (port on the right) must connect to a computer.<br><img src="https://user-images.githubusercontent.com/60194531/180322791-9ea6d51c-a65d-4b88-987c-e72d19c4b888.png" width="350"><br><br>
 4. Open your J-Flash Lite app on your computer. If you do not have J-Flash Lite on your computer go [here](https://www.segger.com/downloads/jlink).<br>![image](https://user-images.githubusercontent.com/60194531/180324489-e8097aab-157e-4fb3-aa75-308434bbeb0f.png)<br><br>
