@@ -76,7 +76,7 @@ There is an issue with the GNSS antenna which is impacting some boards' ability 
 The pilot developer boards will not boot unless both the USB ports are connected with the two cables supplied. However, once the boards are updated to the latest DevEdge version by connecting to the repository, only one USB port (typically the furthest one from the user button) needs to be connected for normal operation. Note that both USB-C ports can still be connected if desired. 
 
 ### &#9839;11
-The tmo_shell commands sendb  and recvb  are limited to 5KB.
+The tmo_shell commands `sendb` and `recvb` are limited to 5KB.
 
 ### &#9839;12
 Large file transfers (1 MB or greater) over HTTP/HTTPS may work on the modem, however, it is very unreliable. Large file transfers work fine on Wi-Fi, however.
