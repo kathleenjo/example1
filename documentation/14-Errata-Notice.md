@@ -71,6 +71,8 @@ The T-Mobile DevEdge IoT Developer Kit has the following specifications.
 
 ### &#9839;17
 
+<br>
+
 ## FAQ
 
 - **Question** -
