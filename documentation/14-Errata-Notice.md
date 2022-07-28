@@ -3,11 +3,17 @@
 ## Introduction
 This document lists all of the features that are yet to be implemented with the beta version of the T-Mobile DevEdge IoT Developer Kit.  In addition, it lists many of the known bugs that exist. 
 
+<br>
+
 ## Prerequisites
 - The T-Mobile DevEdge IoT Developer Kit. 
 
+<br>
+
 ## What are the ultimate goals of this document?
 To understand what is available for this pilot and what is not, plus, understand the known bugs. 
+
+<br>
 
 ## Specifications
 The T-Mobile DevEdge IoT Developer Kit has the following specifications.
@@ -32,6 +38,8 @@ The T-Mobile DevEdge IoT Developer Kit has the following specifications.
 - Button
 - QWIIC I<sup>2</sup>C expansion connector
 - Type-C USB connector
+
+<br>
 
 ## Known Limitation / Bugs 
 
@@ -98,7 +106,7 @@ Mobile app features are yet to be tested on Android. They work fine in iOS.
 - **Question** - Can I use an amplifier to help boost the signal for the the GNSS? 
 - **Answer** - Yes, you can use the following Amazon amplifier to try and boost the signal for the GNSS.  Again, T-Mobile would like to remind you that this is a beta device. If you do not get a  GPS signal, the GNSS may simply not work on your IoT Developer Kit at this time. 
 
-<br><br><br>
+<br><br>
 
 - **Question** - Can I try inserting a battery into the battery slot of the kit?
 - **Answer** - Yes, however, it may or may not work. In addition, the battery is a bit too big for its britches and may pop out after insertion.
