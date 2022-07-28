@@ -183,7 +183,7 @@ Your serial app will display the kit running through a series of system checks.
     1. Connect your [SEGGER J-Link](https://www.mouser.com/ProductDetail/Segger-Microcontroller/8.08.00?qs=sGAEpiMZZMuRZxwUfDU0mj7SZp0j2IIkjt1vgBTHRyw%3D) to your IoT Developer Kit. This can be accomplished by using the J10 MCU SWD on the top, upper left hand corner of the board.<br><br>![image](https://user-images.githubusercontent.com/60194531/180897245-b56f6520-decf-4fa0-9e7e-e03906be6292.png)<br><br>![image](https://user-images.githubusercontent.com/60194531/180897263-6e2db9b4-60dc-4f6a-a1c5-3a93c2b5de33.png)<br><br>
     2. Connect your [SEGGER J-Link](https://www.mouser.com/ProductDetail/Segger-Microcontroller/8.08.00?qs=sGAEpiMZZMuRZxwUfDU0mj7SZp0j2IIkjt1vgBTHRyw%3D) to your computer via the USB-A connecter.<br><br> 
     3. Open the J-Flash Lite app on your computer.<br><br>
-    4. Follow steps 5-15 of the [Option A.2 - SEGGER J-Flash Lite](https://github.com/kathleenjo/t-mobile-iot-dev-kit/blob/main/documentation/09-Upgrading-your-IoT-Developer-Kit.md#option-a2---segger-j-flash-lite) configuration. 
+    4. Follow steps 5-15 of the [Option A.2 - SEGGER J-Flash Lite](09-Upgrading-your-IoT-Developer-Kit.md#option-a2---segger-j-flash-lite) configuration. 
 
    <br><br>
 
