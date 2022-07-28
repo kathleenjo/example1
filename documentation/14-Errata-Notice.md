@@ -85,7 +85,7 @@ Large file transfers (1 MB or greater) over HTTP/HTTPS may work on the modem, ho
 MQTT publisher is yet to be implemented over secure AWS connection for the modem.
 
 ### &#9839;14
-Ipv6 support is yet to be implemented for either the modem or the Wi-Fi.
+IPv6 support is yet to be implemented for either the modem or the Wi-Fi.
 
 ### &#9839;15
 Advertisement beacon (iBeacon) support for Bluetooth is yet to be implemented.
