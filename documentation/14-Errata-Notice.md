@@ -35,53 +35,73 @@ The T-Mobile DevEdge IoT Developer Kit has the following specifications.
 
 ## Known Limitation / Bugs 
 
-> **NOTE:** Some of the following limitations will no longer be applicable once the IoT Developer Kit is upgraded as described here.
+> **NOTE:** Some of the following limitations will no longer be applicable once the IoT Developer Kit is upgraded as described [here](09-Upgrading-your-IoT-Developer-Kit.md).
 
 ### &#9839;1
+SMS messaging may or may not work depending on the SIM being used.
 
 ### &#9839;2
+SMS messages do not support the left single quote character (`). It is just ignored. This applies to SMS messages sent and received.
 
 ### &#9839;3
+There is no identified way to send SMS messages with the double quote (") character; such messages can be sent using single quote delimiters.
 
 ### &#9839;4
+Received SMS messages longer than 160 characters are split into multiple segments, each of which has a maximum length of 153 characters. These segments might be received in an improper sequence.
 
 ### &#9839;5
+Segmented MO / MT messaging is yet to be implemented.
 
 ### &#9839;6
+Firmware (FW) updates and other TCP transfers via modem work but are less reliable especially in poor / low cell signal areas. TCP errors on the T-Mobile network include time outs and disconnects after 2 seconds. Modem errors include time outs and retire after 2.5 seconds. Neither or these are configurable. 
 
 ### &#9839;7
+GNSS (GPS) firmware (FW) can be updated, however, for some boards, the processor might lose contact with the GNSS chip. As a result, the firmware (FW) updates cannot be used to get the updated GPS location.
 
 ### &#9839;8
+Full GNSS driver development, including the use of assist data to obtain a fast GPS fix, is still in progress. However, tmo_shell location requests are supported by the driver in the current state.
 
 ### &#9839;9
+There is an issue with the GNSS antenna which is impacting some boards' ability to get location fixes. Some boards can get the fix, but others take a long time to do so.
 
 ### &#9839;10
+The pilot developer boards will not boot unless both the USB ports are connected with the two cables supplied. However, once the boards are updated to the latest DevEdge version by connecting to the repository, only one USB port (typically the furthest one from the user button) needs to be connected for normal operation. Note that both USB-C ports can still be connected if desired. 
 
 ### &#9839;11
+The tmo_shell commands sendb  and recvb  are limited to 5KB.
 
 ### &#9839;12
+Large file transfers (1 MB or greater) over HTTP/HTTPS may work on the modem, however, it is very unreliable. Large file transfers work fine on Wi-Fi, however.
 
 ### &#9839;13
+MQTT publisher is yet to be implemented over secure AWS connection for the modem.
 
 ### &#9839;14
+Ipv6 support is yet to be implemented for either the modem or the Wi-Fi.
 
 ### &#9839;15
+Advertisement beacon (iBeacon) support for Bluetooth is yet to be implemented.
 
 ### &#9839;16
+The maximum number of concurrent sockets is hard coded for both the modem and Wi-Fi drivers.
 
 ### &#9839;17
+Mobile app features are yet to be tested on Android. They work fine in iOS.
+
+### &#9839;18
+SiLabs RS9116W firmware version 2.4 does not support fragmented TLS. As a result, the web app will not work out of the box until the firmware is updated to version 2.6 (a version that does support fragmented TLS). To update your SiLabs RS9116W firmware, please read the Upgrading Your IoT Developer Kit document.  Also, binaries cannot be downloaded from https://devkit.devedge.t-mobile/bin/latest/ until the SiLabs RS9116W firmware is upgraded to version 2.6. Again, to update your SiLabs RS9116W firmware, please read the Upgrading Your IoT Developer Kit document.
 
 <br>
 
 ## FAQ
 
-- **Question** -
-- **Answer** - 
+- **Question** - Can I use an amplifier to help boost the signal for the the GNSS? 
+- **Answer** - Yes, you can use the following Amazon amplifier to try and boost the signal for the GNSS.  Again, T-Mobile would like to remind you that this is a beta device. If you do not get a  GPS signal, the GNSS may simply not work on your IoT Developer Kit at this time. 
 
 <br><br><br>
 
-- **Question** -
-- **Answer** - 
+- **Question** - Can I try inserting a battery into the battery slot of the kit?
+- **Answer** - Yes, however, it may or may not work. In addition, the battery is a bit too big for its britches and may pop out after insertion.
 
 <br><br>
 ***
