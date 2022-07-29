@@ -1,7 +1,5 @@
 # Release Notes
 
-<br>
-
 ## Introduction
 This document describes the various bits and bobs that have been added for the T-Mobile DevEdge IoT Developer Kit per release. 
 
