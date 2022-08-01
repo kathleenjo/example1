@@ -22,9 +22,21 @@ This document describes how to connect your IoT Developer Kit to T-Mobile's LTE-
 2. Insert the SIM card included in the box into the IoT Developer Kit.<br><br><img src="https://user-images.githubusercontent.com/60194531/179633229-bc13f6f3-bade-484f-ac92-3713bebdb66c.png" width="400"><br>
 3. To confirm you are connected to the T-Mobile LTE-M network.
     1. On your smartphone, look at your *DevEdge IoT* companion app > **Connectivity** section to confirm that you are connected to the T-Mobile LTE-M network.<br><br><div style="border:1px solid #000;">**IMPORTANT:** Completing this step assumes that you have already followed all of the instructions in the [How to See Signs of Life](03-How-to-See-Signs-of-Life.md) document.</div><br><img src="https://user-images.githubusercontent.com/60194531/179632902-98fd8ea0-d0fb-4eb0-9259-1f2d43358c40.png" width="300"><br><br>
-    2. On your computer, go to the web app https://devkit.devedge.t-mobile.com/.<br><br>
-    3. Enter the access code found in the box your IoT Developer Kit arrived in then click ***Next***.<br><br><img src="https://user-images.githubusercontent.com/60194531/179641831-c97cd7e8-c787-4648-9d0c-ce6085011c03.png" width="500" ><br><br>
-    4. Look at the *LTE Signal Strength* section to understand your T-Mobile LTE-M network connection.<br><br><img src="https://user-images.githubusercontent.com/60194531/179641916-bbb7d1ab-3329-4fd0-947b-7611f9d42c6f.png" width="600" ><br><br>
+    2. On your computer, open a serial app like Tera Term, PuTTY, or Serial. For demonstration purposes we will use [Serial](https://apps.apple.com/us/app/serial/id877615577?mt=12) on a Mac.<br><br>
+    3. Select the serial port that is connected to your IoT Developer Kit then click ***Open***.<br><br>
+    4. Under **Terminal** > **Settings** > **Line Settings** > **Baud Rate** make sure the following values are set then click ***OK***:
+       - Baud Rate / Speed - 9600
+       - Data Rate - 8
+       - Parity - None
+       - Stop Bits - 1
+       - Flow Control - None<br><br><img src="https://user-images.githubusercontent.com/60194531/182261738-15deeb37-9338-4a5d-92e4-b99caa48c91a.png" width="400"><br><br>
+    5. At the command line screen press ***Enter*** on your keyboard. The uart command prompt appears. To learn more about uart, please read the document [Interacting with the Kit at CLI via tmo_shell](06-Interacting-with-the-Kit-at-CLI-via-the-tmo_shell.md).<br><br><img src="https://user-images.githubusercontent.com/60194531/180333887-077dab9a-d8a3-461e-90a7-8f5aa0a548f6.png" width="500"><br><br>
+    6. Enter `tmo wifi connect "<SSID>" 0 "<PSK>"` to connect to Wi-Fi.<br><br> 
+    7. Enter `tmo json iface 2` to set the default interface that will send the developer kit's JSON payload then press ***Return*** on your keyboard.<br><br>
+    8. Enter `tmo json enable` then press ***Return*** on your keyboard.<br><br><img src="https://user-images.githubusercontent.com/60194531/182262047-7f9512ae-8063-4637-b755-c3d234991571.png" width="500"><br><br>You should receive a 200 status code.<br><br><img src="https://user-images.githubusercontent.com/60194531/182262272-501511aa-b161-401d-8a11-7a7f37d64091.png" width="500"><br><br> 
+    9. On a web browser, go to the web app https://devkit.devedge.t-mobile.com/.<br><br>
+    10. Enter the access code found in the box your IoT Developer Kit arrived in then click ***Next***.<br><br><img src="https://user-images.githubusercontent.com/60194531/179641831-c97cd7e8-c787-4648-9d0c-ce6085011c03.png" width="500" ><br><br>
+    11. Look at the *LTE Signal Strength* section to understand your T-Mobile LTE-M network connection.<br><br><img src="https://user-images.githubusercontent.com/60194531/179641916-bbb7d1ab-3329-4fd0-947b-7611f9d42c6f.png" width="600" ><br><br>
 4. If your dBm is strong enough (-85 decibels or better) try sending yourself an SMS message. Learn more in the [Interacting with the Kit at CLI via the tmo_shell](06-Interacting-with-the-Kit-at-CLI-via-the-tmo_shell.md) document.<br><br><img src="https://user-images.githubusercontent.com/60194531/179634218-7503889c-6aa9-4e5a-98f8-70f9a766369d.png" width="500">
 
 <br>
@@ -46,6 +58,10 @@ This document describes how to connect your IoT Developer Kit to T-Mobile's LTE-
 - **Question** - Can I retrieve my ICCID number from the SIM card once I insert my card into the IoT Developer Kit?
 - **Answer** - Yes you can. Please read the document [Interacting with the Kit at CLI via tmo_shell](06-Interacting-with-the-Kit-at-CLI-via-the-tmo_shell.md) to learn more.
 
+<br>
+
+- **Question** - I cannot find my 8-digit access code in my box. Is there another way to retrieve it? 
+- **Answer** - Yes. In your serial app enter `fs read /tmo/aws_session.txt`. The output should give you your 8-digit code.<br><br><img src="https://user-images.githubusercontent.com/60194531/182263608-54d61457-d565-4899-a2bb-5e3171b718f8.png" width="500">
 
 <br> 
 
