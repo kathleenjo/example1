@@ -33,10 +33,11 @@ This document describes how to connect your IoT Developer Kit to T-Mobile's LTE-
     5. At the command line screen press ***Enter*** on your keyboard. The uart command prompt appears. To learn more about uart, please read the document [Interacting with the Kit at CLI via tmo_shell](06-Interacting-with-the-Kit-at-CLI-via-the-tmo_shell.md).<br><br><img src="https://user-images.githubusercontent.com/60194531/180333887-077dab9a-d8a3-461e-90a7-8f5aa0a548f6.png" width="500"><br><br>
     6. Enter `tmo wifi connect "<SSID>" 0 "<PSK>"` to connect to Wi-Fi.<br><br> 
     7. Enter `tmo json iface 2` to set the default interface that will send the developer kit's JSON payload then press ***Return*** on your keyboard.<br><br>
-    8. Enter `tmo json enable` then press ***Return*** on your keyboard.<br><br><img src="https://user-images.githubusercontent.com/60194531/182262047-7f9512ae-8063-4637-b755-c3d234991571.png" width="500"><br><br>You should receive a 200 status code.<br><br><img src="https://user-images.githubusercontent.com/60194531/182262272-501511aa-b161-401d-8a11-7a7f37d64091.png" width="500"><br><br> 
-    9. On a web browser, go to the web app https://devkit.devedge.t-mobile.com/.<br><br>
-    10. Enter the access code found in the box your IoT Developer Kit arrived in then click ***Next***.<br><br><img src="https://user-images.githubusercontent.com/60194531/179641831-c97cd7e8-c787-4648-9d0c-ce6085011c03.png" width="500" ><br><br>
-    11. Look at the *LTE Signal Strength* section to understand your T-Mobile LTE-M network connection.<br><br><img src="https://user-images.githubusercontent.com/60194531/179641916-bbb7d1ab-3329-4fd0-947b-7611f9d42c6f.png" width="600" ><br><br>
+    8. Enter `fs cat /tmo/aws_session.txt` then press ***Return*** on your keyboard.<br><br>
+    9. Enter `tmo json enable` then press ***Return*** on your keyboard.<br><br><img src="https://user-images.githubusercontent.com/60194531/182264166-4db13251-693f-481f-be96-7f04079c4921.png" width="500"><br><br>You should receive a 200 status code.<br><br><img src="https://user-images.githubusercontent.com/60194531/182262272-501511aa-b161-401d-8a11-7a7f37d64091.png" width="500"><br><br> 
+    10. On a web browser, go to the web app https://devkit.devedge.t-mobile.com/.<br><br>
+    11. Enter the access code found in the box your IoT Developer Kit arrived in then click ***Next***.<br><br><img src="https://user-images.githubusercontent.com/60194531/179641831-c97cd7e8-c787-4648-9d0c-ce6085011c03.png" width="500" ><br><br>
+    12. Look at the *LTE Signal Strength* section to understand your T-Mobile LTE-M network connection.<br><br><img src="https://user-images.githubusercontent.com/60194531/179641916-bbb7d1ab-3329-4fd0-947b-7611f9d42c6f.png" width="600" ><br><br>
 4. If your dBm is strong enough (-85 decibels or better) try sending yourself an SMS message. Learn more in the [Interacting with the Kit at CLI via the tmo_shell](06-Interacting-with-the-Kit-at-CLI-via-the-tmo_shell.md) document.<br><br><img src="https://user-images.githubusercontent.com/60194531/179634218-7503889c-6aa9-4e5a-98f8-70f9a766369d.png" width="500">
 
 <br>
