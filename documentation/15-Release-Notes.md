@@ -157,24 +157,24 @@ When receiving your pilot board this is the version that the [tmo_shell](06-Inte
 - Developer board reads ambient light sensor via Zephyr sensor commands.
 
 ### 28 - LED Sensor
-- LED sensor added to developer board including Full ON/OFF, multi color effect, and brightness modulation.
+- LED sensor added to developer board including full ON/OFF, multi color effect, and brightness modulation.
+
 ### 29 - Mobile App Feature Support for iOS
-- BLE Driver mobile app feature support for iOS. Includes Pairing / Unpairing, Buzzer Control, Button Control, LED Control, and Connect / Disconnect status of Dev Board to / from TMO Shell.
+- BLE driver mobile app feature support for iOS. Includes Pairing / Unpairing, Buzzer Control, Button Control, LED Control, and Connect / Disconnect status of developer board to / from tmo_shell.
+
 ### 30 - Mobile Data Support for iOS
-- BLE Driver mobile data support for iOS. Includes WiFi Network Name, Location, Device IMEI, Temperature, Pressure, Accelerometer, Ambient Light (Visible), Ambient IR, Cell Signal Strength, WiFi Signal Strength, and Battery Level Mocked Data.
+- BLE driver mobile data support for iOS. Includes Wi-Fi Network Name, Location, Device IMEI, Temperature, Pressure, Accelerometer, Ambient Light (Visible), Ambient IR, Cell Signal Strength, Wi-Fi Signal Strength, and Battery Level Mocked Data.
+
 ### 31 - SMP Support for iOS
-- BLE Driver SMP support for iOS. Includes Ability to toggle between authenticated and non-authenticated pairing from the shell, Ability to toggle between input and output pairing modes from the shell, Ability to display pairing keys in the shell, and Ability to reply with pairing keys from the shell.
+- BLE driver SMP support for iOS. Includes ability to toggle between authenticated and non-authenticated pairing from the shell, ability to toggle between input and output pairing modes from the shell, ability to display pairing keys in the shell, and ability to reply with pairing keys from the shell.
 
-### 32 - SMP Support for iOS
-- BLE Driver SMP support for iOS. Includes Ability to toggle between authenticated and non-authenticated pairing from the shell, Ability to toggle between input and output pairing modes from the shell, Ability to display pairing keys in the shell, and Ability to reply with pairing keys from the shell.
+### 32 - Location Data Support for Mobile App
+- BLE Location Data support for mobile app. Includes latitude and longitude.
 
-### 33 - Location Data Support for Mobile App
-- BLE Location Data support for mobile app. Includes Latitude and Longitude.
+### 33 - BLE Debug Log
+- BLE debug log for Mobile App added.
 
-### 34 - Location Data Support for Mobile App
-- BLE Debug Log for Mobile App.
-
-### 35 - Pearl Gecko Real-Time Clock Support
+### 34 - Pearl Gecko Real-Time Clock Support
 - Real-time clock support (RTCC) for Pearl Gecko. Integration of date shell commands.
 
 <br>
