@@ -11,33 +11,64 @@ The T-Mobile DevEdge IoT Developer Kit
 <br>
 
 ## Release 1.10.0
-### 1 - Firmware Update Download
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
-### 2 - Buzzer CLI Commands
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+### 1 - MQTT Secure (Modem)
+- MQTT publisher is working with the modem driver over secure AWS connection.
 
-### 3 - Web App Connection
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+### 2 - Concurrent Sockets
+- The maximum number of concurrent sockets is configurable for both modem and Wi-Fi drivers, within the corresponding limit currently allowed by each driver.
 
-### 4 - Folder for Certs
-Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+### 3 - IPv6 Support (WiFi)
+- IPv6 protocol support for Wi-Fi added, however, this does not include MQTT implementation for now as there is no IPv6 MQTT server.
+
+### 4 - Beacon / iBeacon
+- Support for Bluetooth advertisement Beacon/iBeacon.
+
+### 5 - Large File Transfer Over HTTPS (Modem) - High Cellular Strength
+- Transferring files 2 MB or larger over HTTPS for modem driver added for high cellular strength environments. Still being worked upon for poor / low signal strength environments. 
+
+### 6 - Large File Transfer Over HTTP
+- Transferring files 2 MB or larger over HTTP for both modem and Wi-Fi driver added.
+
+### 7 - Firmware Type Detection
+- Ability to detect type of firmware (Golden v. Sample) added for the modem driver.
+
+### 8 - Basic Power Control (Modem)
+- Basic power control added to wake / sleep the modem driver and check current state.
+
+###  9 - Device Firmware Update (DFU) - Backward Compatibility (Wi-Fi)
+- Backward Compatibility with RS9116W FW v2.4 added for the Wi-Fi driver, after firmware (FW) version has been updated to 2.6.
+
+### 10 - GNSS Driver - tmo_shell Support
+- Implemented tmo_shell location request support for the GNSS Driver.
+
+### 11 - LED Startup Indication
+- Implemented LED lighting up to indicate activity at startup.
+
+### 12 - Certificate Store in Flash File System (FFS)
+- Implemented "certificate store" in FFS for use with both modem and Wi-Fi drivers.
+
+### 13 - MQTT Customization in TMO SDK
+- MQTT publisher sample was copied and customized in the TMO SDK.
+
+### 14 - File Utilities
+- File utilities added for moving and copying files, and getting a "long list" of files in a folder.
+
+### 15 - MCU Version Information (tmo_shell)
+- Detailed MCU version information was added to tmo_shell.
+### 16 - Wi-Fi Auto Connection (tmo_shell)
+- Configuration options added to support Wi-Fi auto connection in tmo_shell.
 
 <br>
 
 ## Release 1.9.0
 
-### 1 - 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-### 2 - 
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-
-### 3 - 
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-
-### 4 - 
-Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+### 1 - Data Transmission from tmo_shell to Web App End Point
+- Data transmission from tmo_shell to Web App end point via modem and Wi-Fi.
+### 2 - Device Firmware Update (DFU) Download Combine with tmo_shell
+- DFU download combined with tmo_shell provides the best user experience to the 3rd Party developers towards updating SiLabs Wi-Fi firmware (as well as modem, MCU, and GNSS) via tmo_shell.
+### 3 - Extension of Buzzer Functionality
+- Extension of the buzzer functionality to play the ramp tune and a tone for a specified time.
 
 <br>
 
@@ -124,6 +155,27 @@ When receiving your pilot board this is the version that the [tmo_shell](06-Inte
 
 ### 27 - Ambient Light Sensor
 - Developer board reads ambient light sensor via Zephyr sensor commands.
+
+### 28 - LED Sensor
+- LED sensor added to developer board including Full ON/OFF, multi color effect, and brightness modulation.
+### 29 - Mobile App Feature Support for iOS
+- BLE Driver mobile app feature support for iOS. Includes Pairing / Unpairing, Buzzer Control, Button Control, LED Control, and Connect / Disconnect status of Dev Board to / from TMO Shell.
+### 30 - Mobile Data Support for iOS
+- BLE Driver mobile data support for iOS. Includes WiFi Network Name, Location, Device IMEI, Temperature, Pressure, Accelerometer, Ambient Light (Visible), Ambient IR, Cell Signal Strength, WiFi Signal Strength, and Battery Level Mocked Data.
+### 31 - SMP Support for iOS
+- BLE Driver SMP support for iOS. Includes Ability to toggle between authenticated and non-authenticated pairing from the shell, Ability to toggle between input and output pairing modes from the shell, Ability to display pairing keys in the shell, and Ability to reply with pairing keys from the shell.
+
+### 32 - SMP Support for iOS
+- BLE Driver SMP support for iOS. Includes Ability to toggle between authenticated and non-authenticated pairing from the shell, Ability to toggle between input and output pairing modes from the shell, Ability to display pairing keys in the shell, and Ability to reply with pairing keys from the shell.
+
+### 33 - Location Data Support for Mobile App
+- BLE Location Data support for mobile app. Includes Latitude and Longitude.
+
+### 34 - Location Data Support for Mobile App
+- BLE Debug Log for Mobile App.
+
+### 35 - Pearl Gecko Real-Time Clock Support
+- Real-time clock support (RTCC) for Pearl Gecko. Integration of date shell commands.
 
 <br>
 
