@@ -55,7 +55,8 @@ The T-Mobile DevEdge IoT Developer Kit
 - File utilities added for moving and copying files, and getting a "long list" of files in a folder.
 
 ### 15 - MCU Version Information (tmo_shell)
-- Detailed MCU version information was added to tmo_shell.
+- Detailed MCU version information was added to [tmo_shell](06-Interacting-with-the-Kit-at-CLI-via-the-tmo_shell.md).
+- 
 ### 16 - Wi-Fi Auto Connection (tmo_shell)
 - Configuration options added to support Wi-Fi auto connection in tmo_shell.
 
@@ -65,10 +66,12 @@ The T-Mobile DevEdge IoT Developer Kit
 
 ### 1 - Data Transmission from tmo_shell to Web App End Point
 - Data transmission from tmo_shell to Web App end point via modem and Wi-Fi.
+
 ### 2 - Device Firmware Update (DFU) Download Combine with tmo_shell
-- DFU download combined with tmo_shell provides the best user experience to the 3rd Party developers towards updating SiLabs Wi-Fi firmware (as well as modem, MCU, and GNSS) via tmo_shell.
+- Download and update firmware for SiLabs, modem, MCU, and GNSS via [tmo_shell](06-Interacting-with-the-Kit-at-CLI-via-the-tmo_shell.md) command `tmo dfu` added.
+
 ### 3 - Extension of Buzzer Functionality
-- Extension of the buzzer functionality to play the ramp tune and a tone for a specified time.
+- Extension of the `buzzer` functionality to play the ramp tune and a tone for a specified time.
 
 <br>
 
