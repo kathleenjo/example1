@@ -62,7 +62,8 @@ This document describes how to connect your IoT Developer Kit to T-Mobile's LTE-
 <br>
 
 - **Question** - I cannot find my 8-digit access code in my box. Is there another way to retrieve it? 
-- **Answer** - Yes. In your serial app enter `fs read /tmo/aws_session.txt`. The output should give you your 8-digit code.<br><br><img src="https://user-images.githubusercontent.com/60194531/182263608-54d61457-d565-4899-a2bb-5e3171b718f8.png" width="500">
+- **Answer** - Yes. In your serial app enter `fs read /tmo/aws_session.txt`. The output should give you your 8-digit code.<br><br><img src="https://user-images.githubusercontent.com/60194531/182265526-e8b43e29-8c6b-4d50-8fca-93a6784f5ed3.png" width="500">
+
 
 <br> 
 
