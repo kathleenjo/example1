@@ -55,11 +55,24 @@ The web and mobile apps help developers interact with the IoT Developer Kit with
 <br>
 
 - **Question** - How can I access / pair my IoT Developer Kit to https://devkit.devedge.t-mobile.com?
-- **Answer** – In your box, there will be an access code. Enter the access code then click ***Next***.<br><br>![image](https://user-images.githubusercontent.com/60194531/181348997-1848acba-1ea4-4cec-96f7-c76ddf2513a9.png)
+- **Answer** - 
+    1. On your computer, open a serial app like Tera Term, PuTTY, or Serial. For demonstration purposes we will use [Serial](https://apps.apple.com/us/app/serial/id877615577?mt=12) on a Mac.<br><br>
+    2. Select the serial port that is connected to your IoT Developer Kit then click ***Open***.<br><br>
+    3. Under **Terminal** > **Settings** > **Line Settings** > **Baud Rate** make sure the following values are set then click ***OK***:
+       - Baud Rate / Speed - 9600
+       - Data Rate - 8
+       - Parity - None
+       - Stop Bits - 1
+       - Flow Control - None<br><br><img src="https://user-images.githubusercontent.com/60194531/182261738-15deeb37-9338-4a5d-92e4-b99caa48c91a.png" width="400"><br><br>
+    4. At the command line screen press ***Enter*** on your keyboard. The uart command prompt appears. To learn more about uart, please read the document [Interacting with the Kit at CLI via tmo_shell](06-Interacting-with-the-Kit-at-CLI-via-the-tmo_shell.md).<br><br><img src="https://user-images.githubusercontent.com/60194531/180333887-077dab9a-d8a3-461e-90a7-8f5aa0a548f6.png" width="500"><br><br>
+    5. Enter `tmo wifi connect "<SSID>" 0 "<PSK>"` to connect to Wi-Fi.<br><br> 
+    6. Enter `tmo json iface 2` to set the default interface that will send the developer kit's JSON payload then press ***Return*** on your keyboard.<br><br>
+    7. Enter `fs cat /tmo/aws_session.txt` then press ***Return*** on your keyboard.<br><br>
+    8. Enter `tmo json enable` then press ***Return*** on your keyboard.<br><br><img src="https://user-images.githubusercontent.com/60194531/182264166-4db13251-693f-481f-be96-7f04079c4921.png" width="500"><br><br>You should receive a 200 status code.<br><br><img src="https://user-images.githubusercontent.com/60194531/182262272-501511aa-b161-401d-8a11-7a7f37d64091.png" width="500"><br><br> 
+    9. On a web browser, go to the web app https://devkit.devedge.t-mobile.com/.<br><br>
+    10. Enter the access code found in the box your IoT Developer Kit arrived in then click ***Next***.<br><br>![image](https://user-images.githubusercontent.com/60194531/181348997-1848acba-1ea4-4cec-96f7-c76ddf2513a9.png)
 
-
-
-<br>
+<br><br>
 
 - **Question** - What are the main differences between the web app and the mobile app?
 - **Answer** - Through the web app, you can view temperature, GPS, and LTE data. However, you cannot toggle the LEDs on and off and you cannot actuate the buzzer to make any sounds. These actions, however, can be taken in the mobile app. In addition, the mobile app has debugging logs, based on SEGGER technology, that allow the user to troubleshoot the kit. 
