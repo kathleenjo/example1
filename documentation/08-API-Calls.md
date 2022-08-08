@@ -21,18 +21,17 @@ This document lists all available API calls, parameters, errors, and responses f
 
 <br>
 
-## Sensors
-To learn more about the tmo_shell CLI calls, please read the document [Interacting with the Kit at CLI via tmo_shell](06-Interacting-with-the-Kit-at-CLI-via-the-tmo_shell.md). 
-
-| Driver | Available tmo_shell CLI Calls | Subcommands | Subcommand Descriptions | Parameters / Required Arugments | Response |
-| ----- | ----- | ----- | ----- | ----- | ----- |
-| Accelerometer | `sensor get LIS2DW12` | get | Get sensor data. | LIS2DW12 | <pre>{<br>  "accelerometer": {<br>    "x": 0.210568,<br>    "y": 1.234696,<br>    "z": 9.94457<br>},</pre> |
-| Ambient Light | `sensor get TSL2540` | get | Get sensor data. | TSL2540 | <pre>},<br>  "ambientLight": {<br>    "visibleLux": 44.36,<br>    "irLux": 95.36<br>}</pre> |
-| Air Pressure | `sensor get LPS22HH` | get | Get sensor data. | LPS22HH | <pre>},<br>  "pressure": {<br>    "kPa": 99.9<br>},</pre> |
-| Temperature | `sensor get TEMP_0` | get | Get sensor data. | TEMP_0 | <pre>},<br>  "temperature": {<br>    "temperatureCelsius": 25.3<br>},</pre> |
-| LED | `led on pwmleds 0` | <ol><li>off</li><li>on</li><li>get_info</li><li>set_brightness</li><li>set_color</li><li>set_channel</li><li>write_channels</li></ol>  | <ol><li>Turns the LED off.</li><li>Turns the LED on.</li><li>Gets information for the LED.</li><li>Sets the brightness of the LED.</li><li>Sets the color of the LED.</li><li>ets the channel of the LED.</li><li>?????</li></ol> | <ul><li>0 = white LED</li><li>1 = red LED</li><li>2 = green LED</li><li>3 = blue LED</li></ul> | ????? |
-| GNSS<br><br>(Only available with tmo_shell version 1.10.x and later. Upgrade [here](09-Upgrading-your-IoT-Developer-Kit.md).) | `tmo location` | Not applicable. | Not applicable. | Not applicable. | <pre>},<br>  "map": {<br>    "lat": 47.781114,<br>    "lon": -122.212874,<br>    "hdop": 0<br>},</pre> |
-| Buzzer<br><br>(Only available with tmo_shell version 1.10.x and later. Upgrade [here](09-Upgrading-your-IoT-Developer-Kit.md).) | `tmo buzzer tone <freq in Hz> <time in msecs>` | <ol><li>jingle</li><li>ramp</li><li>tone</li></ol> |  |  |  |
+## How to Connect to the Kit's CLI
+1. Connect your IoT Developer Kit via two USB-A to USB-C cables to your computer like in the screenshot below. Ensure that the **J-Link USB-C Debug** port (port on the right) is plugged into your computer and that the **Modem USB-C Debug** port (port on the left) is plugged into your power outlet like in the picture below. If you have them plugged in any other way you will not be able to connect to your kit.<br><br><img src="https://user-images.githubusercontent.com/60194531/180322791-9ea6d51c-a65d-4b88-987c-e72d19c4b888.png" width="350"><br><br> If you are on [tmo_shell](06-Interacting-with-the-Kit-at-CLI-via-the-tmo_shell.md) version 1.10.x, you can connect your IoT Developer Kit in the following way. Learn how to [upgrade here](09-Upgrading-your-IoT-Developer-Kit.md).<br><br><img src="https://user-images.githubusercontent.com/60194531/180333805-eb9e0498-2673-4c54-993f-e737869a3589.png" width="350"><br><br>
+2. Open your serial app on your computer. For demonstration purposes we will use Serial on a Mac.<br><br>
+3. Select the serial port that is connected to your IoT Developer Kit than click ***Open***.<br><br>
+4. Under **Terminal** > **Settings** > **Line Settings** > **Baud Rate** make sure the following values are set then click ***OK***:
+   - Baud Rate / Speed - 9600
+   - Data Rate - 8
+   - Parity - None
+   - Stop Bits - 1
+   - Flow Control - None<br><br><img src="https://user-images.githubusercontent.com/60194531/183472900-63291057-4213-4c9a-98d3-11dd6ec836c5.png" width="350"><br><br>
+5. At the command line screen press ***Enter*** on your keyboard. The uart command prompt appears. To learn more about uart, please read the document [Interacting with the Kit at CLI via tmo_shell](06-Interacting-with-the-Kit-at-CLI-via-the-tmo_shell.md).<br><br><img src="https://user-images.githubusercontent.com/60194531/180333887-077dab9a-d8a3-461e-90a7-8f5aa0a548f6.png" width="400">
 
 <br>
 
