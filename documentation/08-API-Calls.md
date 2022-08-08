@@ -41,7 +41,7 @@ To get the raw API data for the accelerometer sensor, follow the steps below:
 
 1. Connect to your IoT Developer Kit's command line interface (CLI). Please read [How to Connect to the Kit's CLI](08-API-Calls.md#how-to-connect-to-the-kits-cli) above to learn how.<br><br>
 2. Enter `sensor get LIS2DW12` then press ***Return*** on your keyboard. Note that the device name is case sensitive. If you spell it LIS2dw12, you will receive a "Device unknown" error.<br><br> 
-3. The raw accelerometer API data displays.<br><br><img src="https://user-images.githubusercontent.com/60194531/183476547-fcc29fff-2610-4e80-aeaa-9fad001f7488.png" width="350">
+3. The raw accelerometer API data displays.<br><br><img src="https://user-images.githubusercontent.com/60194531/183476547-fcc29fff-2610-4e80-aeaa-9fad001f7488.png" width="450">
 
 <br>
 
@@ -50,15 +50,24 @@ To get the raw API data for the accelerometer sensor, follow the steps below:
 
 1. Connect to your IoT Developer Kit's command line interface (CLI). Please read [How to Connect to the Kit's CLI](08-API-Calls.md#how-to-connect-to-the-kits-cli) above to learn how.<br><br>
 2. Enter `sensor get TSL2540` then press ***Return*** on your keyboard. Note that the device name is case sensitive. If you spell it Tsl2540, you will receive a "Device unknown" error.<br><br> 
-3. The raw accelerometer API data displays.<br><br><img src="https://user-images.githubusercontent.com/60194531/183479202-00e059ed-59fa-45d3-9e25-7570260e0406.png" width="350">
+3. The raw accelerometer API data displays.<br><br><img src="https://user-images.githubusercontent.com/60194531/183479202-00e059ed-59fa-45d3-9e25-7570260e0406.png" width="450">
 
 
 <br>
 
-## Bluetooth Devices
-| Driver | Available tmo_shell CLI Calls | Subcommands | Subcommand Descriptions | Parameters / Required Arugments | Response |
-| ----- | ----- | ----- | ----- | ----- | ----- |
-| BLE | `tmo smp enable<br>(for version 1.8.x)`<br><br>`tmo ble smp enable<br>(for version 1.10.x)` | Please read the document [Interacting with the Kit at CLI via tmo_shell](06-Interacting-with-the-Kit-at-CLI-via-the-tmo_shell.md) to learn more. | Please read the document [Interacting with the Kit at CLI via tmo_shell](06-Interacting-with-the-Kit-at-CLI-via-the-tmo_shell.md) to learn more. | Please read the document [Interacting with the Kit at CLI via tmo_shell](06-Interacting-with-the-Kit-at-CLI-via-the-tmo_shell.md) to learn more. | ![image](https://user-images.githubusercontent.com/60194531/180318584-ab6f22b7-bc3b-4c85-9f68-489c65652db1.png)<br><br>![image](https://user-images.githubusercontent.com/60194531/180318611-76723918-f880-44c9-8292-f443c660b385.png) |
+## Network Operations
+
+<br>
+
+## Bluetooth (BLE)
+
+<br>
+
+## Mobile App Interface
+
+<br>
+
+## Web App Interface
 
 <br>
 
