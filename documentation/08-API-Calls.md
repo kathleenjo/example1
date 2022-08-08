@@ -87,8 +87,8 @@ The LED sensors do not deliver a raw data or API response. Instead, you can chan
 
 1. Connect to your IoT Developer Kit's command line interface (CLI). Please read [How to Connect to the Kit's CLI](08-API-Calls.md#how-to-connect-to-the-kits-cli) above to learn how.<br><br>
 2. Enter `led on pwmleds 0` then press ***Return*** on your keyboard. Note that the device name is case sensitive. If you spell it `pwmlEDs`, you will receive a "LED device pwnlEDs not found" error.<br><br><img src="https://user-images.githubusercontent.com/60194531/183486706-8f8f4a88-1a55-4665-8ea7-050f9c1a42ae.png" width="450"><br>
-3. The white LED turns on.<br><div>**IMPORTANT:** There are 4 LEDS on the DevEdge IoT Developer Kit. 0 = white, 1 = red, 2 = green, and 3 = blue.</div><br><img src="https://user-images.githubusercontent.com/60194531/183487038-84fb2408-15e9-4b93-ac67-d7436c229037.png" width="400"><br>
-4. In your serial app, enter `led off pwmleds 0`to turn off the white LED.<br>
+3. The white LED turns on.<br><div>**IMPORTANT:** There are 4 LEDS on the DevEdge IoT Developer Kit. `0` = white, `1` = red, `2` = green, and `3` = blue.</div><br><img src="https://user-images.githubusercontent.com/60194531/183487038-84fb2408-15e9-4b93-ac67-d7436c229037.png" width="400"><br>
+4. In your serial app, enter `led off pwmleds 0` to turn off the white LED.<br>
 5. To set the brightness of the white LED enter `led set_brightness pwmleds 0 50` in your serial app.<br><br><img src="https://user-images.githubusercontent.com/60194531/183487376-a89831e9-ea68-43ac-a970-128cfa0946fd.png" width="450"><br>
 6. The brightness of the white LED is now set to 50%.<br>
 7. Below is a chart of commands and subcommands for the LEDs.
@@ -106,6 +106,21 @@ To get the raw API data for the temperature sensor, follow the steps below:
 <br>
 
 ## Network Operations
+### Modem
+The modem does not deliver a raw data or API response. Instead, you can obtain further information about the modem, it's SIM card, and more. There are two options for obtaining modem information from the kit. Both are covered below.
+
+#### Option 1 - Zephyr
+1. Connect to your IoT Developer Kit's command line interface (CLI). Please read [How to Connect to the Kit's CLI](08-API-Calls.md#how-to-connect-to-the-kits-cli) above to learn how.<br><br> 
+2. Enter modem list  then press ***Return*** on your keyboard.<br><br>
+3. The Zephyr modem  command gives you the interface ID, modem manufacturer, the model number, what version of modem firmware is installed on the kit, and the IMEI.<br><br><img src="https://user-images.githubusercontent.com/60194531/183496545-2b595972-0464-4d26-9270-a28727266a8d.png" width="450">  
+4. To learn more about the Zephyr RTOS modem command go [here](https://docs.zephyrproject.org/3.0.0/reference/networking/gsm_modem.html).
+
+#### Option 2 - tmo_shell
+1. Connect to your IoT Developer Kit's command line interface (CLI). Please read How to Connect to the Kit's CLI above to learn how. 
+2. Enter tmo mdm_data  if your pilot board's tmo_shell is still on version 1.8.0. Enter tmo modem if your pilot board's tmo_shell is on version 1.10.x. For demonstration purposes, we will use tmo modem and assuming that you have upgraded your developer kit using these instructions. <div>***NOTE:*** Many of the subcommands in the screenshot below do not exist in tmo_shell version 1.8.0, the version that your pilot board originally comes with. You will have to upgrade to tmo_shell version 1.10.x in order to use some of the subcommands.</div>
+3. Enter tmo modem 1 imei then press Return on your keyboard to obtain the IMEI number for the kit. Note that the spelling of imei, or any of these subcommands, is not case sensitive. 
+4. Enter tmo modem 1 imsi then press Return on your keyboard to obtain the IMSI number. 
+5. Below is a chart of commands and subcommands for tmo modem.
 
 <br>
 
