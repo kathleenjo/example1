@@ -39,9 +39,19 @@ This document lists all available API calls, parameters, errors, and responses f
 ### Accelerometer
 To get the raw API data for the accelerometer sensor, follow the steps below:
 
-1. Connect to your IoT Developer Kit's command line interface (CLI). Please read How to Connect to the Kit's CLI above to learn how.<br><br>
+1. Connect to your IoT Developer Kit's command line interface (CLI). Please read [How to Connect to the Kit's CLI](08-API-Calls.md#how-to-connect-to-the-kits-cli) above to learn how.<br><br>
 2. Enter `sensor get LIS2DW12` then press ***Return*** on your keyboard. Note that the device name is case sensitive. If you spell it LIS2dw12, you will receive a "Device unknown" error.<br><br> 
 3. The raw accelerometer API data displays.<br><br><img src="https://user-images.githubusercontent.com/60194531/183476547-fcc29fff-2610-4e80-aeaa-9fad001f7488.png" width="350">
+
+<br>
+
+### Ambient Light
+To get the raw API data for the accelerometer sensor, follow the steps below:
+
+1. Connect to your IoT Developer Kit's command line interface (CLI). Please read [How to Connect to the Kit's CLI](08-API-Calls.md#how-to-connect-to-the-kits-cli) above to learn how.<br><br>
+2. Enter `sensor get TSL2540` then press ***Return*** on your keyboard. Note that the device name is case sensitive. If you spell it Tsl2540, you will receive a "Device unknown" error.<br><br> 
+3. The raw accelerometer API data displays.<br><br><img src="https://user-images.githubusercontent.com/60194531/183479202-00e059ed-59fa-45d3-9e25-7570260e0406.png" width="350">
+
 
 <br>
 
