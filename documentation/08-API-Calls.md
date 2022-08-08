@@ -142,6 +142,41 @@ Wi-Fi does not deliver a raw data or API response. Instead, you can connect to W
 
 ## Bluetooth (BLE)
 
+Bluetooth (BLE) does not deliver a raw data or API response. Instead, you can pair your kit with an available Bluetooth device. Follow the directions below to learn more. 
+
+> **NOTE:** <ol><li>For Bluetooth Low Energy (BLE) features you need a BLE monitoring app. T-Mobile recommends the LightBlue app.</li><li>For Secure Manager Protocol (SMP) pairing, you may need to unpair the kit from the smartphone to test pairing again. This can be done in your smartphone's Bluetooth settings.</li><li>These instructions will work for version 1.8.x of the tmo_shell. For version 1.10.x the command is&nbsp;<code>tmo ble smp enable</code>.</li></ol>
+
+
+To enable SMP pairing enter `tmo ble smp enable` (`tmo smp enable` for those on [tmo_shell](06-Interacting-with-the-Kit-at-CLI-via-the-tmo_shell.md) 1.8.0). After SMP is enabled if you try and pair your DevEdge IoT companion app to your IoT Developer Kit a "Connected <bluetooth_address> (random)" appears. A passkey appears as well. Enter this passkey in your smartphone's DevEdge IoT companion app. 
+
+<img src="https://user-images.githubusercontent.com/60194531/183514942-303a2cb6-7cce-48af-b32a-90384b6b5331.png" width="500">
+
+The result on your smartphone looks like the below. Again, enter this passkey in your companion app. 
+
+<img src="https://user-images.githubusercontent.com/60194531/183515146-67e25c65-7a08-4ada-b2d9-e8ef082eeb58.png" width="350">
+
+To disable SMP pairing enter `tmo ble smp disable`.
+
+To choose the pairing verification methodology, simply enable the relevant IO capabilities using the `tmo ble smp toggle` and `tmo ble smp callbacks` commands. For example, to test key entry on a device enable only keyboard enter the following at CLI:
+
+```
+uart:~$ tmo ble smp enable
+SMP Enabled.
+uart:~$ tmo ble smp callbacks
+CONFIRM: disabled
+DISPLAY: enabled
+KEYBOARD: disabled
+uart:~$ tmo ble smp toggle display
+Display is now disabled
+uart:~$ tmo ble smp toggle keyboard
+Keyboard is now enabled
+uart:~$ tmo ble smp callbacks
+CONFIRM: disabled
+DISPLAY: disabled
+KEYBOARD: enabled
+uart:~$
+```
+
 <br>
 
 ## Mobile App Interface
