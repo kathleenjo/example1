@@ -80,6 +80,7 @@ The T-Mobile DevEdge IoT Developer Kit has the following specifications.
 4. **2-pin header J6** – Placing a shunt (shorting block) across pins 1 and 2 of this header, and resetting the Pearl Gecko microprocessor, will invoke a boot loader program in the micro’s onboard Flash memory. This will allow firmware images to be downloaded to the micro without using the ARM SWD (Serial Wire Debug) or JTAG (Joint Test Action Group) debug interfaces.<br><br>
 5. **Spare GPIO pins on the Pearl Gecko** – There are four unassigned GPIO (General Purpose Input/Output) port pins on the Pearl Gecko: PB7, PF9, PF11, and PK2. These pins, a 1.85V supply rail and ground, are routed to a set of 1.5mm test point pads on the bottom side of the PCB. They are located along one edge of the board and are labeled with the port name.<br><br>**ALSO NOTE:** <ul><li>There is an additional test point in this group, labeled PB6, that is not connected to anything with the default configuration of the board.</li> <li>There was no room on the board to mount a pin header for these signals, so wires must be soldered to the board to access them.</li> <li>There is no ESD protection on these pads, so industry standard anti-static measures should be used when connecting external circuitry.</li></ul>
 
+<br>
 
 ***
 [<< Go back](06-Interacting-with-the-Kit-at-CLI-via-the-tmo_shell.md) &nbsp; | &nbsp; [Up next >>](08-API-Calls.md)
