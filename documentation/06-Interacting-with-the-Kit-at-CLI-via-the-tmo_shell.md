@@ -119,6 +119,43 @@ To perform DNS resolve, use the syntax shown below.
 
 <br>
 
+### Testing BLE SMP Pairing 
+To pair your IoT Developer Kit to your mobile device, use the syntax below. 
+
+> **NOTE:** <ol><li>For Bluetooth Low Energy (BLE) features you need a BLE monitoring app. T-Mobile recommends the LightBlue app.</li><li>For Secure Manager Protocol (SMP) pairing, you may need to unpair the kit from the smartphone to test pairing again. This can be done in your smartphone's Bluetooth settings.</li><li>These instructions will work for version 1.8.x of the tmo_shell. For version 1.10.x the command is `tmo ble smp enable`.</li></ol>
+
+
+To enable SMP pairing enter `tmo smp enable`. After SMP is enabled if you try and pair your DevEdge IoT companion app to your IoT Developer Kit a "Connected <bluetooth_address> (random)" appears. A passkey appears as well. Enter this passkey in your smartphone's DevEdge IoT companion app. 
+
+<img src="https://user-images.githubusercontent.com/60194531/183514942-303a2cb6-7cce-48af-b32a-90384b6b5331.png" width="500">
+
+The result on your smartphone looks like the below. Again, enter this passkey in your companion app. 
+
+<img src="https://user-images.githubusercontent.com/60194531/183515146-67e25c65-7a08-4ada-b2d9-e8ef082eeb58.png" width="350">
+
+To disable SMP pairing enter `tmo smp disable`.
+
+To choose the pairing verification methodology, simply enable the relevant IO capabilities using the `tmo smp toggle` and `tmo smp callbacks` commands. For example, to test key entry on a device enable only keyboard enter the following at CLI:
+
+```
+uart:~$ tmo smp enable
+SMP Enabled.
+uart:~$ tmo smp callbacks
+CONFIRM: disabled
+DISPLAY: enabled
+KEYBOARD: disabled
+uart:~$ tmo smp toggle display
+Display is now disabled
+uart:~$ tmo smp toggle keyboard
+Keyboard is now enabled
+uart:~$ tmo smp callbacks
+CONFIRM: disabled
+DISPLAY: disabled
+KEYBOARD: enabled
+uart:~$
+```
+
+
 ### Find the IMEI
 1. Enter `tmo ifaces`. Based on the [Data Sheet](07-Data-Sheet.md), the murata.1sc is the LTE CAT-M1/NB1 cellular modem and the RS9116W is the Wi-Fi/BLE radio device.
 2. Enter `tmo mdm_data`.
