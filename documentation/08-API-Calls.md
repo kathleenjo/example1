@@ -1,12 +1,23 @@
-# Driver Configurations
+# API Calls
 
 ## Introduction
-This document lists all available calls, parameters, errors, and responses for the drivers. 
+This document lists all available API calls, parameters, errors, and responses for the various sensors and devices on the IoT Developer Kit. 
 
 <br>
 
 ## Prerequisites
 - The [T-Mobile DevEdge IoT Developer Kit](https://devedge.t-mobile.com/solutions/iot-developer-kit). 
+- A computer with Windows, macOS, or Linux OS installed.
+- A serial app like Tera Term, PuTTY, Picocom, or Serial installed on your computer. 
+
+<br>
+
+## Some Important Things to Note
+- Many of the API calls will require that you connect to the [T-Mobile DevEdge IoT Developer Kit](https://devedge.t-mobile.com/solutions/iot-developer-kit) via command line interface (CLI). The section below called [How to Connect to the Kit's CLI](03-How-to-See-Signs-of-Life.md) will show you how to connect to command line. 
+- Many of the API responses will be in a raw data format.
+- Some of the API responses will be in JSON.
+- Some of the sensors / devices will not respond with raw data or JSON at all. Instead the API call will simply change the state of that sensor / device. 
+- You can obtain a list of all devices that can be accessed on the IoT Developer Kit by typing `device list` then pressing ***Return*** on your keyboard at CLI.<br><img src="https://user-images.githubusercontent.com/60194531/183468008-ece7e7e4-d032-4d64-818f-db2ae6abc23d.png" width="400">
 
 <br>
 
