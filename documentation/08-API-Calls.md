@@ -95,7 +95,13 @@ The LED sensors do not deliver a raw data or API response. Instead, you can chan
 
    | Command | Command Description | Subcommands | Subcommand Descriptions | Required Arguments | Example Syntax |
    | ----- | ----- | ----- | ----- | ----- | ----- |
-   | `led` | Zephyr RTOS command that allows for interaction with LEDs on the kit. | <ol><li>off</li><li>on</li><li>get_info</li><li>set_brightness</li><li>set_color</li><li>set_channel</li><li>write_channels</li></ol> | <ol><li>Turns the LED off.</li><li>Turns the LED on.</li><li>Not supported.</li><li>Not supported.</li><li>Sets the brightness of the LED.</li><li>Not supported.</li><li>Not supported.</li></ol> | &lt;device&gt;<ul><li>`pwmleds`</li></ul><br>&lt;led&gt;<ul><li>`0` = white LED</li></ul> | <ol><li>off</li><li>on</li><li>get_info</li><li>set_brightness</li><li>set_color</li><li>set_channel</li><li>write_channels</li></ol> |
+   | `led` | Zephyr RTOS command that allows for interaction with LEDs on the kit. | <ol><li>off</li><li>on</li><li>get_info</li><li>set_brightness</li><li>set_color</li><li>set_channel</li><li>write_channels</li></ol> | <ol><li>Turns the LED off.</li><li>Turns the LED on.</li><li>Not supported.</li><li>Not supported.</li><li>Sets the brightness of the LED.</li><li>Not supported.</li><li>Not supported.</li></ol> | &lt;device&gt;<ul><li>`pwmleds`</li></ul><br>&lt;led&gt;<ul><li>`0` = white LED</li><li>`1` = red LED</li><li>`2` = green LED</li><li>`3` = blue LED</li></ul> | <ol><li>`led off pwmleds 0`</li><li>`led on pwmleds 0`</li><li>Not supported.</li><li>`led set_brightness pwmleds 0 50`</li><li>Not supported.</li><li>Not supported.</li><li>Not supported.</li></ol> |
+   
+### Temperature
+To get the raw API data for the temperature sensor, follow the steps below:
+1. Connect to your IoT Developer Kit's command line interface (CLI). Please read [How to Connect to the Kit's CLI](08-API-Calls.md#how-to-connect-to-the-kits-cli) above to learn how.<br><br> 
+2. Enter `sensor get TEMP_0` then press ***Return*** on your keyboard. Note that the device name is case sensitive. If you spell it `TEmP_0`, you will receive a "Device unknown" error.<br><br> 
+3. The raw temperature API data displays.<br><br><img src="https://user-images.githubusercontent.com/60194531/183495012-602cab39-b3d8-4214-90c3-1cdc6eb08210.png" width="450">
    
 <br>
 
