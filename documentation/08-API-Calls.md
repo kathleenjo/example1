@@ -76,7 +76,7 @@ To get the raw API data for the GNSS sensor, follow the steps below:
 
 1. Connect to your IoT Developer Kit's command line interface (CLI). Please read [How to Connect to the Kit's CLI](08-API-Calls.md#how-to-connect-to-the-kits-cli) above to learn how.<br><br>
 2. Enter `tmo location` then press ***Return*** on your keyboard. Note that the command is case sensitive. If you enter `tmo loCaTion`, you will not receive any raw data.<br><br><img src="https://user-images.githubusercontent.com/60194531/183485265-949a7206-3d39-4120-9d02-dde2ed0ed950.png" width="450"><br><br>
-3. The raw location API data displays.<br><br>
+3. The raw location API data displays.<br><br><div>**IMPORTANT:** The board's GNSS may or may not work. If you do see any data, even after [upgrading](09-Upgrading-your-IoT-Developer-Kit.md), please remember that this board is a pilot.</div><br><img src="https://user-images.githubusercontent.com/60194531/183491523-0b1d1e4a-41ee-4b34-9773-100eb644caf2.png" width="450">
 
 <br>
 
@@ -95,7 +95,7 @@ The LED sensors do not deliver a raw data or API response. Instead, you can chan
 
    | Command | Command Description | Subcommands | Subcommand Descriptions | Required Arguments | Example Syntax |
    | ----- | ----- | ----- | ----- | ----- | ----- |
-   | `led` | Zephyr RTOS command that allows for interaction with LEDs on the kit. | <ol><li>off</li><li>on</li></ol> | <ol><li>Play the T-Mobile jingle.</li><li>Play ramp tune.</li><li>Play a tone for a time.<ol><li>Sets the tone's pitch.</li><li>Sets the tone's duration.</li></ol></li></ol> | <ol><li>`jingle`</li><li>`ramp`</li><li>`tone`<ol><li>&lt;pitch in Hz&gt;</li><li>&lt;duration in msecs&gt;</li></ol></li></ol> | <ol><li>`tmo buzzer jingle`</li><li>`tmo buzzer ramp`</li><li>`tmo buzzer tone 80 1000`</li></ol> |
+   | `led` | Zephyr RTOS command that allows for interaction with LEDs on the kit. | <ol><li>off</li><li>on</li><li>get_info</li><li>set_brightness</li><li>set_color</li><li>set_channel</li><li>write_channels</li></ol> | <ol><li>off</li><li>on</li><li>get_info</li><li>set_brightness</li><li>set_color</li><li>set_channel</li><li>write_channels</li></ol> | <ol><li>off</li><li>on</li><li>get_info</li><li>set_brightness</li><li>set_color</li><li>set_channel</li><li>write_channels</li></ol> | <ol><li>off</li><li>on</li><li>get_info</li><li>set_brightness</li><li>set_color</li><li>set_channel</li><li>write_channels</li></ol> |
    
 <br>
 
