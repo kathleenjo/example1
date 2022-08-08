@@ -193,5 +193,5 @@ Your serial app will display the kit running through a series of system checks.
 <br>
 
 ***
-[<< Go back](08-Driver-Configurations.md) &nbsp; | &nbsp; [Up next >>](10-Accompanying-Apps.md)
+[<< Go back](08-API-Calls.md) &nbsp; | &nbsp; [Up next >>](10-Accompanying-Apps.md)
 
