@@ -13,7 +13,7 @@ This document lists all available API calls, parameters, errors, and responses f
 <br>
 
 ## Some Important Things to Note
-- Many of the API calls will require that you connect to the [T-Mobile DevEdge IoT Developer Kit](https://devedge.t-mobile.com/solutions/iot-developer-kit) via command line interface (CLI). The section below called [How to Connect to the Kit's CLI](03-How-to-See-Signs-of-Life.md) will show you how to connect to command line. 
+- Many of the API calls will require that you connect to the [T-Mobile DevEdge IoT Developer Kit](https://devedge.t-mobile.com/solutions/iot-developer-kit) via command line interface (CLI). The section below called [How to Connect to the Kit's CLI](08-API-Calls.md#how-to-connect-to-the-kits-cli) will show you how to connect to command line. 
 - Many of the API responses will be in a raw data format.
 - Some of the API responses will be in JSON.
 - Some of the sensors / devices will not respond with raw data or JSON at all. Instead the API call will simply change the state of that sensor / device. 
@@ -40,7 +40,7 @@ This document lists all available API calls, parameters, errors, and responses f
 To get the raw API data for the accelerometer sensor, follow the steps below:
 
 1. Connect to your IoT Developer Kit's command line interface (CLI). Please read [How to Connect to the Kit's CLI](08-API-Calls.md#how-to-connect-to-the-kits-cli) above to learn how.<br><br>
-2. Enter `sensor get LIS2DW12` then press ***Return*** on your keyboard. Note that the device name is case sensitive. If you spell it LIS2dw12, you will receive a "Device unknown" error.<br><br> 
+2. Enter `sensor get LIS2DW12` then press ***Return*** on your keyboard. Note that the device name is case sensitive. If you spell it `LIS2dw12`, you will receive a "Device unknown" error.<br><br> 
 3. The raw accelerometer API data displays.<br><br><img src="https://user-images.githubusercontent.com/60194531/183476547-fcc29fff-2610-4e80-aeaa-9fad001f7488.png" width="450">
 
 <br>
@@ -49,7 +49,7 @@ To get the raw API data for the accelerometer sensor, follow the steps below:
 To get the raw API data for the accelerometer sensor, follow the steps below:
 
 1. Connect to your IoT Developer Kit's command line interface (CLI). Please read [How to Connect to the Kit's CLI](08-API-Calls.md#how-to-connect-to-the-kits-cli) above to learn how.<br><br>
-2. Enter `sensor get TSL2540` then press ***Return*** on your keyboard. Note that the device name is case sensitive. If you spell it Tsl2540, you will receive a "Device unknown" error.<br><br> 
+2. Enter `sensor get TSL2540` then press ***Return*** on your keyboard. Note that the device name is case sensitive. If you spell it `Tsl2540`, you will receive a "Device unknown" error.<br><br> 
 3. The raw accelerometer API data displays.<br><br><img src="https://user-images.githubusercontent.com/60194531/183479202-00e059ed-59fa-45d3-9e25-7570260e0406.png" width="450">
 
 <br>
@@ -69,6 +69,16 @@ The Buzzer sensor does not deliver a raw data or API response. Instead, you can 
    | `tmo buzzer` | Actuates the buzzer to play various tones and songs. | <ol><li>jingle</li><li>ramp</li><li>tone<ol><li>pitch in Hz</li><li>duration in secs</li></ol></li></ol> | <ol><li>Play the T-Mobile jingle.</li><li>Play ramp tune.</li><li>Play a tone for a time.<ol><li>Sets the tone's pitch.</li><li>Sets the tone's duration.</li></ol></li></ol> | <ol><li>`jingle`</li><li>`ramp`</li><li>`tone`<ol><li>&lt;pitch in Hz&gt;</li><li>&lt;duration in msecs&gt;</li></ol></li></ol> | <ol><li>`tmo buzzer jingle`</li><li>`tmo buzzer ramp`</li><li>`tmo buzzer tone 80 1000`</li></ol> |
 
 <br> 
+
+### GNSS
+
+To get the raw API data for the GNSS sensor, follow the steps below:
+
+1. Connect to your IoT Developer Kit's command line interface (CLI). Please read [How to Connect to the Kit's CLI](08-API-Calls.md#how-to-connect-to-the-kits-cli) above to learn how.<br><br>
+2. Enter `tmo location` then press ***Return*** on your keyboard. Note that the command is case sensitive. If you enter `tmo loCaTion`, you will not receive any raw data.<br><br><img src="https://user-images.githubusercontent.com/60194531/183485265-949a7206-3d39-4120-9d02-dde2ed0ed950.png" width="450"><br><br>
+3. The raw location API data displays.<br><br>
+
+
 
 ## Network Operations
 
