@@ -86,11 +86,11 @@ The LED sensors do not deliver a raw data or API response. Instead, you can chan
 > **NOTE:** As of this writing the subcommands `get_info`, `set_color`, `set_channel`, and `write_channels` are not supported.<br><br><img src="https://user-images.githubusercontent.com/60194531/183486016-1c132f4f-9bba-43d9-97af-84371c9ba6cd.png" width="450">
 
 1. Connect to your IoT Developer Kit's command line interface (CLI). Please read [How to Connect to the Kit's CLI](08-API-Calls.md#how-to-connect-to-the-kits-cli) above to learn how.<br><br>
-2. Enter led on pwmleds 0 then press Return on your keyboard. Note that the device name is case sensitive. If you spell it pwmlEDs, you will receive a "LED device pwnlEDs not found" error. 
-3. The white LED turns on.
-4. In your serial app, enter led off pwmleds 0  to turn off the white LED. 
-5. To set the brightness of the white LED enter led set_brightness pwmleds 0 50  in your serial app. 
-6. The brightness of the white LED is now set to 50%. 
+2. Enter `led on pwmleds 0` then press ***Return*** on your keyboard. Note that the device name is case sensitive. If you spell it `pwmlEDs`, you will receive a "LED device pwnlEDs not found" error.<br><br><img src="https://user-images.githubusercontent.com/60194531/183486706-8f8f4a88-1a55-4665-8ea7-050f9c1a42ae.png" width="450"><br><br> 
+3. The white LED turns on.<br><div>**IMPORTANT:** There are 4 LEDS on the DevEdge IoT Developer Kit. 0 = white, 1 = red, 2 = green, and 3 = blue.</div><br><img src="https://user-images.githubusercontent.com/60194531/183487038-84fb2408-15e9-4b93-ac67-d7436c229037.png" width="400"><br>
+4. In your serial app, enter `led off pwmleds 0`to turn off the white LED.<br><br>
+5. To set the brightness of the white LED enter led set_brightness pwmleds 0 50  in your serial app.<br><br><img src="https://user-images.githubusercontent.com/60194531/183487376-a89831e9-ea68-43ac-a970-128cfa0946fd.png" width="450"><br><br>
+6. The brightness of the white LED is now set to 50%.<br><br>
 7. Below is a chart of commands and subcommands for the LEDs.
 
    | Command | Command Description | Subcommands | Subcommand Descriptions | Required Arguments | Example Syntax |
