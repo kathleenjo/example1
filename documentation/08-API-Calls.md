@@ -116,11 +116,15 @@ The modem does not deliver a raw data or API response. Instead, you can obtain f
 4. To learn more about the Zephyr RTOS modem command go [here](https://docs.zephyrproject.org/3.0.0/reference/networking/gsm_modem.html).
 
 #### Option 2 - tmo_shell
-1. Connect to your IoT Developer Kit's command line interface (CLI). Please read How to Connect to the Kit's CLI above to learn how. 
-2. Enter tmo mdm_data  if your pilot board's tmo_shell is still on version 1.8.0. Enter tmo modem if your pilot board's tmo_shell is on version 1.10.x. For demonstration purposes, we will use tmo modem and assuming that you have upgraded your developer kit using these instructions. <div>***NOTE:*** Many of the subcommands in the screenshot below do not exist in tmo_shell version 1.8.0, the version that your pilot board originally comes with. You will have to upgrade to tmo_shell version 1.10.x in order to use some of the subcommands.</div>
-3. Enter tmo modem 1 imei then press Return on your keyboard to obtain the IMEI number for the kit. Note that the spelling of imei, or any of these subcommands, is not case sensitive. 
-4. Enter tmo modem 1 imsi then press Return on your keyboard to obtain the IMSI number. 
+1. Connect to your IoT Developer Kit's command line interface (CLI). Please read [How to Connect to the Kit's CLI](08-API-Calls.md#how-to-connect-to-the-kits-cli) above to learn how.<br><br> 
+2. Enter `tmo mdm_data` if your pilot board's [tmo_shell](06-Interacting-with-the-Kit-at-CLI-via-the-tmo_shell.md) is still on version 1.8.0. Enter `tmo modem` if your pilot board's [tmo_shell](06-Interacting-with-the-Kit-at-CLI-via-the-tmo_shell.md) is on version 1.10.x. For demonstration purposes, we will use `tmo modem` and assuming that you have upgraded your developer kit using [these instructions](09-Upgrading-your-IoT-Developer-Kit.md).<br><br><div style="background-color:#F3F9F4;">**NOTE:** Many of the subcommands in the screenshot below do not exist in [tmo_shell](06-Interacting-with-the-Kit-at-CLI-via-the-tmo_shell.md) version 1.8.0, the version that your pilot board originally comes with. You will have to [upgrade](09-Upgrading-your-IoT-Developer-Kit.md) to [tmo_shell](06-Interacting-with-the-Kit-at-CLI-via-the-tmo_shell.md) version 1.10.x in order to use some of the subcommands.</div><br><img src="https://user-images.githubusercontent.com/60194531/183498806-96290b5c-6bbd-46b5-be6b-6a6b9ed6cc1c.png" width="450"><br><br>
+3. Enter `tmo modem 1 imei` then press ***Return*** on your keyboard to obtain the IMEI number for the kit. Note that the spelling of imei, or any of these subcommands, is not case sensitive.<br><br><img src="https://user-images.githubusercontent.com/60194531/183499283-bbb7f8d5-a5df-4614-bdba-fb19a9a62db1.png" width="450"><br><br> 
+4. Enter `tmo modem 1 imsi` then press ***Return*** on your keyboard to obtain the IMSI number.<br><br> 
 5. Below is a chart of commands and subcommands for tmo modem.
+
+   | Command | Command Description | Subcommands | Subcommand Descriptions | Required Arguments | Example Syntax |
+   | ----- | ----- | ----- | ----- | ----- | ----- |
+   | `led` | Zephyr RTOS command that allows for interaction with LEDs on the kit. | <ol><li>off</li><li>on</li><li>get_info</li><li>set_brightness</li><li>set_color</li><li>set_channel</li><li>write_channels</li></ol> | <ol><li>Turns the LED off.</li><li>Turns the LED on.</li><li>Not supported.</li><li>Not supported.</li><li>Sets the brightness of the LED.</li><li>Not supported.</li><li>Not supported.</li></ol> | &lt;device&gt;<ul><li>`pwmleds`</li></ul><br>&lt;led&gt;<ul><li>`0` = white LED</li><li>`1` = red LED</li><li>`2` = green LED</li><li>`3` = blue LED</li></ul> | <ol><li>`led off pwmleds 0`</li><li>`led on pwmleds 0`</li><li>Not supported.</li><li>`led set_brightness pwmleds 0 50`</li><li>Not supported.</li><li>Not supported.</li><li>Not supported.</li></ol> |
 
 <br>
 
