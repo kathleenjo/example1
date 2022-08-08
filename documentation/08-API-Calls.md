@@ -52,8 +52,23 @@ To get the raw API data for the accelerometer sensor, follow the steps below:
 2. Enter `sensor get TSL2540` then press ***Return*** on your keyboard. Note that the device name is case sensitive. If you spell it Tsl2540, you will receive a "Device unknown" error.<br><br> 
 3. The raw accelerometer API data displays.<br><br><img src="https://user-images.githubusercontent.com/60194531/183479202-00e059ed-59fa-45d3-9e25-7570260e0406.png" width="450">
 
-
 <br>
+
+### Buzzer
+The Buzzer sensor does not deliver a raw data or API response. Instead, you can use the buzzer to hear the T-Mobile jingle or play the buzzer at a certain pitch and for a chosen duration. 
+
+> **NOTE:** Only available with tmo_shell version 1.10.x and later. Upgrade [here](09-Upgrading-your-IoT-Developer-Kit.md).
+
+1. Connect to your IoT Developer Kit's command line interface (CLI). Please read [How to Connect to the Kit's CLI](08-API-Calls.md#how-to-connect-to-the-kits-cli) above to learn how.<br><br>
+2. Enter `tmo buzzer jingle` then press ***Return*** on your keyboard. Note that the syntax is case sensitive. If you type the command `tmo BuZzer jinGle`, the T-Mobile jingle will not play.<br><br><img src="https://user-images.githubusercontent.com/60194531/183482297-e82b42ec-960d-4196-88a4-5b3419c74f84.png" width="450">
+3. Listen to the kit play the T-Mobile jingle.
+4. Below is a chart of commands and subcommands for the LEDs. 
+
+   | Command | Command Description | Subcommands | Subcommand Descriptions | Required Arguments | Example Syntax |
+   | ----- | ----- | ----- | ----- | ----- | ----- |
+   | `tmo buzzer` | Actuates the buzzer to play various tones and songs. | <ol><li>jingle</li><li>ramp</li><li>tone<ol><li>pitch in Hz</li><li>duration in secs</li></ol></li></ol> | <ol><li>Play the T-Mobile jingle.</li><li>Play ramp tune.</li><li>Play a tone for a time.<ol><li>Sets the tone's pitch.</li><li>Sets the tone's duration.</li></ol></li></ol> | <ol><li>`jingle`</li><li>`ramp`</li><li>`tone`<ol><li>&lt;pitch in Hz&gt;</li><li>&lt;duration in msecs&gt;</li></ol></li></ol> | <ol><li>`tmo buzzer jingle`</li><li>`tmo buzzer ramp`</li><li>`tmo buzzer tone 80 1000`</li></ol> |
+
+<br> 
 
 ## Network Operations
 
