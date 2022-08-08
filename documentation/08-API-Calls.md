@@ -224,44 +224,83 @@ The Mobile App Interface does not deliver a raw data or API response. Instead, y
 <br>
 
 ## Web App Interface
+The Web App Interface does not deliver a raw data or API response. Instead you can glance at stats like temperature and air pressure.
+
+- **Question** - What is the T-Mobile DevEdge IoT Developer Kit Web App?
+- **Answer** – The T-Mobile DevEdge IoT Developer Kit Web App is a URL that allows you to see basic stats on your IoT Developer Kit. An example can be seen below:<br><br>![image](https://user-images.githubusercontent.com/60194531/181348571-d1bfa9a2-a2a4-47e4-bf8b-f89d7569d9d3.png) 
 
 <br>
 
-## JSON Data Structure
-```json
-{
-  "accelerometer": {
-    "x": 0.210568,
-    "y": 1.234696,
-    "z": 9.944571
-  },
-  "cellSignalStrength": {
-    "dbm": -103
-  },
-  "temperature": {
-    "temperatureCelsius": 25.3
-  },
-  "ambientLight": {
-    "visibleLux": 44.36,
-    "irLux": 95.36
-  },
-  "pressure": {
-    "kPa": 99.9
-  },
-  "map": {
-    "lat": 47.781114,
-    "lon": -122.212874,
-    "hdop": 0
-  }
-}
-```
+- **Question** – Where can I find a the web app?
+- **Answer** – You can find the web app here: https://devkit.devedge.t-mobile.com. 
+
+<br>
+
+- **Question** - What can I do with the web app?
+- **Answer** – You can see the temperature of your kit, glimpse at its accelerometer forces data, note its LTE signal strength, and glance at a JSON data structure. 
+
+<br>
+
+- **Question** - How can I access / pair my IoT Developer Kit to https://devkit.devedge.t-mobile.com?
+- **Answer** - 
+    1. On your computer, open a serial app like Tera Term, PuTTY, or Serial. For demonstration purposes we will use [Serial](https://apps.apple.com/us/app/serial/id877615577?mt=12) on a Mac.<br><br>
+    2. Select the serial port that is connected to your IoT Developer Kit then click ***Open***.<br><br>
+    3. Under **Terminal** > **Settings** > **Line Settings** > **Baud Rate** make sure the following values are set then click ***OK***:
+       - Baud Rate / Speed - 9600
+       - Data Rate - 8
+       - Parity - None
+       - Stop Bits - 1
+       - Flow Control - None<br><br><img src="https://user-images.githubusercontent.com/60194531/182261738-15deeb37-9338-4a5d-92e4-b99caa48c91a.png" width="400"><br><br>
+    4. At the command line screen press ***Enter*** on your keyboard. The uart command prompt appears. To learn more about uart, please read the document [Interacting with the Kit at CLI via tmo_shell](06-Interacting-with-the-Kit-at-CLI-via-the-tmo_shell.md).<br><br><img src="https://user-images.githubusercontent.com/60194531/180333887-077dab9a-d8a3-461e-90a7-8f5aa0a548f6.png" width="500"><br><br>
+    5. Enter `tmo wifi connect "<SSID>" 0 "<PSK>"` to connect to Wi-Fi.<br><br> 
+    6. Enter `tmo json iface 2` to set the default interface that will send the developer kit's JSON payload then press ***Return*** on your keyboard.<br><br>
+    7. Enter `fs cat /tmo/aws_session.txt` then press ***Return*** on your keyboard.<br><br>
+    8. Enter `tmo json enable` then press ***Return*** on your keyboard.<br><br><img src="https://user-images.githubusercontent.com/60194531/182264166-4db13251-693f-481f-be96-7f04079c4921.png" width="500"><br><br>You should receive a 200 status code.<br><br><img src="https://user-images.githubusercontent.com/60194531/182262272-501511aa-b161-401d-8a11-7a7f37d64091.png" width="500"><br><br> 
+    9. On a web browser, go to the web app https://devkit.devedge.t-mobile.com/.<br><br>
+    10. Enter the access code found in the box your IoT Developer Kit arrived in then click ***Next***.<br><br>![image](https://user-images.githubusercontent.com/60194531/181348997-1848acba-1ea4-4cec-96f7-c76ddf2513a9.png)
+
+<br><br>
+
+- **Question** - What are the main differences between the web app and the mobile app?
+- **Answer** - Through the web app, you can view temperature, GPS, LTE, and even JSON data. A sample of the JSON data can be seen below. However, you cannot toggle the LEDs on and off and you cannot actuate the buzzer to make any sounds. These actions, however, can be taken in the mobile app. In addition, the mobile app has debugging logs, based on SEGGER technology, that allow the user to troubleshoot the kit. 
+
+   ```json
+   {
+     "accelerometer": {
+       "x": 0.210568,
+       "y": 1.234696,
+       "z": 9.944571
+     },
+     "cellSignalStrength": {
+       "dbm": -103
+     },
+     "temperature": {
+       "temperatureCelsius": 25.3
+     },
+     "ambientLight": {
+       "visibleLux": 44.36,
+       "irLux": 95.36
+     },
+     "pressure": {
+       "kPa": 99.9
+     },
+     "map": {
+       "lat": 47.781114,
+       "lon": -122.212874,
+       "hdop": 0
+     }
+   }
+   ```
 <br>
 
 ## FAQ
-- **Question** - Why are there two CLI command syntaxes for the modem?
-- **Answer** - There are two because the [Zephyr shell](https://docs.zephyrproject.org/latest/services/shell/index.html) provides one way of obtaining modem data and the [tmo_shell](06-Interacting-with-the-Kit-at-CLI-via-the-tmo_shell.md) provides another way. Either method provides the same modem data. 
+- **Question** - Does the command `modem list` provide different data about the modem than `tmo modem / tmo mdm_data`?
+- **Answer** - No. Both methods provide the same modem data. 
 
 <br>
+
+- **Question** -  I cannot find my 8-digit access code for the web app in the box? Is there another way to find this access code?
+- **Answer** - Yes there is. At CLI enter fs read /tmo/aws_session.txt. The output should provide your 8-digit code.<br><br><img src="https://user-images.githubusercontent.com/60194531/182265526-e8b43e29-8c6b-4d50-8fca-93a6784f5ed3.png" width="450">
 
 ***
 [<< Go back](07-Data-Sheet.md) &nbsp; | &nbsp; [Up next >>](09-Upgrading-your-IoT-Developer-Kit.md)
