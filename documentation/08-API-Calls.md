@@ -300,7 +300,7 @@ The Web App Interface does not deliver a raw data or API response. Instead you c
 <br>
 
 - **Question** -  I cannot find my 8-digit access code for the web app in the box? Is there another way to find this access code?
-- **Answer** - Yes there is. At CLI enter fs read /tmo/aws_session.txt. The output should provide your 8-digit code.<br><br><img src="https://user-images.githubusercontent.com/60194531/182265526-e8b43e29-8c6b-4d50-8fca-93a6784f5ed3.png" width="450">
+- **Answer** - Yes there is. At CLI enter `fs read /tmo/aws_session.txt`. The output should provide your 8-digit code.<br><br><img src="https://user-images.githubusercontent.com/60194531/182265526-e8b43e29-8c6b-4d50-8fca-93a6784f5ed3.png" width="450">
 
 ***
 [<< Go back](07-Data-Sheet.md) &nbsp; | &nbsp; [Up next >>](09-Upgrading-your-IoT-Developer-Kit.md)
