@@ -147,7 +147,7 @@ Bluetooth (BLE) does not deliver a raw data or API response. Instead, you can pa
 > **NOTE:** <ol><li>For Bluetooth Low Energy (BLE) features you need a BLE monitoring app. T-Mobile recommends the LightBlue app.</li><li>For Secure Manager Protocol (SMP) pairing, you may need to unpair the kit from the smartphone to test pairing again. This can be done in your smartphone's Bluetooth settings.</li><li>These instructions will work for version 1.8.x of the tmo_shell. For version 1.10.x the command is&nbsp;<code>tmo ble smp enable</code>.</li></ol>
 
 
-To enable SMP pairing enter `tmo ble smp enable` (`tmo smp enable` for those on [tmo_shell](06-Interacting-with-the-Kit-at-CLI-via-the-tmo_shell.md) 1.8.0). After SMP is enabled if you try and pair your DevEdge IoT companion app to your IoT Developer Kit a "Connected <bluetooth_address> (random)" appears. A passkey appears as well. Enter this passkey in your smartphone's DevEdge IoT companion app. 
+To enable SMP pairing enter `tmo smp enable`. After SMP is enabled if you try and pair your DevEdge IoT companion app to your IoT Developer Kit a "Connected <bluetooth_address> (random)" appears. A passkey appears as well. Enter this passkey in your smartphone's DevEdge IoT companion app. 
 
 <img src="https://user-images.githubusercontent.com/60194531/183514942-303a2cb6-7cce-48af-b32a-90384b6b5331.png" width="500">
 
@@ -155,22 +155,22 @@ The result on your smartphone looks like the below. Again, enter this passkey in
 
 <img src="https://user-images.githubusercontent.com/60194531/183515146-67e25c65-7a08-4ada-b2d9-e8ef082eeb58.png" width="350">
 
-To disable SMP pairing enter `tmo ble smp disable`.
+To disable SMP pairing enter `tmo smp disable`.
 
-To choose the pairing verification methodology, simply enable the relevant IO capabilities using the `tmo ble smp toggle` and `tmo ble smp callbacks` commands. For example, to test key entry on a device enable only keyboard enter the following at CLI:
+To choose the pairing verification methodology, simply enable the relevant IO capabilities using the `tmo smp toggle` and `tmo smp callbacks` commands. For example, to test key entry on a device enable only keyboard enter the following at CLI:
 
 ```
-uart:~$ tmo ble smp enable
+uart:~$ tmo smp enable
 SMP Enabled.
-uart:~$ tmo ble smp callbacks
+uart:~$ tmo smp callbacks
 CONFIRM: disabled
 DISPLAY: enabled
 KEYBOARD: disabled
-uart:~$ tmo ble smp toggle display
+uart:~$ tmo smp toggle display
 Display is now disabled
-uart:~$ tmo ble smp toggle keyboard
+uart:~$ tmo smp toggle keyboard
 Keyboard is now enabled
-uart:~$ tmo ble smp callbacks
+uart:~$ tmo smp callbacks
 CONFIRM: disabled
 DISPLAY: disabled
 KEYBOARD: enabled
@@ -180,6 +180,46 @@ uart:~$
 <br>
 
 ## Mobile App Interface
+The Mobile App Interface does not deliver a raw data or API response. Instead, you can change the status of the LEDs, buzz the buzzer, and glance at other stats like temperature and air pressure. 
+
+#### General
+- **Question** - What is the T-Mobile DevEdge IoT Developer Kit mobile app?
+- **Answer** -  Also known as the *DevEdge IoT* app, this app allows the user to see "signs of life" in the kit without having to use commands at CLI.<br><br><img src="https://user-images.githubusercontent.com/60194531/179608757-fdfbbce7-43ae-43f7-951e-6641d662dc4b.png" width="250"> <img src="https://user-images.githubusercontent.com/60194531/179610173-17f7d684-3b77-4a9d-99ae-eb5c61628766.png" width="250"> 
+
+<br>
+
+- **Question** - What can I do with the T-Mobile DevEdge IoT Developer Kit mobile app?
+- **Answer** - You can turn the lights of the kit on and off, turn the buzzer on and off, glimpse at acceleramotor forces data, view not only the signal strength of the LTE-M towers near you but how many towers are near you, observe pressure and temperature readings, and note the kit's power levels. Plus, you can use the Debug tab, based on SEGGER technology, to troubleshoot your kit. 
+
+<br>
+
+   | Capability | In the Mobile App | On the Kit |
+   | ----- | ----- | ----- |
+   | Turn LED lights on and off. | In the *DevEdge IoT* mobile app tap ***Home*** &gt; ***I/O*** &gt; ***Green toggle*** button.<br><img src="https://user-images.githubusercontent.com/60194531/181352668-01a6ed34-2915-4771-9951-e3b3a7ff6e6e.png" width="200"> | The green LED lights up.<br><img src="https://user-images.githubusercontent.com/60194531/170355650-ac8fc661-067e-4179-9ea4-05fc659dfede.png" width="250"> |
+   | Activate the buzzer. | In the *DevEdge IoT* mobile app tap ***Home*** &gt; ***I/O*** &gt; ***Activate Buzzer***.<br><br><img src="https://user-images.githubusercontent.com/60194531/181353917-461e2e11-c7c1-4946-be01-2bfd4e11843f.png" width="200"> | The buzzer buzzes.<br><br><span style="border: 3px solid #94CA9F; background-color: #F3F9F4; padding: 4px;">**TIP:** Unmute the video to hear the buzzer.</span><br><br> <video class="d-block rounded-bottom-2 border-top width-fit" src="https://user-images.githubusercontent.com/60194531/170573010-8edf0fe6-15dd-4a23-b44c-4f3d2b9f70ff.mp4" data-canonical-src="https://user-images.githubusercontent.com/60194531/170573010-8edf0fe6-15dd-4a23-b44c-4f3d2b9f70ff.mp4" controls="controls" muted="" style="max-height:640px;"></video> |
+   | Observe accelerometer forces. | In the *DevEdge IoT* mobile app tap ***Motion*** tab.<br><br><img src="https://user-images.githubusercontent.com/60194531/170578893-43e93061-9b31-4766-9f21-8535e911600d.png" width="200"> | Flip and turn the IoT Developer Kit and watch it move in real-time in the app. |
+   | View LTE-M signal strength. | On the *DevEdge IoT* mobile **Home** screen view the Connectivity stats.<br><br> <img src="https://user-images.githubusercontent.com/60194531/181357619-5032f015-0e02-4087-9528-a417461b9ce9.png" width="200"> | **NOTE:** You must have a T-Mobile SIM card installed in order to see signal strength.<br><br><img src="https://user-images.githubusercontent.com/60194531/181358089-c530e10c-e05f-4717-88ed-2f10a889f25c.png" width="200"> |
+   | Glimpse at air pressure data.	| In the *DevEdge IoT* mobile app tap ***Home*** &gt; ***Environment*** &gt; ***Air Pressure***.<br><img src="https://user-images.githubusercontent.com/60194531/181358935-acfb734b-e223-47db-81cf-9e4e38a144a0.png" width="200"> | Not applicable. |
+   | Glance at temperature data.	| In the *DevEdge IoT* mobile app tap ***Home*** &gt; ***Environment*** &gt; ***Temperature***.<br><img src="https://user-images.githubusercontent.com/60194531/170580247-ecbc36d8-9d73-4037-8842-dbe4966d0e81.png" width="200"> | Breath on the kit and watch the temperature data change. |
+   | Observe power levels data. | **NOTE:** The battery does not work on this beta model. You will only see the plugged in power supply. The battery may show 75% even if you do not have a battery plugged in. This is a "mocked" value to demonstrate what you will see once the battery is fully functioning. <br><img src="https://user-images.githubusercontent.com/60194531/181362021-fbff1847-eff9-4e63-a3c9-218d20904dde.png" width="200"> | Not applicable.  |
+   | View debug logs. | Based on SEGGER technology, you can see the debug log in the DevEdge IoT mobile app **Debug** tab.<br><img src="https://user-images.githubusercontent.com/60194531/181362360-b96df244-7bfb-44fd-934b-85013d3d0728.png" width="200"> | Not applicable. |
+   
+   <br>
+   
+- **Question** - How do I pair my *DevEdge IoT* mobile app to my kit?
+- **Answer** - <ol><li>On your smartphone, open the *DevEdge IoT* companion app.<br><br><img src="https://user-images.githubusercontent.com/60194531/179608757-fdfbbce7-43ae-43f7-951e-6641d662dc4b.png" width="300"><br><br></li><li>Using Bluetooth, the *DevEdge IoT* companion app will search for your IoT Developer Kit.<br><br><img src="https://user-images.githubusercontent.com/60194531/181363836-44bb0f41-6d27-4dd0-9710-f70cadb2e590.png" width="300"><br><br></li><li>Next, the *DevEdge IoT* companion app provides a list.<br><br><img src="https://user-images.githubusercontent.com/60194531/170331541-44149edb-0b23-45cc-91e3-e6f7ff0a5bbd.png" width="300"><br><br></li><li>Select "T-Mobile DevEdge".<br><br></li><li>The DevEdge IoT home screen opens and is now populated with data from the IoT Developer Kit.<br><br><img src="https://user-images.githubusercontent.com/60194531/179610173-17f7d684-3b77-4a9d-99ae-eb5c61628766.png" width="300"></li></ol>
+   
+<br>
+   
+#### iPhone
+- **Question** - Where can I find the iPhone T-Mobile DevEdge IoT Developer Kit mobile app?<br><br><img src="https://user-images.githubusercontent.com/60194531/179608757-fdfbbce7-43ae-43f7-951e-6641d662dc4b.png" width="300"><br><br>
+- **Answer** - On your iPhone, for this pilot you can find it in [TestFlight](https://apps.apple.com/us/app/testflight/id899247664). Note that you will have to ask for access. If you do not have access, please reach out to us using [this contact form](https://devedge.t-mobile.com/contact). If you did ask for access and still do not see the *DevEdge IoT* mobile app in [TestFlight](https://apps.apple.com/us/app/testflight/id899247664), again, please reach out to us using [this contact form](https://devedge.t-mobile.com).<br><br><img src="https://user-images.githubusercontent.com/60194531/170549827-15312c85-ffd5-4531-8eec-37bb59616c56.png" width="300"><br><br>
+
+<br>
+
+#### Android
+- **Question** - Where can I find the Android T-Mobile DevEdge IoT Developer Kit mobile app?
+- **Answer** - At this time the Android mobile app is not ready for the pilot. It will, however, be ready for general availability. 
 
 <br>
 
