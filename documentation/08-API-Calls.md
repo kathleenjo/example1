@@ -78,7 +78,26 @@ To get the raw API data for the GNSS sensor, follow the steps below:
 2. Enter `tmo location` then press ***Return*** on your keyboard. Note that the command is case sensitive. If you enter `tmo loCaTion`, you will not receive any raw data.<br><br><img src="https://user-images.githubusercontent.com/60194531/183485265-949a7206-3d39-4120-9d02-dde2ed0ed950.png" width="450"><br><br>
 3. The raw location API data displays.<br><br>
 
+<br>
 
+### LED
+The LED sensors do not deliver a raw data or API response. Instead, you can change the state of the LED from on to off and set the LED's brightness. Follow in the instructions below to learn how. 
+
+> **NOTE:** As of this writing the subcommands `get_info`, `set_color`, `set_channel`, and `write_channels` are not supported.<br><br><img src="https://user-images.githubusercontent.com/60194531/183486016-1c132f4f-9bba-43d9-97af-84371c9ba6cd.png" width="450">
+
+1. Connect to your IoT Developer Kit's command line interface (CLI). Please read [How to Connect to the Kit's CLI](08-API-Calls.md#how-to-connect-to-the-kits-cli) above to learn how.<br><br>
+2. Enter led on pwmleds 0 then press Return on your keyboard. Note that the device name is case sensitive. If you spell it pwmlEDs, you will receive a "LED device pwnlEDs not found" error. 
+3. The white LED turns on.
+4. In your serial app, enter led off pwmleds 0  to turn off the white LED. 
+5. To set the brightness of the white LED enter led set_brightness pwmleds 0 50  in your serial app. 
+6. The brightness of the white LED is now set to 50%. 
+7. Below is a chart of commands and subcommands for the LEDs.
+
+   | Command | Command Description | Subcommands | Subcommand Descriptions | Required Arguments | Example Syntax |
+   | ----- | ----- | ----- | ----- | ----- | ----- |
+   | `tmo buzzer` | Actuates the buzzer to play various tones and songs. | <ol><li>jingle</li><li>ramp</li><li>tone<ol><li>pitch in Hz</li><li>duration in secs</li></ol></li></ol> | <ol><li>Play the T-Mobile jingle.</li><li>Play ramp tune.</li><li>Play a tone for a time.<ol><li>Sets the tone's pitch.</li><li>Sets the tone's duration.</li></ol></li></ol> | <ol><li>`jingle`</li><li>`ramp`</li><li>`tone`<ol><li>&lt;pitch in Hz&gt;</li><li>&lt;duration in msecs&gt;</li></ol></li></ol> | <ol><li>`tmo buzzer jingle`</li><li>`tmo buzzer ramp`</li><li>`tmo buzzer tone 80 1000`</li></ol> |
+   
+<br>
 
 ## Network Operations
 
