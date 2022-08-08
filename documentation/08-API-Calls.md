@@ -35,12 +35,13 @@ This document lists all available API calls, parameters, errors, and responses f
 
 <br>
 
-## Network Devices
-| Driver | Available tmo_shell CLI Calls | Subcommands | Subcommand Descriptions | Parameters / Required Arugments | Response |
-| ----- | ----- | ----- | ----- | ----- | ----- |
-| Modem (Zephyr command) | `modem list`<br><br>or<br><br>`modem list 0` | list | At tmo_shell CLI lists all the modems with their ID number and iface device, manufacturer, model, firmware version (a.k.a. Revision), IMEI, and more. | &lt;modem_id&gt; | ![image](https://user-images.githubusercontent.com/60194531/180312410-fd992cb2-a7fd-4959-bda0-fdbe7fadece9.png) |
-| Modem (tmo_shell command) | `tmo mdm_data`<br>(for version 1.8.x)<br><br>`tmo modem`<br>(for version 1.10.x) | Not applicable. | Not applicable. | &lt;iface&gt; &lt;cmd_str&gt;<br><br>cmd_str  has the following available arguments:<ol><li>&lt;imei&gt;</li><li>&lt;imsi&gt;</li><li>&lt;iccid&gt;</li><li>&lt;ssi&gt;</li><li>&lt;sim&gt;</li><li>&lt;msisdn&gt;</li><li>&lt;apn&gt;</li><li>&lt;conn_sts&gt;</li><li>&lt;ip&gt;</li><li>&lt;version&gt;</li></ol> Please see [this document](06-Interacting-with-the-Kit-at-CLI-via-the-tmo_shell.md) for further details.   | ![image](https://user-images.githubusercontent.com/60194531/180313989-985aa426-a20c-497e-b4fc-a453aafc38e5.png) |
-| Wi-Fi | `tmo wifi connect <iface> "<ssid>" 0 "<psk>"<br><br>then`<br><br>`tmo udp connect <socket_number> <ip_addr> <port>`| Please read the document [Interacting with the Kit at CLI via tmo_shell](06-Interacting-with-the-Kit-at-CLI-via-the-tmo_shell.md) to learn more. | Please read the document [Interacting with the Kit at CLI via tmo_shell](06-Interacting-with-the-Kit-at-CLI-via-the-tmo_shell.md) to learn more. | Please read the document [Interacting with the Kit at CLI via tmo_shell](06-Interacting-with-the-Kit-at-CLI-via-the-tmo_shell.md) to learn more.  | <img src="https://user-images.githubusercontent.com/60194531/179850018-b0958ab7-c46f-435d-a203-c4bbd83a6e8e.png"><br><br>then<br><br><img src="https://user-images.githubusercontent.com/60194531/180087873-23a7d924-539b-47ee-a258-dcb3dcfaca84.png"> |
+## Devices and Sensors
+### Accelerometer
+To get the raw API data for the accelerometer sensor, follow the steps below:
+
+1. Connect to your IoT Developer Kit's command line interface (CLI). Please read How to Connect to the Kit's CLI above to learn how.<br><br>
+2. Enter `sensor get LIS2DW12` then press ***Return*** on your keyboard. Note that the device name is case sensitive. If you spell it LIS2dw12, you will receive a "Device unknown" error.<br><br> 
+3. The raw accelerometer API data displays.<br><br><img src="https://user-images.githubusercontent.com/60194531/183476547-fcc29fff-2610-4e80-aeaa-9fad001f7488.png" width="350">
 
 <br>
 
