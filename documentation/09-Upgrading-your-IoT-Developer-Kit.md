@@ -93,7 +93,7 @@ For those who do not have a Zephyr development environment installed on their co
 
 ### Step B - Upgrade Firmware
 In this step we will upgrade the required firmware needed for the RS9116W and GNSS drivers. The Modem (Murata 1SC) is an optional upgrade. Please see the Data Sheet to learn more.<br> 
-1. Execute the following command if you flashed the Blinky sample on your board in the previous step:<br><br>`west build -p -b tmo_dev_edge /home/johnsmith/zephyrproject/tmo-zephyr-sdk/samples/tmo_shell -- -DBOARD_ROOT=/home/johnsmith/zephyrproject/tmo-zephyr-sdk/`<br><br>
+1. Execute the following command if you flashed the Blinky sample on your board in the previous [Option A.3](09-Upgrading-your-IoT-Developer-Kit.md#option-a3---full-zephyr-install) step above. If you did not use [Option A.3](09-Upgrading-your-IoT-Developer-Kit.md#option-a3---full-zephyr-install) please skip to step number three.<br><br>`west build -p -b tmo_dev_edge /home/johnsmith/zephyrproject/tmo-zephyr-sdk/samples/tmo_shell -- -DBOARD_ROOT=/home/johnsmith/zephyrproject/tmo-zephyr-sdk/`<br><br>
 2. Flash the board.<br><br>`west flash`<br><br>
 3. Connect your T-Mobile DevEdge IoT Developer Kit to your computer via two USB-A to USB-C cables.<br><br><img src="https://user-images.githubusercontent.com/60194531/180322791-9ea6d51c-a65d-4b88-987c-e72d19c4b888.png" width="350"><br><br>
 4. Or, since you are now upgraded to 1.10.x you can use just one cable.<br>![image](https://user-images.githubusercontent.com/60194531/180333805-eb9e0498-2673-4c54-993f-e737869a3589.png)<br><br> 
@@ -194,4 +194,3 @@ Your serial app will display the kit running through a series of system checks.
 
 ***
 [<< Go back](08-API-Calls.md) &nbsp; | &nbsp; [Up next >>](10-Accompanying-Apps.md)
-
