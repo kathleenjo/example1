@@ -95,7 +95,7 @@ The LED sensors do not deliver a raw data or API response. Instead, you can chan
 
    | Command | Command Description | Subcommands | Subcommand Descriptions | Required Arguments | Example Syntax |
    | ----- | ----- | ----- | ----- | ----- | ----- |
-   | `led` | Zephyr RTOS command that allows for interaction with LEDs on the kit. | <ol><li>off</li><li>on</li><li>get_info</li><li>set_brightness</li><li>set_color</li><li>set_channel</li><li>write_channels</li></ol> | <ol><li>off</li><li>on</li><li>get_info</li><li>set_brightness</li><li>set_color</li><li>set_channel</li><li>write_channels</li></ol> | <ol><li>off</li><li>on</li><li>get_info</li><li>set_brightness</li><li>set_color</li><li>set_channel</li><li>write_channels</li></ol> | <ol><li>off</li><li>on</li><li>get_info</li><li>set_brightness</li><li>set_color</li><li>set_channel</li><li>write_channels</li></ol> |
+   | `led` | Zephyr RTOS command that allows for interaction with LEDs on the kit. | <ol><li>off</li><li>on</li><li>get_info</li><li>set_brightness</li><li>set_color</li><li>set_channel</li><li>write_channels</li></ol> | <ol><li>Turns the LED off.</li><li>Turns the LED on.</li><li>Not supported.</li><li>Not supported.</li><li>Sets the brightness of the LED.</li><li>Not supported.</li><li>Not supported.</li></ol> | &lt;device&gt;<ul><li>`pwmleds`</li></ul><br>&lt;led&gt;<ul><li>`0` = white LED</li></ul> | <ol><li>off</li><li>on</li><li>get_info</li><li>set_brightness</li><li>set_color</li><li>set_channel</li><li>write_channels</li></ol> |
    
 <br>
 
