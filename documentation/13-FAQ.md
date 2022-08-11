@@ -45,5 +45,11 @@
 - **Question** - Is the battery slid in or pushed into the slot? 
 - **Answer** - The battery is pushed into the slot.<br><img src="https://user-images.githubusercontent.com/60194531/181390907-8469f999-a12a-45b4-bf6a-d9573f6633f0.png" width="300"> 
 <br><br><br>
+- **Question** - Can I try inserting a battery into the battery slot of the kit? 
+- **Answer** - Yes, however, it may or may not work. In addition, the battery is a bit too big for its britches and may pop out after insertion.
+<br><br><br>
+- **Question** - Are there any other issues with the battery that I should know about? 
+- **Answer** - The battery slot may come off of the board if you lift too hard. This is a known issue and we are working on it. 
+<br><br><br>
 ***
 [<< Go back](12-Troubleshooting.md) &nbsp; | &nbsp; [Up next >>](14-Errata-Notice.md)
