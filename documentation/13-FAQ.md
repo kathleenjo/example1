@@ -49,7 +49,7 @@
 - **Answer** - Yes, however, it may or may not work. In addition, the battery is a bit too big for its britches and may pop out after insertion.
 <br><br><br>
 - **Question** - Are there any other issues with the battery that I should know about? 
-- **Answer** - The battery slot may come off of the board if you lift too hard. This is a known issue and we are working on it. 
+- **Answer** - The battery slot may come off of the board if you lift too hard to remove the battery. This is a known issue and we are working on it.
 <br><br><br>
 ***
 [<< Go back](12-Troubleshooting.md) &nbsp; | &nbsp; [Up next >>](14-Errata-Notice.md)
