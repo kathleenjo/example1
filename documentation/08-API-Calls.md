@@ -99,6 +99,9 @@ The LED sensors do not deliver a raw data or API response. Instead, you can chan
    
 ### Temperature
 To get the raw API data for the temperature sensor, follow the steps below:
+
+> **NOTE:** Only available with tmo_shell version 1.10.x and later. Upgrade [here](09-Upgrading-your-IoT-Developer-Kit.md).
+
 1. Connect to your IoT Developer Kit's command line interface (CLI). Please read [How to Connect to the Kit's CLI](08-API-Calls.md#how-to-connect-to-the-kits-cli) above to learn how.<br><br> 
 2. Enter `sensor get TEMP_0` then press ***Return*** on your keyboard. Note that the device name is case sensitive. If you spell it `TEmP_0`, you will receive a "Device unknown" error.<br><br> 
 3. The raw temperature API data displays.<br><br><img src="https://user-images.githubusercontent.com/60194531/183495012-602cab39-b3d8-4214-90c3-1cdc6eb08210.png" width="450">
