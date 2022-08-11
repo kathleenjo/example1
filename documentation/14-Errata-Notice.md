@@ -97,7 +97,10 @@ The maximum number of concurrent sockets is hard coded for both the modem and Wi
 Mobile app features are yet to be tested on Android. They work fine in iOS.
 
 ### &#9839;18
-[SiLabs RS9116W](https://www.silabs.com/wireless/wi-fi/rs9116-wi-fi-ncp-modules/device.rs9116w-sb00-aa0) firmware version 2.4 does not support fragmented TLS. As a result, the [web app](10-Accompanying-Apps.md) will not work out of the box until the firmware is updated to version 2.6 (a version that does support fragmented TLS). To update your [SiLabs RS9116W](https://www.silabs.com/wireless/wi-fi/rs9116-wi-fi-ncp-modules/device.rs9116w-sb00-aa0) firmware, please read the [Upgrading Your IoT Developer Kit](09-Upgrading-your-IoT-Developer-Kit.md) document.  Also, binaries cannot be downloaded using the `tmo dfu download 2` until the SiLabs RS9116W firmware is upgraded to version 2.6. Again, to update your [SiLabs RS9116W](https://www.silabs.com/wireless/wi-fi/rs9116-wi-fi-ncp-modules/device.rs9116w-sb00-aa0) firmware, please read the [Upgrading Your IoT Developer Kit](09-Upgrading-your-IoT-Developer-Kit.md) document.
+[SiLabs RS9116W](https://www.silabs.com/wireless/wi-fi/rs9116-wi-fi-ncp-modules/device.rs9116w-sb00-aa0) firmware version 2.4 does not support fragmented TLS. As a result, the [web app](10-Accompanying-Apps.md) will not work out of the box until the firmware is updated to version 2.6 (a version that does support fragmented TLS). To update your [SiLabs RS9116W](https://www.silabs.com/wireless/wi-fi/rs9116-wi-fi-ncp-modules/device.rs9116w-sb00-aa0) firmware, please read the [Upgrading Your IoT Developer Kit](09-Upgrading-your-IoT-Developer-Kit.md) document.  Also, binaries cannot be downloaded using the `tmo dfu download 2` command until the SiLabs RS9116W firmware is upgraded to version 2.6. Again, to update your [SiLabs RS9116W](https://www.silabs.com/wireless/wi-fi/rs9116-wi-fi-ncp-modules/device.rs9116w-sb00-aa0) firmware, please read the [Upgrading Your IoT Developer Kit](09-Upgrading-your-IoT-Developer-Kit.md) document.
+
+### &#9839;19
+The battery slot may come off of the board if you lift too hard to remove the battery. This is a known issue and we are working on it.
 
 <br>
 
