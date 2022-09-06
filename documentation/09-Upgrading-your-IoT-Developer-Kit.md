@@ -47,8 +47,8 @@ If you already have [Zephyr west](https://docs.zephyrproject.org/latest/develop/
 2. Download the 1.10.x .hex file. Remember where you downloaded this file.<br><br> 
 3. Connect your IoT Developer Kit via two USB-A to USB-C cables to your computer like in the screenshot below. Ensure that the **J-Link USB-C Debug** port (port on the right) is plugged into your computer and that the **Modem USB-C Debug** port (port on the left) is plugged into your power outlet like in the picture below. If you have them plugged in any other way you will not be able to connect to your kit.<br><img src="https://user-images.githubusercontent.com/60194531/180322791-9ea6d51c-a65d-4b88-987c-e72d19c4b888.png" width="350"><br><br>
 4. Open your command line app. For demonstration purposes we will use Terminal on a Mac.<br><br>
-5. Enter the below code at command line.<br><br>`west flash --hex-file <full or relative path to .hex file>`<br><br><img src="https://user-images.githubusercontent.com/60194531/180322712-f4efdda0-367d-4c83-9b2a-860480cc2a05.png" width="550"><br><br>
-6. When version 1.10.x of the tmo_shell finishes flashing, go to Step B.<br><br> 
+5. Enter the below code at command line.<br><br>`cd zephyrproject`<br>`west flash --hex-file <full or relative path to .hex file>`<br><br><img src="https://user-images.githubusercontent.com/60194531/180322712-f4efdda0-367d-4c83-9b2a-860480cc2a05.png" width="550"><br><br>
+6. When version 1.10.x of the tmo_shell finishes flashing, go to <a href="#step-b---upgrade-firmware">Step B</a>.<br><br> 
 
 <br>
 
@@ -69,7 +69,7 @@ The T-Mobile DevEdge IoT Developer Kit comes with a SEGGER chip. As a result, yo
 12. Select the 1.10.x.hex file then click ***Open***. You are returned to the SEGGER J-Flash Lite screen.<br>![image](https://user-images.githubusercontent.com/60194531/180324927-e44c38d7-0d80-4dae-909f-b4c313b4e925.png)<br><br>
 13. Click ***Program Device***. A progress pane and the "Log" section of the SEGGER J-Flash Lite screen shows the progress of your flash.<br>![image](https://user-images.githubusercontent.com/60194531/180324991-d10d284d-20a9-4a1d-90ea-701bfa5683ad.png)<br><br>![image](https://user-images.githubusercontent.com/60194531/180325013-b2194db6-fe1e-4b1a-9f7b-963ce702d7a1.png)<br><br>
 14. Close the SEGGER J-Flash Lite screen when the "Log" states Done.<br>![image](https://user-images.githubusercontent.com/60194531/180325042-1132372b-83d9-49d1-a174-b4961e6fbc95.png)<br><br>
-15. Go to Step B. 
+15. Go to <a href="#step-b---upgrade-firmware">Step B</a>. 
 
 <br>
 
