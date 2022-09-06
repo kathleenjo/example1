@@ -47,7 +47,7 @@ If you already have [Zephyr west](https://docs.zephyrproject.org/latest/develop/
 2. Download the 1.10.x .hex file. Remember where you downloaded this file.<br><br> 
 3. Connect your IoT Developer Kit via two USB-A to USB-C cables to your computer like in the screenshot below. Ensure that the **J-Link USB-C Debug** port (port on the right) is plugged into your computer and that the **Modem USB-C Debug** port (port on the left) is plugged into your power outlet like in the picture below. If you have them plugged in any other way you will not be able to connect to your kit.<br><img src="https://user-images.githubusercontent.com/60194531/180322791-9ea6d51c-a65d-4b88-987c-e72d19c4b888.png" width="350"><br><br>
 4. Open your command line app. For demonstration purposes we will use Terminal on a Mac.<br><br>
-5. Enter the below code at command line.<br><br>`cd zephyrproject`<br>`west flash --hex-file <full or relative path to .hex file>`<br><br><img src="https://user-images.githubusercontent.com/60194531/180322712-f4efdda0-367d-4c83-9b2a-860480cc2a05.png" width="550"><br><br>
+5. Enter the below code at command line.<br><br>`cd zephyrproject`<br>`west flash --hex-file <full or relative path to .hex file>`<br><br><img src="https://user-images.githubusercontent.com/92389901/188679014-022eea75-736b-46f8-9040-77aa8a5655c9.png" width="550"><br><br>
 6. When version 1.10.x of the tmo_shell finishes flashing, go to <a href="#step-b---upgrade-firmware">Step B</a>.<br><br> 
 
 <br>
@@ -87,7 +87,7 @@ For those who do not have a Zephyr development environment installed on their co
 3. Everything else in the [Zephyr Getting Started Guide](https://docs.zephyrproject.org/latest/develop/getting_started/index.html) remains the same.<br><br>
 4. Connect your IoT Developer Kit via two USB-A to USB-C cables to your computer when you are ready to flash your Blinky sample onto the board.<br><img src="https://user-images.githubusercontent.com/60194531/180322791-9ea6d51c-a65d-4b88-987c-e72d19c4b888.png" width="350"><br><br> 
 5. Flash the board.<br><br>`west flash`<br><br>
-6. Go to Step B. 
+6. Go to <a href="#step-b---upgrade-firmware">Step B</a>. 
 
 <br>
 
