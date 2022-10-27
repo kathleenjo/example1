@@ -1,4 +1,4 @@
-# Connecting to the T-Mobile LTE-M Network
+# Connecting to the Network
 
 ## Introduction
 This document describes how to connect your IoT Developer Kit to T-Mobile's LTE-M network. 
