@@ -1,0 +1,633 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Identity and Fraud Management",
+    "description": "A simple set of APIs that will verify whether or a not a call occurred.",
+    "contact": {
+      "name": "IFM API Team",
+      "url": "http://api.t-mobile.com",
+      "email": "IFMProjectTeam@T-Mobile.com"
+    },
+    "license": {
+      "name": "Proprietary software",
+      "url": "https://en.wikipedia.org/wiki/Proprietary_software"
+    },
+    "version": "1.0.0",
+    "x-createdBy": {
+      "dateCreated": "January 2021",
+      "createdBy": "Vnagaba2",
+      "application": "Recite",
+      "appVersion": "1.2.1.3071",
+      "documentId": "5ad2612c-d496-4990-9fd2-4e0323d1b29c",
+      "status": "Conceptual - Initial",
+      "businessCapabilityModel": "5.0",
+      "classification": "16.4 Workforce Mgmt.",
+      "profile": "Application Integration Service",
+      "serviceLayer": "Enterprise - WorkforceManagement"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://dit01-pd.t-mobile.com/ifm/v1/call-verification",
+      "description": "NPE server endpoint"
+    },
+    {
+      "url": "https://api.t-mobile.com/ifm/v1/call-verification",
+      "description": "PROD server endpoint"
+    }
+  ],
+  "tags": [
+    {
+      "name": "Calling number verification",
+      "description": "Calling number verification"
+    }
+  ],
+  "x-data-sensitivity": "Restricted",
+  "x-type-of-consumer": "EU",
+  "x-breadth-of-consumption": "ANY",
+  "paths": {
+    "/calling-number-verification": {
+      "post": {
+        "x-data-sensitivity": "Restricted",
+        "x-type-of-consumer": "EU",
+        "x-breadth-of-consumption": "ANY",
+        "tags": ["Calling number verification"],
+        "summary": "A simple set of APIs that will verify whether or a not a call occurred.",
+        "description": "The http verb for this request is a POST but the api is in fact an idempotent, read only operation. No data will be changed when calling this api, it is a perfectly safe read only operation to perform.",
+        "operationId": "callingNumberVerification",
+        "parameters": [
+          {
+            "name": "Date",
+            "in": "header",
+            "description": "API be called timestamp passed by API Caller",
+            "required": true,
+            "schema": { "type": "string", "format": "date-time" },
+            "example": "Mon, 05 Mar 2018 16:38:08 GMT"
+          },
+          {
+            "name": "interaction-id",
+            "in": "header",
+            "description": "This Id is going to represent a interactionid which is sent by partner",
+            "schema": { "pattern": ".*$", "type": "string" },
+            "example": "072420174258356309"
+          },
+          {
+            "name": "activity-id",
+            "in": "header",
+            "description": "Unique identifier of the request",
+            "required": true,
+            "schema": { "pattern": ".*$", "type": "string" },
+            "example": "c34e7acd-384b-4c22-8b02-ba3963682508"
+          },
+          {
+            "name": "service-transaction-id",
+            "in": "header",
+            "description": "This Id is going to represent a service transaction id which is sent by partner",
+            "schema": { "pattern": ".*$", "type": "string" },
+            "example": "f6cfc010-3ab6-1efd-d920-47c515a8b167"
+          },
+          {
+            "name": "x-authorization",
+            "in": "header",
+            "description": "OAuth 2.0 access token",
+            "schema": { "pattern": ".*$", "type": "string" },
+            "example": "Bearer eyJraWQiOiI0Nzc1M2UzZi0zOGFjLTQ1ODQtZ1sfg1xYTE1Nzk5NWMiLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI5T1VJaTE1TUxVS01QMnVKMXdudUFOZFJJakRFUDNncyIsInJ0Ijoie1wic2VnbWVudGF0aW9uSWRcIjpcIlBPTEFSSVNcIn0iLCJkZWFsZXJDb2RlIjoiIiwiaXNzIjoiaHR0cHM6XC9cL3FhdDAxLmFwaS50LW1vYmlsZS5jb21cL29hdXRoMlwvdjQiLCJtYXN0ZXJEZWFsZXJDb2RlIjoiIiwiYXV0aFRpbWUiOiIxNTk1NTMyMDcxMjExIiwic3RvcmVJZCI6IiIsInVzbiI6IjIzZDc5MDZhLTgzNDktN2U5NC1lNWM1LTQwYzAwZWU1ZDJkZSIsImF1ZCI6IjlPVUlpMTVNTFVLTVAydUoxd251QU5kUklqREVQM2dzIiwic2VuZGVySWQiOiIiLCJuYmYiOjE1OTU1MzIwNzEsInNjb3BlIjoiIiwiYXBwbGljYXRpb25JZCI6IiIsImV4cCI6MTU5NTUzNTY3MSwiaWF0IjoxNTk1NTMyMDcxLCJjaGFubmVsSWQiOiIiLCJqdGkiOiI4ZGI4YTc2OC1jMjg0LTBkNWQtOTc3NS01YjUxNDA2NTEzOWQifQ.wbRq1BI35Y8Dp2ZklHCiSzAs6FxgDY5Obkny6Zodue34dshku5SQOKMevPQuhW1spKUBd551XuznmzpJ5-KqIqY70iNZztj1T_D34fs6yGrymH-97xQvwlGQY2bdLaz_NGAIbuMO98gNSeQjx5PP15J6mFH1W9IT8KwbYJFSwagH_2i1samDb2UV5_43uRMckbu0otn7EFDQFOWPmYqU4P3uN-kiF1NDocvgnVaC_JyJjcCY5-hzCm2_NmjfYwRqR1Xc8Hc82U9MH0vkVQSVYRn7DhVuyvUzwWa9MKPilHmtFJ97nRHSoEfYQNIuv5ml44yMKNRY7Mavf0itpxBwYg"
+          },
+          {
+            "name": "x-auth-originator",
+            "in": "header",
+            "description": "ID Token",
+            "schema": { "pattern": ".*$", "type": "string" },
+            "example": "Bearer eyJraWQiOiI0Nzc1M2UzZi0zOGFjLTQ1ODQtZ1sfg1xYTE1Nzk5NWMiLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI5T1VJaTE1TUxVS01QMnVKMXdudUFOZFJJakRFUDNncyIsInJ0Ijoie1wic2VnbWVudGF0aW9uSWRcIjpcIlBPTEFSSVNcIn0iLCJkZWFsZXJDb2RlIjoiIiwiaXNzIjoiaHR0cHM6XC9cL3FhdDAxLmFwaS50LW1vYmlsZS5jb21cL29hdXRoMlwvdjQiLCJtYXN0ZXJEZWFsZXJDb2RlIjoiIiwiYXV0aFRpbWUiOiIxNTk1NTMyMDcxMjExIiwic3RvcmVJZCI6IiIsInVzbiI6IjIzZDc5MDZhLTgzNDktN2U5NC1lNWM1LTQwYzAwZWU1ZDJkZSIsImF1ZCI6IjlPVUlpMTVNTFVLTVAydUoxd251QU5kUklqREVQM2dzIiwic2VuZGVySWQiOiIiLCJuYmYiOjE1OTU1MzIwNzEsInNjb3BlIjoiIiwiYXBwbGljYXRpb25JZCI6IiIsImV4cCI6MTU5NTUzNTY3MSwiaWF0IjoxNTk1NTMyMDcxLCJjaGFubmVsSWQiOiIiLCJqdGkiOiI4ZGI4YTc2OC1jMjg0LTBkNWQtOTc3NS01YjUxNDA2NTEzOWQifQ.wbRq1BI35Y8Dp2ZklHCiSzAs6FxgDY5Obkny6Zodue34dshku5SQOKMevPQuhW1spKUBd551XuznmzpJ5-KqIqY70iNZztj1T_D34fs6yGrymH-97xQvwlGQY2bdLaz_NGAIbuMO98gNSeQjx5PP15J6mFH1W9IT8KwbYJFSwagH_2i1samDb2UV5_43uRMckbu0otn7EFDQFOWPmYqU4P3uN-kiF1NDocvgnVaC_JyJjcCY5-hzCm2_NmjfYwRqR1Xc8Hc82U9MH0vkVQSVYRn7DhVuyvUzwWa9MKPilHmtFJ97nRHSoEfYQNIuv5ml44yMKNRY7Mavf0itpxBwYg"
+          }
+        ],
+        "requestBody": {
+          "description": "calling number verification request",
+          "content": {
+            "*/*": {
+              "schema": {
+                "$ref": "#/components/schemas/callingNumberVerificationRequest"
+              },
+              "example": {
+                "callingNum": "2057612101",
+                "calledNum": "8772946933",
+                "consentMerchant": "Bank of America",
+                "consentTimestamp": "2019-05-21T13:34:31.101Z",
+                "consentType": "ongoing",
+                "headerEnrichment": "yes"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Ok",
+            "headers": {
+              "service-transaction-id": {
+                "description": "This Id is going to represent a service transaction id which is sent by partner",
+                "schema": { "pattern": ".*$", "type": "string" }
+              },
+              "Data-Sensitivity": {
+                "description": "Represents the type of data sensitivty",
+                "x-example": "Data-Sensitivity",
+                "schema": { "pattern": ".*$", "type": "string" }
+              },
+              "Date": {
+                "description": "The Date general HTTP header contains the date and time at which the message was originated.",
+                "schema": { "type": "string", "format": "date-time" }
+              },
+              "Content-Type": {
+                "description": "The MIME type of this content",
+                "schema": {
+                  "maxLength": 256,
+                  "minLength": 1,
+                  "pattern": "^[ \\S]+$",
+                  "type": "string"
+                }
+              },
+              "ETag": {
+                "description": "Entity Tag: the version of the resource, usually a hash of the representation",
+                "schema": { "pattern": ".*$", "type": "string" }
+              }
+            },
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/callingNumberVerificationResponse"
+                }
+              },
+              "callingNumberVerificationResponse": {
+                "example": {
+                  "didCallOccur": true,
+                  "callInfo": {
+                    "originationTimeStamp": "2019-05-21T13:34:31.101Z"
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "headers": {
+              "service-transaction-id": {
+                "description": "This Id is going to represent a service transaction id which is sent by partner",
+                "schema": { "pattern": ".*$", "type": "string" }
+              },
+              "Date": {
+                "description": "The Date general HTTP header contains the date and time at which the message was originated.",
+                "schema": { "type": "string", "format": "date-time" }
+              },
+              "Content-Type": {
+                "description": "The MIME type of this content",
+                "schema": {
+                  "maxLength": 256,
+                  "minLength": 1,
+                  "pattern": "^[ \\S]+$",
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/Error" },
+                "example": {
+                  "code": "400",
+                  "userMessage": "Bad Request",
+                  "systemMessage": "Bad Request",
+                  "detailLink": "http://aaa.bbb.ccc/"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "headers": {
+              "service-transaction-id": {
+                "description": "This Id is going to represent a service transaction id which is sent by partner",
+                "schema": { "pattern": ".*$", "type": "string" }
+              },
+              "Date": {
+                "description": "The Date general HTTP header contains the date and time at which the message was originated.",
+                "schema": { "type": "string", "format": "date-time" }
+              },
+              "Content-Type": {
+                "description": "The MIME type of this content",
+                "schema": {
+                  "maxLength": 256,
+                  "minLength": 1,
+                  "pattern": "^[ \\S]+$",
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/Error" },
+                "example": {
+                  "code": "401",
+                  "userMessage": "Unauthorized",
+                  "systemMessage": "Unauthorized",
+                  "detailLink": "http://aaa.bbb.ccc/"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Access Denied",
+            "headers": {
+              "service-transaction-id": {
+                "description": "This Id is going to represent a service transaction id which is sent by partner",
+                "schema": { "pattern": ".*$", "type": "string" }
+              },
+              "Date": {
+                "description": "The Date general HTTP header contains the date and time at which the message was originated.",
+                "schema": { "type": "string", "format": "date-time" }
+              },
+              "Content-Type": {
+                "description": "The MIME type of this content",
+                "schema": {
+                  "maxLength": 256,
+                  "minLength": 1,
+                  "pattern": "^[ \\S]+$",
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/Error" },
+                "example": {
+                  "code": "403",
+                  "userMessage": "Access Denied",
+                  "systemMessage": "Access Denied",
+                  "detailLink": "http://aaa.bbb.ccc/"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "headers": {
+              "service-transaction-id": {
+                "description": "This Id is going to represent a service transaction id which is sent by partner",
+                "schema": { "pattern": ".*$", "type": "string" }
+              },
+              "Date": {
+                "description": "The Date general HTTP header contains the date and time at which the message was originated.",
+                "schema": { "type": "string", "format": "date-time" }
+              },
+              "Content-Type": {
+                "description": "The MIME type of this content",
+                "schema": {
+                  "maxLength": 256,
+                  "minLength": 1,
+                  "pattern": "^[ \\S]+$",
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/Error" },
+                "example": {
+                  "code": "404",
+                  "userMessage": "Not Found",
+                  "systemMessage": "Not Found",
+                  "detailLink": "http://aaa.bbb.ccc/"
+                }
+              }
+            }
+          },
+          "405": {
+            "description": "Method Not Allowed",
+            "headers": {
+              "service-transaction-id": {
+                "description": "This Id is going to represent a service transaction id which is sent by partner",
+                "schema": { "pattern": ".*$", "type": "string" }
+              },
+              "Date": {
+                "description": "The Date general HTTP header contains the date and time at which the message was originated.",
+                "schema": { "type": "string", "format": "date-time" }
+              },
+              "Allow": {
+                "description": "list of supported methods for URI",
+                "schema": {
+                  "maxLength": 256,
+                  "minLength": 1,
+                  "pattern": "^[\\S]*$",
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/Error" },
+                "example": {
+                  "code": "405",
+                  "userMessage": "Method Not Allowed",
+                  "systemMessage": "Method Not Allowed",
+                  "detailLink": "http://aaa.bbb.ccc/"
+                }
+              }
+            }
+          },
+          "409": {
+            "description": "Conflict",
+            "headers": {
+              "service-transaction-id": {
+                "description": "This Id is going to represent a service transaction id which is sent by partner",
+                "schema": { "pattern": ".*$", "type": "string" }
+              },
+              "Date": {
+                "description": "The Date general HTTP header contains the date and time at which the message was originated.",
+                "schema": { "type": "string", "format": "date-time" }
+              },
+              "Content-Type": {
+                "description": "The MIME type of this content",
+                "schema": {
+                  "maxLength": 256,
+                  "minLength": 1,
+                  "pattern": "^[ \\S]+$",
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/Error" },
+                "example": {
+                  "code": "409",
+                  "userMessage": "Conflict",
+                  "systemMessage": "Conflict",
+                  "detailLink": "http://aaa.bbb.ccc/"
+                }
+              }
+            }
+          },
+          "415": {
+            "description": "Unsupported Media Type",
+            "headers": {
+              "service-transaction-id": {
+                "description": "This Id is going to represent a service transaction id which is sent by partner",
+                "schema": { "pattern": ".*$", "type": "string" }
+              },
+              "Date": {
+                "description": "The Date general HTTP header contains the date and time at which the message was originated.",
+                "schema": { "type": "string", "format": "date-time" }
+              },
+              "Content-Type": {
+                "description": "The MIME type of this content",
+                "schema": {
+                  "maxLength": 256,
+                  "minLength": 1,
+                  "pattern": "^[ \\S]+$",
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/Error" },
+                "example": {
+                  "code": "415",
+                  "userMessage": "Unsupported Media Type",
+                  "systemMessage": "Unsupported Media Type",
+                  "detailLink": "http://aaa.bbb.ccc/"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "headers": {
+              "service-transaction-id": {
+                "description": "This Id is going to represent a service transaction id which is sent by partner",
+                "schema": { "pattern": ".*$", "type": "string" }
+              },
+              "Date": {
+                "description": "The Date general HTTP header contains the date and time at which the message was originated.",
+                "schema": { "type": "string", "format": "date-time" }
+              },
+              "Content-Type": {
+                "description": "The MIME type of this content",
+                "schema": {
+                  "maxLength": 256,
+                  "minLength": 1,
+                  "pattern": "^[ \\S]+$",
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/Error" },
+                "example": {
+                  "code": "500",
+                  "userMessage": "Internal Server Error",
+                  "systemMessage": "Internal Server Error",
+                  "detailLink": "http://aaa.bbb.ccc/"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Service Unavailable",
+            "headers": {
+              "service-transaction-id": {
+                "description": "This Id is going to represent a service transaction id which is sent by partner",
+                "schema": { "pattern": ".*$", "type": "string" }
+              },
+              "Date": {
+                "description": "The Date general HTTP header contains the date and time at which the message was originated.",
+                "schema": { "type": "string", "format": "date-time" }
+              },
+              "Content-Type": {
+                "description": "The MIME type of this content",
+                "schema": {
+                  "maxLength": 256,
+                  "minLength": 1,
+                  "pattern": "^[ \\S]+$",
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/Error" },
+                "example": {
+                  "code": "503",
+                  "userMessage": "Service unavailable",
+                  "systemMessage": "Service unavailable",
+                  "detailLink": "http://aaa.bbb.ccc/"
+                }
+              }
+            }
+          }
+        },
+        "security": [{ "Oauth": ["read:callingNumberVerificationInfo"] }],
+        "x-api-pattern": "ExecuteFunction",
+        "x-codegen-request-body-name": "callingNumberVerificationRequest"
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Error": {
+        "required": ["code", "userMessage"],
+        "type": "object",
+        "properties": {
+          "code": {
+            "pattern": "^[\\S ]+$",
+            "type": "string",
+            "description": "A succinct, domain-specific, human-readable text string to identify the type of error for the given status code",
+            "example": "ProductNotFound"
+          },
+          "userMessage": {
+            "pattern": "^[\\S ]+$",
+            "type": "string",
+            "description": "A human-readable message describing the error.",
+            "example": "Failed to find product."
+          },
+          "systemMessage": {
+            "pattern": ".*$",
+            "type": "string",
+            "description": "Text that provides a more detailed technical explanation of the error",
+            "example": "PRODUCT_NOT_FOUND"
+          },
+          "detailLink": {
+            "pattern": ".*$",
+            "type": "string",
+            "description": "link to custom information providing greater detail on error or errors",
+            "example": "http://aaa.bbb.ccc/"
+          }
+        },
+        "description": "Format defined in http://api-standards.apps.px-npe01.cf.t-mobile.com/http/status-codes/error-response-format/ and error details reference: https://qwiki.internal.t-mobile.com/display/ESG/JWT+Implementation+-+Change+Summary"
+      },
+      "callingNumberVerificationRequest": {
+        "required": [
+          "callingNum",
+          "calledNum",
+          "consentMerchant",
+          "consentTimestamp",
+          "consentType"
+        ],
+        "type": "object",
+        "properties": {
+          "callingNum": {
+            "maxLength": 15,
+            "minLength": 10,
+            "pattern": "[0-9]{10,15}",
+            "type": "string",
+            "description": "calling number",
+            "example": "2057612101"
+          },
+          "calledNum": {
+            "maxLength": 15,
+            "minLength": 10,
+            "pattern": "[0-9]{10,15}",
+            "type": "string",
+            "description": "called number",
+            "example": "8772946933"
+          },
+          "consentMerchant": {
+            "maxLength": 50,
+            "minLength": 5,
+            "pattern": ".*$",
+            "type": "string",
+            "description": "Merchant name",
+            "example": "Bank of America"
+          },
+          "consentTimestamp": {
+            "type": "string",
+            "description": "Time stamp format",
+            "format": "date-time",
+            "example": "2015-12-08T00:34:31.536Z"
+          },
+          "consentType": {
+            "maxLength": 7,
+            "minLength": 7,
+            "type": "string",
+            "description": "Represents onetime or ongoing consent",
+            "example": "onetime/ongoing",
+            "enum": ["onetime", "ongoing"]
+          },
+          "headerEnrichment": {
+            "maxLength": 3,
+            "minLength": 2,
+            "type": "string",
+            "description": "Flag to indicate header enrichment case. The Value set to 'yes' is for headerenrichment API calls",
+            "example": "yes/no",
+            "enum": ["yes", "no"]
+          }
+        },
+        "description": "callingNumberVerificationRequest",
+        "example": {
+          "callingNum": "2057612101",
+          "calledNum": "8772946933",
+          "consentMerchant": "Bank of America",
+          "consentTimestamp": "2019-05-21T13:34:31.101Z",
+          "consentType": "ongoing",
+          "headerEnrichment": "yes"
+        }
+      },
+      "callingNumberVerificationResponse": {
+        "description": "callingNumberVerificationResponse",
+        "type": "object",
+        "example": {
+          "didCallOccur": true,
+          "callInfo": { "originationTimeStamp": "2015-12-08T00:34:31.536Z" }
+        },
+        "properties": {
+          "didCallOccur": {
+            "maxLength": 256,
+            "minLength": 1,
+            "pattern": "^[\\S ]+$",
+            "type": "boolean",
+            "description": "A boolean value of true if the call occurred in last 30 minutes, false otherwise",
+            "example": "2057612101"
+          },
+          "callInfo": { "$ref": "#/components/schemas/callInfo" }
+        }
+      },
+      "callInfo": {
+        "type": "object",
+        "properties": {
+          "originationTimeStamp": {
+            "type": "string",
+            "description": "Indicates call origination timestamp, example=\"2020-11-05T19:20:57.367Z\"",
+            "format": "date-time",
+            "example": "2015-12-08T00:34:31.536Z"
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "Oauth": {
+        "type": "oauth2",
+        "x-scheme": "bearer",
+        "x-bearerFormat": "JWT",
+        "description": "When you sign up for an account, you are given your first API key.\nTo do so please follow this link: https://www.t-mobile.com/site/signup/\nAlso you can generate additional API keys, and delete API keys (as you may\nneed to rotate your keys in the future).\n",
+        "flows": {
+          "authorizationCode": {
+            "authorizationUrl": "https://dit01-pd.api.t-mobile.com/oauth2/v6/authorization",
+            "tokenUrl": "https://dit01-pd.api.t-mobile.com/oauth2/v6/tokens",
+            "scopes": {
+              "see-bootcamp:users:*": "Read, update and delete Users"
+            }
+          },
+          "clientCredentials": {
+            "tokenUrl": "https://dit01-pd.api.t-mobile.com/oauth2/v6/tokens?grant_type=client_credentials",
+            "scopes": {
+              "read:callingNumberVerificationInfo": "Get access token"
+            }
+          }
+        }
+      }
+    }
+  },
+  "x-servers": [
+    { "url": "https://dit01-pd.t-mobile.com", "description": "Sandbox Server" },
+    { "url": "https://api.t-mobile.com", "description": "Live Server" }
+  ]
+}
